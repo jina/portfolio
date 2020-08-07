@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/21c19ca4-f823-4de2-861b-f22f07b69fee/deploy-status)](https://app.netlify.com/sites/jinaanne/deploys)
+
 # Note: This website was built off of a fork of the designtokens website which I also work on -- will update all the docs later!
 
 ---
