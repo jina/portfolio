@@ -1,0 +1,16 @@
+header:
+  - title: Work
+    url: /
+  - title: About
+    url: /about/
+  - title: CV
+    htmlTitle: <abbr title="Curriculum Vitae">CV</abbr>
+    url: /cv/
+
+footer:
+  - title: GitHub
+    url: https://github.com/jina
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/sushiandrobots/
+  - title: Twitter
+    url: https://twitter.com/jina

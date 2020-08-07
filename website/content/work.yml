@@ -1,0 +1,313 @@
+- title: Beehive Design System
+  path: /beehive-design-system/
+  next: '/clarity/'
+  prev: '/apple-online-store/'
+  description: Design systems and design operations for Amazon Honeycode, a new No-code app builder product from Amazon (named &ldquo;Beehive&rdquo; prior to the public&nbsp;launch).
+  image: BeehiveDesignSystemWebsite
+  cover: BeehiveDesignSystemIcons
+  logo: BeehiveDesignSystem
+  content: []
+  roles:
+    - Creative Director
+    - Design Systems Advocate
+    - Frontend Developer
+    - Project Manager
+    - <abbr title="User Experience">UX</abbr> Designer
+    - Visual Designer
+  deliverables:
+    - <abbr title="User Interface">UI</abbr> Kit
+    - Style Guide
+    - Website
+
+- title: Clarity
+  path: /clarity/
+  next: /salesforce-lightning-design-system/
+  prev: /beehive-design-system/
+  description: Jina founded and organizes the premiere design systems community conference. The event is now on its fifth year.
+  image: ClarityTatianaAndBrad
+  cover: ClarityTatianaAndBrad
+  logo: Clarity
+  content:
+    - heading:
+        text: Overview
+      description: Clarity is a design systems conference focused on how we work together. We provide tools and standards to scale across an increasing number of devices, platforms, and products. But real success comes when people align around a shared vision and language. Diverse perspectives for design, development, and product unite so more people can be a part of the conversation. At Clarity, we elevate our skills through multi-faceted <strong>inclusion</strong>, <strong>empathy</strong>, <strong>technology</strong>, <strong>creativity</strong>, and <strong>collaboration</strong>.
+      image: ClarityWebsite
+      lists: []
+
+    - heading:
+        text: Story
+      description: >
+        In 2014, Jina decided to try their hand at organizing a conference. They decided to focus the event on design systems since that was their main interest. At the time, there were no other events that had this focus. “Clarity” seemed perfect for the name, as it was a word Jina found using quite often in their field.
+
+        The inspiration for the design aesthetic is diamonds (because “clarity”).
+      lists: []
+
+    - heading:
+        text: '2016'
+        variant: small
+      description: >
+        While Jina bought the website domain right away, it wasn’t until 2016 that they held the first event. They chose the newly-opened Alamo Drafthouse New Mission theatre in San Francisco. Jina enlisted a few folx to help them with a few items (see credits below). Otherwise, Jina executed everything else. This included planning, coordinating, operations, storing, transporting equipment/materials, packing swag bags, etc.
+
+        To Jina’s delight, Richard Danne keynoted the event. He was the designer on the Nasa logo and Graphic Standards Manual from the worm logo era (the 70’s).
+      image: ClarityRichardAndBarbara
+      lists:
+        - heading:
+            text: Creative Responsibilities
+            variant: label
+          items:
+            - Attendee Guide Book
+            - Badges &amp; Lanyards
+            - Event Decor/Appearance
+            - Interstitial Slides
+            - Marquee Signage
+            - Printed Program
+            - Speaker Guide Book
+            - Social Media/Marketing
+            - Website
+
+        - heading:
+            text: Other Creative Credits
+            variant: label
+          items:
+            - Cate Zheng (photography)
+            - Christopher Auyeung (scarf, sticker, swag bag)
+            - FairPlay Video (recap video)
+            - Jesse Hernandez (identity)
+            - Josh Silverman (identity)
+            - Matt Fisher (presentation videos)
+            - Susan Lin (sketchnotes)
+            - The Noun Project (swag bags)
+            - Trish Ang (roll-up banners)
+            - Tristan Henry-Wilson (logo animation)
+
+    - heading:
+        text: '2017'
+        variant: small
+      description: After the first successful event, Jina decided to do another one. They used the Alamo Drafthouse again with the attendee count rising closer to 400. They added workshops to the program this year.
+      image: ClarityHenri
+      lists:
+        - heading:
+            text: Creative Responsibilities
+            variant: label
+          items:
+            - Attendee Guide Book
+            - Badges &amp; Lanyards
+            - Interstitial Slides
+            - Marquee Signage
+            - Printed Program
+            - Social Media/Marketing
+            - Speaker Guide Book
+            - Stickers
+            - Website
+
+        - heading:
+            text: Other Creative Credits
+            variant: label
+          items:
+            - Christopher Auyeung (enamel pins, socks, sticker)
+            - Cindy Chang (sketchnotes)
+            - Courtney Quirin (recap video)
+            - Matt Fisher (presentation videos)
+            - Todd Matthews (photography)
+
+    - heading:
+        text: '2018'
+        variant: small
+      description: >
+        After 2 years of self-organizing, Jina realized they needed help. The event was scaling faster than expected. So Jina hired a part-time assistant (Michael Morrison). He took on some of the vendor facilitation, paperwork, and volunteer coordination. Then Jina could focus on the content curation, creative direction, and event experience.
+
+        The third event was in New York City at the SVA Theatre. The event had grown to 500 attendees.
+      image: ClaritySVAMarquee
+      lists:
+        - heading:
+            text: Creative Responsibilities
+            variant: label
+          items:
+            - Attendee Guide Book
+            - Badges &amp; Lanyards
+            - Beanies
+            - Bracelets
+            - Information Posters
+            - Information Screens
+            - Interstitial Slides
+            - Journals
+            - Marquee Signage
+            - Printed Program
+            - Social Media/Marketing
+            - Speaker Guide Book
+            - Video editing
+            - Website
+
+        - heading:
+            text: Other Creative Credits
+            variant: label
+          items:
+            - Josh Silverman (brand update, pencil, pencil case, swag bag)
+            - Christopher Auyeung (sticker)
+            - Courtney Quirin (recap video)
+            - Jeremy Perez-Cruz (photography)
+            - Laura Brunow Miner (brand and experience vision exploration)
+            - Natalya Shelburne (sketchnotes)
+            - <abbr title="School of Visual Arts">SVA</abbr> Theatre <abbr title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team (presentation video recordings)
+            - Sean Pettis (video editing)
+
+    - heading:
+        text: '2019'
+        variant: small
+      description: The fourth year, the event was back in San Francisco. This time it was at the Blue Shield of California Theatre at YBCA. They needed a larger venue since the attendance had outgrown the Alamo Drafthouse. This year there were 700 attendees.
+      image: ClarityPrograms
+      lists:
+        - heading:
+            text: Creative Responsibilities
+            variant: label
+          items:
+            - Attendee Guide Book
+            - Badges &amp; Lanyards
+            - Information Screens
+            - Interstitial Slides
+            - Printed Program
+            - Social Media/Marketing
+            - Speaker Guide Book
+            - Sticker
+            - Video editing
+            - Website
+
+        - heading:
+            text: Other Creative Credits
+            variant: label
+          items:
+            - Christopher Auyeung (t-shirt design)
+            - Courtney Quirin (recap video)
+            - Robin McGill (sketchnotes)
+            - Blue Shield of California Theatre at <abbr title="Yerba Buena Center for the Arts">YBCA</abbr> <abbr title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team (presentation video recordings)
+            - Wicked Tale LLC (video editing)
+
+    - heading:
+        text: '2020'
+        variant: small
+      description: >
+        The event attendance had grown year over year. So this year, instead of an assistant, Jina partnered with Kickass Conferences. This will produce a higher-quality event.
+
+        With the 2020 pandemic, the landscape of events has changed. The event has evolved into an online experience. They have hopes to provide a hybrid experience in future years. This would combine the online and in-person experience.
+      lists:
+        - heading:
+            text: Creative Responsibilities
+            variant: label
+          items:
+            - Enamel Pin
+            - Mailer Box
+            - Patch
+            - Printed Program
+            - Website
+
+        - heading:
+            text: Other Creative Credits
+            variant: label
+          items:
+            - Alexander Tran (sketchnotes)
+            - Josh Silverman (sticker sheets)
+            - Kickass Conferences (badges, design post-production/procurement, social media/marketing, website content updates, etc)
+            - Three Wolf Media (video production for <abbr title="New York">NY</abbr> speakers)
+      image: ClarityBox
+  roles:
+    - Creative Director
+    - Design Systems Advocate
+    - Event Planner
+    - Frontend Developer
+    - Project Manager
+    - <abbr title="User Experience">UX</abbr> Designer
+    - Visual Designer
+  deliverables:
+    - Conference
+    - Printed Collateral
+    - Style Guide
+    - Website
+
+- title: Salesforce Lightning Design System
+  path: /salesforce-lightning-design-system/
+  next: /sass/
+  prev: /clarity/
+  description: Jina was the founding Lead Designer of one of the most popular enterprise design systems.
+  image: SalesforceLightningDesignSystemWebsite
+  cover: SalesforceLightningDesignSystemIllustration
+  logo: SalesforceLightningDesignSystem
+  content:
+    - heading:
+        text: Overview
+      description: You can customize applications with a look and feel consistent with Salesforce features. You don’t have to reverse engineer the styles! Download the platform-agnostic CSS framework and get started today. Use the detailed guidelines to design excellent apps with confidence. The apps will fit right into the Salesforce ecosystem. With the Design System, get access to Salesforce visual and interaction design patterns. You can follow established best practices.
+      image: SalesforceLightningDesignSystemSystem
+      lists: []
+
+    - heading:
+        text: Story
+      image: SalesforceLightningDesignSystem
+      lists: []
+  roles:
+    - Design Systems Advocate
+    - Event Planner
+    - Frontend Developer
+    - <abbr title="User Experience">UX</abbr> Designer
+    - Visual Designer
+  deliverables:
+    - Style Guide
+    - Website
+
+- title: Sass
+  path: /sass/
+  next: /apple-online-store/
+  prev: /salesforce-lightning-design-system/
+  description: Jina is a Sass core team member. They lead the brand, website design, frontend UI development, and content direction.
+  image: SassWebsite
+  cover: SassGlasses
+  logo: Sass
+  content:
+    - heading:
+        text: Overview
+      description: Sass is a mature, stable, and powerful professional grade CSS extension language. Sass is completely compatible with all versions of CSS. You can use it with any available CSS libraries.
+      image: SassStyleTile
+      lists: []
+
+    - heading:
+        text: Story
+      description: Jina was a fan of using Sass to process their CSS. They were first introduced to it during their time working at Engine Yard. One day, one of the core team members tweeted his frustration with the design of the project. He suggested that it might be why designers were using a competitor instead. So Jina volunteered to lead the redesign of the brand and website.
+      image: Sass
+      lists: []
+  roles:
+    - Branding
+    - Creative Director
+    - Design Systems Advocate
+    - Event Planner
+    - Frontend Developer
+    - <abbr title="User Experience">UX</abbr> Designer
+    - Visual Designer
+  deliverables:
+    - Style Guide
+    - Website
+
+- title: Apple Online Store
+  path: /apple-online-store/
+  next: /beehive-design-system/
+  prev: /sass/
+  description: Jina led the CSS architecture for Apple’s online shopping experience. They also produced/documented the visual language.
+  image: AppleOnlineStoreWebsite
+  cover: AppleOnlineStoreWebsite
+  logo: AppleOnlineStore
+  content:
+    - heading:
+        text: Overview
+      description: The Apple Online Store was an e-commerce website at store.apple.com. The separate website no longer exists as Apple has merged it into the marketing website.
+      image: AppleOnlineStoreSignIn
+      lists: []
+
+    - heading:
+        text: Story
+      description: Jina joined Apple to work on the Online Store right before the launch of the first iPhone. They started as a Frontend UI Engineer.
+      image: AppleOnlineStoreCart
+      lists: []
+  roles:
+    - Design Systems Advocate
+    - Frontend Developer
+    - Visual Designer
+  deliverables:
+    - Style Guide
+    - Website

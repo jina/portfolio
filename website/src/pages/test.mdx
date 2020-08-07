@@ -1,0 +1,73 @@
+---
+title: Test page
+path: /test
+date: 2020-03-05
+---
+
+import { LinkButton } from '../components/LinkButton';
+import { Image } from '../components/Image';
+
+<LinkButton to="/">Home</LinkButton>
+
+```jsx
+<SomeJSXCodeInACodeBlock />
+```
+
+```js render=true
+<div
+  style={{
+    backgroundColor: 'rebeccapurple',
+    padding: '20px',
+    marginTop: '20px',
+    color: 'white',
+  }}
+>
+  Some code that is being rendered (not sure why one would use that)
+</div>
+```
+
+```js live=true
+<div style={{ backgroundColor: 'tomato', padding: '20px' }} />
+```
+
+---
+
+## Images
+
+Image using Markdown:
+
+![Gatsby Logo](../assets/images/portrait-drawing.png)
+
+Image using a React component:
+
+<Image src="../assets/images/portrait-drawing.png" width="50%" />
+
+---
+
+## Smart typography rendering using Smartypants
+
+See <https://retextjs.github.io/retext-smartypants/>.
+
+Some text here--A 'simple' english sentence. . . or something more sophisticated.
+
+### Source
+
+```
+"a"
+
+'a'
+
+a--a a---a
+
+a...a. . .a . . .a. . . a
+```
+
+### Result
+
+"a"
+
+'a'
+
+a--a a---a
+
+a...a. . .a . . .a. . . a

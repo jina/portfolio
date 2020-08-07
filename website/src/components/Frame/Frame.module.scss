@@ -1,0 +1,106 @@
+@import 'assets/styles/dependencies';
+
+:global {
+  html {
+    background: #000;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper,
+  .body {
+    &::before,
+    &::after {
+      position: fixed;
+      display: block;
+      content: ' ';
+      background: #000;
+      z-index: 9999;
+    }
+  }
+
+  .wrapper::before,
+  .wrapper::after,
+  .body::before {
+    top: 0;
+  }
+
+  .wrapper::after,
+  .body::before,
+  .body::after {
+    right: 0;
+  }
+
+  .wrapper::before,
+  .wrapper::after,
+  .body::after {
+    bottom: 0;
+  }
+
+  .wrapper::before,
+  .body::before,
+  .body::after {
+    left: 0;
+  }
+
+  .wrapper {
+    grid: {
+      template-rows: 0.5rem 1fr 0.5rem;
+      template-columns: 0.5rem 1fr 0.5rem;
+    }
+
+    &::before,
+    &::after {
+      width: 0.5rem;
+    }
+  }
+
+  .body {
+    &::before,
+    &::after {
+      height: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    grid: {
+      template-rows: 1rem 1fr 1rem;
+      template-columns: 1rem 1fr 1rem;
+    }
+
+    &::before,
+    &::after {
+      width: 0.5rem;
+    }
+  }
+
+  .body {
+    &::before,
+    &::after {
+      height: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    grid: {
+      template-rows: 2rem 1fr 2rem;
+      template-columns: 2rem 1fr 2rem;
+    }
+
+    &::before,
+    &::after {
+      width: 2rem;
+    }
+  }
+
+  .body {
+    &::before,
+    &::after {
+      height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,308 @@
+skills:
+  - Design Systems
+  - Visual Design
+  - Scalable <abbr title="Cascading Stylesheets">CSS</abbr>/Sass
+  - Proper, semantic <abbr title="HyperText Markup Language">HTML</abbr>
+  - Community-building
+  - Public Speaking
+  - Writing
+
+education:
+  - name: Academy <i>of</i> Art University
+    location: San Francisco, California
+    roles:
+      - role: Master of Fine Arts (pursuing)
+        dates: September 2008&mdash;Present
+        description: >
+          Web Design New Media.
+
+          Taking classes part time toward a masters (all classes completed
+          &mdash; just final thesis to&nbsp;complete).
+  - name: Santa Reparata International School <i>of</i> Art
+    location: Florence, Italy
+    roles:
+      - role: Summer Study Abroad
+        dates: June 2006
+        description: Book Arts, Italian Language
+  - name: Memphis College <i>of</i> Art
+    location: Memphis, Tennessee
+    roles:
+      - role: Bachelor of Fine Arts
+        dates: August 2001&ndash;July 2006
+        description: Both Computer Arts/New Media and Graphic Design
+
+experience:
+  - name: Sushi &amp; Robots (independent consulting)
+    location: San Francisco, California
+    dates: January 2000&ndash;Present
+    roles:
+      - role: Consultant
+        description: >
+          Designing, consulting, coaching, mentoring, and speaking with
+          companies which have included Blend, <abbr title="International
+          Business Machines Corporation">IBM</abbr>, Amazon, Cardstack,
+          Deloitte, Justworks, <abbr title="The website for the Commonwealth of
+          Massachusetts">Mass.gov</abbr>, Upwork, <abbr title="World Wide Web
+          Consortium">W3C</abbr>, Webflow, etc.
+
+          Some projects are executed as collaborations with distributed and
+          virtual studios and agencies including Superfriendly, Nine Labs, Group
+          of Humans, and Josh Silverman.
+      - role: Community Advocate
+        description: >
+          Organizing events including Clarity (a design systems conference),
+          Design Systems Coalition <abbr title="San Francisco">SF</abbr> (an
+          <abbr title="San Francisco">SF</abbr>-area meet up dedicated to all
+          things design systems), and The Mixin (an <abbr title="San
+          Francisco">SF</abbr> Sass & Frontend meet up).
+
+          Running other community projects including the Design Systems Slack
+          (with 16K+ members), Sass.News, Design Systems Jobs, etc.
+  - name: Amazon Honeycode
+    location: San Francisco, California
+    roles:
+      - role: Senior Design Systems/Design Operations Lead &amp; Project Manager
+        dates: August 2017&ndash;September 2018
+        description: >
+          Leading the design systems and design operations for a new product.
+          The responsibilities included documentation, visual design direction,
+          frontend development, accessibility, design tooling distribution,
+          and&nbsp;more.
+  - name: Sales<i>f</i>orce
+    location: San Francisco, California
+    roles:
+      - role: Lead Designer, Design Systems
+        dates: January 2016&ndash;August 2017
+        description: >
+          Taking on a larger role, leading the information architecture, design,
+          and development for the design system, and partnering with other
+          designers to adopt the  system. Continued evangelism efforts
+          internally and&nbsp;externally.
+      - role: Senior Designer, Design Systems
+        dates: November 2015&ndash;December 2015
+        description: >
+          Pitched and founded the Lightning Design System. With the team and
+          product funded and formalized, there was a title change. Conducted
+          design systems work (which included UX design, visual design, frontend
+          development, and documentation).
+
+          Also led the <abbr title="user experience">UX</abbr>
+          organization&rsquo;s evangelism and outreach efforts including being
+          the Editor-in-chief for the team blog, the admin for the social media
+          accounts, organizer of various meet ups and conference sponsorships,
+          teaching and coaching both internal and external people on best
+          practices, and speaking and writing.
+      - role: Senior Product Designer
+        dates: December 2014&ndash;November 2015
+        description: >
+          Moved to the core team to work on design systems across the various
+          products. Worked closely with other product designers to standardize
+          and document the design language and patterns for mobile and web.
+          Helped invent design tokens, which became adopted by the industry as a
+          best practice for scaling design in a system.
+      - role: Product &amp; Marketing Designer
+        dates: February 2012&ndash;December 2014
+        description: >
+          On a small design team of 3 for Do (a social productivity product),
+          was product designer, marketing designer, and web developer. Led the
+          Android app design, the style guide for the marketing website and web
+          application. Also led some design features for the iPhone application.
+          And produced various marketing assets for the app/play stores and
+          social media channels. This product, owned by Salesforce, was sunset
+          in 2014.
+  - name: GitHub
+    location: San Francisco, California
+    roles:
+      - role: Designer
+        dates: September 2011&ndash;December 2011
+        description: >
+          Design for various web and printed materials, which even included
+          Dodgeball uniforms and party invitations.
+  - name: Engine Yard
+    location: San Francisco, California
+    roles:
+      - role: User Experience Designer
+        dates: September 2010&ndash;September 2011
+        description: >
+          Leading user experience design, visual design, and frontend Sass
+          develpment in-house for the AppCloud experience. Developed a coded,
+          living style g the early days of this practice.
+  - name: Crush &amp; Lovely
+    location: New York City, New York (remote from San Francisco, California)
+    roles:
+      - role: Interaction Designer
+        dates: February 2009&ndash;September 2010
+        description: >
+          Web development and design for various products and client projects
+          including the <abbr title="The American Broadcasting
+          Company">ABC</abbr> Nightline iPad and Twitter-stream microsite, the
+          Disney iPhone app, 50 People One Question, and more.
+  - name: Apple
+    location: Cupertino, California
+    roles:
+      - role: Visual Interaction Designer
+        dates: March 2008&ndash;2009
+        description: >
+          Visual and interaction design in-house for various features for the
+          online shopping experience, including Mac configurators, the Cart and
+          Checkout experience, Sign In/Create Account flows, iPhone purchase
+          with mobile carrier sign up flows, education landing pages, and more.
+          Also maintained a design style guide.
+      - role: Frontend <abbr title="User Interface">UI</abbr> Engineer
+        dates: March 2007&ndash;March 2008
+        description: >
+          Led the <abbr title="Cascading Stylesheets">CSS</abbr> architecture
+          in-house for the remodel project, moving to web standards. Also
+          maintained and documented front-end best practices into a style guide.
+  - name: inferno
+    location: Memphis, Tennessee
+    description: >
+      Lowercase is intentional &mdash; the company prefers it for its name.
+    roles:
+      - role: Interactive Designer
+        dates: July 2006&ndash;February 2007
+        description: >
+          Interactive web developer and designer for clients including NuVasive,
+          Medtronic, FedEx, Posh Pattern, and more.
+  - name: Rocket Science Design
+    location: Memphis, Tennessee
+    roles:
+      - role: Graphic/Interactive Designer
+        dates: August 2005&ndash;June 2006
+        description: >
+          Part-time web developer and designer for websites, business cards, and
+          other printed  materials for clients including Emerge Memphis,
+          Germantown Day Spa, and more.
+  - name: Wurzburg
+    location: Memphis, Tennessee
+    roles:
+      - role: Graphic/Interactive Designer
+        dates: April 2005&ndash;August 2005
+        description: >
+          In-house web developer and designer for brochures, branded merchandize
+          and gifts, company newsletter, stationery, large-scale graphics for
+          trade show booths, company vehicles, and the intranet website.
+  - name: Isys Technology
+    location: Memphis, Tennessee
+    roles:
+      - role: Graphic/Interactive Design Intern
+        dates: April 2004&ndash;July 2004
+        decsription: >
+          Web developer and designer for websites, presentations, brochures,
+          etc. for clients including Lausanne Collegiate School and Memphis Area
+          Transit Authority
+  - name: Oden Marketing &amp; Design
+    location: Memphis, Tennessee
+    roles:
+      - role: Interactive Design Intern
+        dates: January 2004&ndash;April 2004
+        description: >
+          Design and frontend development for client projects for a leading
+          Memphis agency. Included creating style guides documenting design and
+          code.
+
+          Clients included American Contract Bridge League, FedEx, International
+          Paper, Anita Kerr, etc.
+
+advisor:
+  - name: Haiku
+    location: San Francisco, California
+    roles:
+      - role: Advisor
+        dates: September 2019&ndash;Present
+        description: >
+          Advisor for the company&rsquo;s various products, including the
+          open-source project Diez (diez.org), a cross-platform design system
+          framework. Diez makes it easy to adopt a unified design language
+          across codebases, platforms, and&nbsp;teams.
+  - name: Jobroo
+    location: San Francisco, California
+    roles:
+      - role: Advisor
+        dates: January 2019&ndash;Present
+        description: >
+          I advise a new start up, by meeting with the CEO and board of
+          directors, and other contributors to provide guidance and feedback on
+          their design direction and user experience.
+
+awards_and_honors:
+  - name: Google Developers Experts program
+    roles:
+      - role: Web Technologies
+        dates: June 2019&ndash;Present
+        description: 'Area of focus: User Experience and frontend development.'
+      - role: Product Design
+        dates: February 2019&ndash;July 2019
+        description: >
+          Area of focus: Visual Design. This category in the program was
+          discontinued in July 2019.
+
+professional_associations:
+  - name: >
+      Design Tokens <abbr title="World Wide Web Consortium">W3C</abbr> Community
+      Group
+    roles:
+      - role: Co-chair
+        dates: July 2019&ndash;Present
+        description: Focused on community and education
+  - name: <abbr title="The Professional Association for Design">AIGA</abbr>
+    roles:
+      - role: San Francisco chapter committee lead
+        dates: February 2019&ndash;Present
+        description: Focused on content and social media
+      - role: Member
+        dates: August 2005&ndash;Present
+  - name: Sass
+    roles:
+      - role: Core-team member
+        dates: November 2014&ndash;Present
+        description: >
+          Leading the brand and website design, development, and content
+
+publications_and_presentations:
+  - name: Design Systems Handbook
+    url: https://www.designbetter.co/design-systems-handbook
+    dates: November, 28, 2017
+    description: >
+      Authors: Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, &amp;
+      Roy Stanfield. Published by DesignBetter.co by InVision.
+    book: true
+    roles:
+      - role: Co-author
+
+  - name: Sass for Web Designers
+    url: https://amzn.to/2BWcbLp
+    dates: November 13, 2014
+    description: >
+      Authors: Dan Cederholm. Published by A Book&nbsp;Apart.
+    book: true
+    roles:
+      - role: Tech Editor
+  - name: Sexy Web Design
+    url: https://amzn.to/39UoLr0
+    dates: April 7, 2009
+    description: >
+      Author: Elliot Jay Stocks. Published&nbsp;by&nbsp;SitePoint.
+    book: true
+    roles:
+      - role: Tech Editor
+      - role: Foreword Author
+  - name: Fancy Form Design
+    url: https://amzn.to/2D8DBhP
+    dates: October 20, 2009
+    description: >
+      Authors: Jina Anne, Derek Featherstone, &amp; Tim Connell.  Published by
+      SitePoint.
+    book: true
+    roles:
+      - role: Co-author
+  - name: >
+      The Art & Science <i>of</i> <abbr title="Cascading Stylesheets">CSS</abbr>
+    url: https://amzn.to/3fkfYQg
+    dates: March 19, 2007
+    description: >
+      Authors: Jonathan Snook, Steve Smith, Jina Anne, Cameron Adams, &amp;
+      David Johnson. Published by SitePoint.
+    book: true
+    roles:
+      - role: Co-author

@@ -1,0 +1,7 @@
+imports:
+  - './global-only.yml'
+  - './components-only.yml'
+
+global:
+  type: all
+  category: all

@@ -1,32 +1,70 @@
 {
+  "name": "designtokens.org",
+  "version": "1.0.0",
+  "description": "Source for the designtokens.org website and its design tokens",
+  "main": "index.js",
+  "repository": "https://github.com/design-tokens/designtokens.org.git",
+  "author": "Design Token",
+  "license": "SEE LICENSE.MD",
   "private": true,
-  "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
-  "version": "0.2.0",
-  "author": "LekoArts <hello@lekoarts.de>",
-  "license": "MIT",
-  "starter-name": "gatsby-starter-portfolio-cara",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
-    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+  "engines": {
+    "yarn": "1.18.0"
   },
-  "dependencies": {
-    "@lekoarts/gatsby-theme-cara": "^1.2.10",
-    "gatsby": "^2.20.36",
-    "gatsby-plugin-google-analytics": "^2.1.8",
-    "gatsby-plugin-manifest": "^2.2.6",
-    "gatsby-plugin-netlify": "^2.1.6",
-    "gatsby-plugin-offline": "^2.2.7",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.10",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+  "scripts": {
+    "lint": "npm-run-all lint:*",
+    "lint:js": "eslint website/ --ext .js,.jsx,.ts,.tsx --format codeframe",
+    "lint:css": "stylelint **/*.scss",
+    "develop": "yarn workspace website run develop",
+    "storybook": "yarn workspace website storybook",
+    "start": "yarn workspace website run start",
+    "build": "lerna run build",
+    "build-storybook": "yarn workspace website run build-storybook",
+    "test": "lerna run test",
+    "chromatic": "CHROMATIC_APP_CODE=966rycwf5zf chromatic"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0"
-  }
+    "core-js": "2",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-monorepo": "^0.2.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.2",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "lerna": "^3.22.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "stylelint": {
+    "plugins": [
+      "stylelint-scss"
+    ],
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-prettier"
+    ],
+    "rules": {
+      "at-rule-no-unknown": null,
+      "scss/at-rule-no-unknown": true,
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global",
+            "local"
+          ]
+        }
+      ]
+    }
+  },
+  "workspaces": [
+    "packages/*",
+    "website"
+  ]
 }
