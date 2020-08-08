@@ -19,8 +19,7 @@
     "start": "yarn workspace website run start",
     "build": "lerna run build",
     "build-storybook": "yarn workspace website run build-storybook",
-    "test": "lerna run test",
-    "chromatic": "CHROMATIC_APP_CODE=966rycwf5zf chromatic"
+    "test": "lerna run test"
   },
   "devDependencies": {
     "core-js": "2",

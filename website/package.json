@@ -13,7 +13,7 @@
     "css-loader": "^3.6.0",
     "fibers": "^5.0.0",
     "gatsby": "^2.23.12",
-    "gatsby-cli": "^2.12.78",
+    "gatsby-cli": "^2.12.80",
     "gatsby-image": "^2.4.9",
     "gatsby-plugin-mdx": "^1.2.19",
     "gatsby-plugin-postcss": "^2.3.6",
@@ -57,7 +57,6 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-remove-graphql-queries": "^2.9.7",
-    "chromatic": "^5.0.0",
     "cross-env": "^7.0.2",
     "react-is": "^16.13.1"
   },
