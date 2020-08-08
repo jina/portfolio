@@ -6,6 +6,7 @@ import {
   AppleOnlineStoreCart,
   AppleOnlineStoreSignIn,
   AppleOnlineStoreWebsite,
+  BeehiveApp,
   BeehiveDesignSystem,
   BeehiveDesignSystemIcons,
   BeehiveDesignSystemWebsite,
@@ -18,8 +19,10 @@ import {
   ClarityTatianaAndBrad,
   ClarityWebsite,
   PortraitDrawing,
+  Salesforce1StyleGuide,
   SalesforceLightningDesignSystem,
   SalesforceLightningDesignSystemIllustration,
+  SalesforceLightningDesignSystemInvitation,
   SalesforceLightningDesignSystemSystem,
   SalesforceLightningDesignSystemWebsite,
   Sass,
@@ -59,6 +62,7 @@ Image.AppleOnlineStore = AppleOnlineStore;
 Image.AppleOnlineStoreCart = AppleOnlineStoreCart;
 Image.AppleOnlineStoreSignIn = AppleOnlineStoreSignIn;
 Image.AppleOnlineStoreWebsite = AppleOnlineStoreWebsite;
+Image.BeehiveApp = BeehiveApp;
 Image.BeehiveDesignSystem = BeehiveDesignSystem;
 Image.BeehiveDesignSystemIcons = BeehiveDesignSystemIcons;
 Image.BeehiveDesignSystemWebsite = BeehiveDesignSystemWebsite;
@@ -71,8 +75,10 @@ Image.ClaritySVAMarquee = ClaritySVAMarquee;
 Image.ClarityTatianaAndBrad = ClarityTatianaAndBrad;
 Image.ClarityWebsite = ClarityWebsite;
 Image.PortraitDrawing = PortraitDrawing;
+Image.Salesforce1StyleGuide = Salesforce1StyleGuide;
 Image.SalesforceLightningDesignSystem = SalesforceLightningDesignSystem;
 Image.SalesforceLightningDesignSystemIllustration = SalesforceLightningDesignSystemIllustration;
+Image.SalesforceLightningDesignSystemInvitation = SalesforceLightningDesignSystemInvitation;
 Image.SalesforceLightningDesignSystemSystem = SalesforceLightningDesignSystemSystem;
 Image.SalesforceLightningDesignSystemWebsite = SalesforceLightningDesignSystemWebsite;
 Image.Sass = Sass;

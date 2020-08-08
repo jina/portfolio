@@ -15,9 +15,12 @@ const NestedListItem = ({ key, role, dates, description, ...rest }) => {
         {dates && <p dangerouslySetInnerHTML={{ __html: dates }} />}
       </div>
 
-      <div className="prose">
-        {description && <p dangerouslySetInnerHTML={{ __html: description }} />}
-      </div>
+      {description && (
+        <div
+          className="prose space-y-1"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      )}
     </li>
   );
 };

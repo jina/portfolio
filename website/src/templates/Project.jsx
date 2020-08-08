@@ -33,7 +33,7 @@ const projectTemplate = (props) => {
       pageTitle={pageTitle}
       pageHTMLTitle={pageHTMLTitle}
       pageDescription={pageDescription}
-      heroSidebarRight={(
+      heroSidebarRight={
         <Horizontal className="space-y-3 sm:space-y-0 justify-end" spacing={4}>
           <Horizontal.Item>
             <LinkButton className="text-center" secondary to={pagePrev}>
@@ -47,15 +47,15 @@ const projectTemplate = (props) => {
             </LinkButton>
           </Horizontal.Item>
         </Horizontal>
-      )}
-      header={(
+      }
+      header={
         <div className="-mx-4 md:-mx-8 bg-black">
           <div className="m-auto lg:max-w-screen-xl">
             <CoverElement className="w-full" />
           </div>
         </div>
-      )}
-      sidebarLeft={(
+      }
+      sidebarLeft={
         <div className="space-y-12">
           <Card heading="Roles">
             <ul className="space-y-3">
@@ -87,12 +87,12 @@ const projectTemplate = (props) => {
             <LogoElement />
           </div>
         </div>
-      )}
+      }
       sidebarLeftWide
-      footer={(
+      footer={
         <>
           <Horizontal
-            className="space-y-3 sm:space-y-0 justify-center"
+            className=" space-y-3 sm:space-y-0 justify-center"
             spacing={4}
           >
             <Horizontal.Item>
@@ -108,9 +108,9 @@ const projectTemplate = (props) => {
             </Horizontal.Item>
           </Horizontal>
 
-          <Card heading="View Other Projects">
+          <Card className="pt-24" heading="View Other Projects">
             <div className="-mx-4">
-              <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 row-gap-3 col-gap-4">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 row-gap-3 col-gap-4">
                 {WorkData.filter((data) => data.draft !== true).map(
                   (data, index) => {
                     return (
@@ -134,7 +134,7 @@ const projectTemplate = (props) => {
             </div>
           </Card>
         </>
-      )}
+      }
     >
       <div className="space-y-12">
         {ImageElement !== CoverElement ? <ImageElement /> : ''}
@@ -143,16 +143,22 @@ const projectTemplate = (props) => {
           return (
             <div key={`content__${index}`} className="space-y-6">
               {data.heading.variant === 'small' ? (
-                <Heading.Small>{data.heading.text}</Heading.Small>
+                <Heading.Small
+                  dangerouslySetInnerHTML={{ __html: data.heading.text }}
+                />
               ) : data.heading.variant === 'label' ? (
-                <Heading.Label>{data.heading.text}</Heading.Label>
+                <Heading.Label
+                  dangerouslySetInnerrHTML={{ __html: data.heading.text }}
+                />
               ) : (
-                <Heading>{data.heading.text}</Heading>
+                <Heading
+                  dangerouslySetInnerHTML={{ __html: data.heading.text }}
+                />
               )}
 
               <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-8">
                 <div className="prose space-y-12 w-full">
-                  <p
+                  <div
                     className={`space-y-6 ${
                       data.heading.text === 'Overview' ? 'lead' : ''
                     }`}
@@ -170,6 +176,8 @@ const projectTemplate = (props) => {
                           <Image.AppleOnlineStoreSignIn />
                         ) : data.image === 'AppleOnlineStoreWebsite' ? (
                           <Image.AppleOnlineStoreWebsite />
+                        ) : data.image === 'BeehiveApp' ? (
+                          <Image.BeehiveApp />
                         ) : data.image === 'BeehiveDesignSystemIcons' ? (
                           <Image.BeehiveDesignSystemIcons />
                         ) : data.image === 'BeehiveDesignSystemWebsite' ? (
@@ -188,15 +196,20 @@ const projectTemplate = (props) => {
                           <Image.ClarityTatianaAndBrad />
                         ) : data.image === 'ClarityWebsite' ? (
                           <Image.ClarityWebsite />
+                        ) : data.image === 'Salesforce1StyleGuide' ? (
+                          <Image.Salesforce1StyleGuide />
                         ) : data.image ===
                           'SalesforceLightningDesignSystemIllustration' ? (
-                          <Image.SalesforceLightningDesignSystemIllustration />
+                            <Image.SalesforceLightningDesignSystemIllustration />
+                        ) : data.image ===
+                          'SalesforceLightningDesignSystemInvitation' ? (
+                            <Image.SalesforceLightningDesignSystemInvitation />
                         ) : data.image ===
                           'SalesforceLightningDesignSystemSystem' ? (
-                          <Image.SalesforceLightningDesignSystemSystem />
+                            <Image.SalesforceLightningDesignSystemSystem />
                         ) : data.image ===
                           'SalesforceLightningDesignSystemWebsite' ? (
-                          <Image.SalesforceLightningDesignSystemWebsite />
+                            <Image.SalesforceLightningDesignSystemWebsite />
                         ) : data.image === 'SassGlasses' ? (
                           <Image.SassGlasses />
                         ) : data.image === 'SassStyleTile' ? (
@@ -220,11 +233,23 @@ const projectTemplate = (props) => {
                           className="space-y-3 sm:flex-none sm:w-1/2 md:flex-1 md:w-auto"
                         >
                           {item.heading.variant === 'small' ? (
-                            <Heading.Small>{item.heading.text}</Heading.Small>
+                            <Heading.Small
+                              dangerouslySetInnerHTML={{
+                                __html: item.heading.text,
+                              }}
+                            />
                           ) : item.heading.variant === 'label' ? (
-                            <Heading.Label>{item.heading.text}</Heading.Label>
+                            <Heading.Label
+                              dangerouslySetInnerHTML={{
+                                __html: item.heading.text,
+                              }}
+                            />
                           ) : (
-                            <Heading>{item.heading.text}</Heading>
+                            <Heading
+                              dangerouslySetInnerHTMTL={{
+                                __html: item.heading.text,
+                              }}
+                            />
                           )}
 
                           <ul className="space-y-3">

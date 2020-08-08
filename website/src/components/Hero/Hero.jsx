@@ -35,7 +35,7 @@ const Hero = ({
               {heading && <Heading.Title>{heading}</Heading.Title>}
 
               {description && (
-                <p dangerouslySetInnerHTML={{ __html: description }} />
+                <div dangerouslySetInnerHTML={{ __html: description }} />
               )}
             </div>
 

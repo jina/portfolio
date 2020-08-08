@@ -1,62 +1,78 @@
 bio:
-  lead:
-    <p>Jina is super passionate about design systems, design tools, and design
-    processes. But more importantly, they&rsquo;re passionate about
-    collaboration and improving communication; they&rsquo;re passionate about
-    community and people. It&rsquo;s why they love design systems in the first
-    place. Because <strong>design systems are for people</strong>.</p>
-  full: <p>Jina is a design systems advocate. They are an advisor at companies
-    including <a href="https://www.jobroo.com/">Jobroo</a>. In the <a
-    href="https://developers.google.com/community/experts">Google Developers
-    Experts</a> program, Jina is a Web Technologies Expert (and they were a
-    Product Design Expert until Google sunset that category). They have been
-    making websites for over 23 years, 19 of which professionally, and 16 of
-    which doing design systems. They are a co-chair of the <a
-    href="https://www.w3.org/community/design-tokens/">Design Tokens <abbr
-    title="World Wide Web Consortium">W3C</abbr> Community Group</a>. They are
-    currently coaching and consulting with companies on design systems, visual
-    design, and user experience.</p>
-    <p>Jina was Senior Design Systems and Operations Lead for <a
-    href="https://www.honeycode.aws/">Amazon Honeycode</a>, a new no-code
-    product. Jina was lead designer and founding team member on the <a
-    href="https://www.lightningdesignsystem.com/">Salesforce Lightning Design
-    System</a>. They also lead the overall Salesforce <abbr title="User
-    Experience">UX</abbr> community and evangelism efforts, by acting as
-    Editor-in-Chief for the <a
-    href="https://medium.com/salesforce-ux">Salesforce <abbr title="User
-    Experience">UX</abbr> blog</a>, managing the Twitter account, organizing and
-    setting up sponsorships for meet ups and conferences, and coordinating
-    speakers. They led the <abbr title="Cascading Stylesheets">CSS</abbr>
-    architecture and style guide for the <a href="https://www.apple.com/">Apple
-    Online Store</a>. They also worked at <a
-    href="https://github.com/">GitHub</a>, <a
-    href="https://www.engineyard.com/">Engine Yard</a>, <a
-    href="https://crushlovely.com/">Crush &amp; Lovely</a>, <a
-    href="https://creativeinferno.com/">inferno</a>, <a
-    href="https://www.oden.com/">Oden</a>, and <a
-    href="https://www.brooksmuseum.org/">Memphis Brooks Museum <i>of</i>
-    Art</a>. Through consulting, they&rsquo;ve worked on projects including <a
-    href="https://www.w3.org/WAI/redesign/project.php#ack"><abbr title="World
-    Wide Web Consortium">W3C</abbr> Web Accessibility Initiative</a>, <a
-    href="https://www.mass.gov/">Mass.gov</a>, <a
-    href="https://www2.deloitte.com/us/en.html">Deloitte</a>, <a
-    href="https://www.fedex.com/global/choose-location.html">FedEx</a>, and <a
-    href="http://www.internationalpaper.com/">International Paper</a>.</p>
-    <p>Print Magazine featured Jina as a leading San Francisco creative. They
-    have been said to be one of the most cheerful goths.</p>
+  lead: >
+    I am super passionate about design systems, design tools, and design
+    processes. But more importantly, I enjoy looking at ways to improve
+    collaboration and improving communication; I love  community and people.
+    It&rsquo;s why I love design systems in the first place. Because
+    <strong>design systems are for people</strong>.
+  full: >
+    <p>
+      I am a design systems advocate. I advise companies including <a
+      href="https://www.jobroo.com/">Jobroo</a>. In the <a
+      href="https://developers.google.com/community/experts">Google Developers
+      Experts</a> program, I am a Web Technologies Expert (and I was a Product
+      Design Expert until Google sunset that category). I have been making
+      designing and developing (mostly for the web) for over 23 years, 19 of
+      which professionally. 16 of those years I have been doing design systems.
+      I am a co-chair of the <a
+      href="https://www.w3.org/community/design-tokens/">Design Tokens <abbr
+      title="World Wide Web Consortium">W3C</abbr> Community Group</a>. I am
+      currently coaching and consulting with companies on design systems, visual
+      design, and user experience.
+    </p>
+    <p>
+      I was a Senior Design Systems and Design Operations Lead and Project
+      Manager for <a href="https://www.honeycode.aws/">Amazon Honeycode</a>, a
+      new no-code product. I was also the founding Lead Designer on the <a
+      href="https://www.lightningdesignsystem.com/">Salesforce Lightning Design
+      System</a>. During my time at Salesforce, I also led the overall
+      Salesforce <abbr title="User Experience">UX</abbr> community and
+      evangelism efforts, by acting as Editor-in-Chief for the <a
+      href="https://medium.com/salesforce-ux">Salesforce <abbr title="User
+      Experience">UX</abbr> blog</a>, managing the social media accounts,
+      organizing and setting up sponsorships for meet ups and conferences, and
+      coordinating speakers. Previously, I led the <abbr title="Cascading
+      Stylesheets">CSS</abbr> architecture and style guide for the <a
+      href="https://www.apple.com/">Apple Online Store</a>. I also worked at <a
+      href="https://github.com/">GitHub</a>, <a
+      href="https://www.engineyard.com/">Engine Yard</a>, <a
+      href="https://crushlovely.com/">Crush &amp; Lovely</a>, <a
+      href="https://creativeinferno.com/">inferno</a>, <a
+      href="https://www.oden.com/">Oden</a>, and <a
+      href="https://www.brooksmuseum.org/">Memphis Brooks Museum <i>of</i>
+      Art</a>. Through consulting, I&rsquo;ve worked on projects including <a
+      href="https://www.w3.org/WAI/redesign/project.php#ack"><abbr title="World
+      Wide Web Consortium">W3C</abbr> Web Accessibility Initiative</a>, <a
+      href="https://www.mass.gov/">Mass.gov</a>, <a
+      href="https://www2.deloitte.com/us/en.html">Deloitte</a>, <a
+      href="https://www.fedex.com/global/choose-location.html">FedEx</a>, and <a
+      href="http://www.internationalpaper.com/">International Paper</a>.
+    </p>
+    <p>
+      Print Magazine featured me as a leading San Francisco creative. I have
+      been said to be one of the most cheerful goths.
+    </p>
 
 invite: >
-  <p>I love speaking at conferences! If you would like to invite me to speak at
-  your event, please review the following details.</p>
+  <p>
+    I love speaking at conferences! If you would like to invite me to speak at
+    your event, please review the following details.
+  </p>
   <ul>
-    <li>I only speak at conferences that have an actionable and enforced Code of
-    Conduct.</li>
-    <li>I require travel expenses to be covered by the event. I prefer doing
-    this as a reimbursement so that I can book my own travel.</li>
-    <li>I require an honorarium (speaking fee). If you are a non-profit, we can
-    discuss terms to make the engagement possible.</li><li>When contacting me,
-    please let me know what actions you are taking to ensure a diverse and
-    inclusive event.</li>
+    <li>
+      I only speak at conferences that have an actionable and enforced Code of
+      Conduct.
+    </li>
+    <li>
+      I require travel expenses to be covered by the event. I prefer doing this
+      as a reimbursement so that I can book my own travel.
+    </li>
+    <li>
+      I require an honorarium (speaking fee). If you are a non-profit, we can
+      discuss terms to make the engagement possible.</li><li>When contacting me,
+      please let me know what actions you are taking to ensure a diverse and
+      inclusive event.
+    </li>
   </ul>
 
 collaborations:
@@ -104,7 +120,9 @@ connect:
     url: https://twitter.com/jina
 
 open_source:
-  - name: Design Tokens <abbr title="World Wide Web Consortium">W3C</abbr> Community Group
+  - name: >
+      Design Tokens <abbr title="World Wide Web Consortium">W3C</abbr> Community
+      Group
     url: http://designtokens.org/
   - name: Sass
     url: https://sass-lang.com/

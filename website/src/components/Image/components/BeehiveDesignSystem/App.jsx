@@ -2,10 +2,10 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const SalesforceLightningDesignSystem = ({ props }) => {
+const BeehiveApp = ({ props }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "salesforce-logo.png" }) {
+      placeholderImage: file(relativePath: { eq: "beehive-app.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280) {
             ...GatsbyImageSharpFluid_noBase64
@@ -19,13 +19,13 @@ const SalesforceLightningDesignSystem = ({ props }) => {
     <Img
       {...props}
       fluid={data.placeholderImage.childImageSharp.fluid}
-      alt="Salesforce Lightning Design System logo"
+      alt="Beehive app"
     />
   );
 };
 
-SalesforceLightningDesignSystem.propTypes = {
+BeehiveApp.propTypes = {
   ...Img.propTypes,
 };
 
-export { SalesforceLightningDesignSystem };
+export { BeehiveApp };

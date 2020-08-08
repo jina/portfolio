@@ -2,11 +2,62 @@
   path: /beehive-design-system/
   next: '/clarity/'
   prev: '/apple-online-store/'
-  description: Design systems and design operations for Amazon Honeycode, a new No-code app builder product from Amazon (named &ldquo;Beehive&rdquo; prior to the public&nbsp;launch).
+  description: >
+    <p>
+      Design systems and design operations for Amazon Honeycode, a new No-code
+      app builder product from Amazon (named &ldquo;Beehive&rdquo; prior to the
+      public launch).
+    </p>
   image: BeehiveDesignSystemWebsite
   cover: BeehiveDesignSystemIcons
   logo: BeehiveDesignSystem
-  content: []
+  content:
+    - heading:
+        text: Overview
+      description: >
+        <p>
+          You need to manage your tasks, your projects, and your team. Now you
+          can build an app to achieve your goals with Amazon Honeycode. No
+          programming required.
+        </p>
+      image: BeehiveApp
+      lists: []
+    - heading:
+        text: Story
+      description: >
+        <p>
+          I was recruited by fellow former Salesforce employees who worked with
+          me to join them at Amazon. They wanted me to recreate the success of
+          the Salesforce Lightning Design System. In a contract-turned-full-time
+          engagement, I worked closely with product designers by providing
+          design direction for visuals and interactions. I also worked with
+          engineers to ensure their <abbr title="CSS">CSS</abbr> was to
+          specifications as well as guidance on accessibility.
+        </p>
+        <p>
+          My role also included some design operations as well, including
+          provisioning access to the design tools used on the team, project
+          management, and providing education and workshops opportunities.
+        </p>
+        <p>
+          During my time there, I built a React-based style guide with
+          components and documentation for both the design and engineering
+          organizations to use.
+        </p>
+      lists:
+        - heading:
+            text: Other Creative Credits
+          items:
+            - Rebecca Buck (initial design manager)
+            - Scott Perket (initial branding and design language)
+            - Christian Gin (assisted with design specifications and Sketch
+              <abbr title="User Interface">UI</abbr> Kit)
+            - The rest of the design team for all the product design work which
+              informed the design system
+            - Patrick Woo (provided lots of feedback and guidance for the React
+              style guide I was building)
+            - James Khatiblou (helped set up the initial framework for the style
+              guide)
   roles:
     - Creative Director
     - Design Systems Advocate
@@ -23,32 +74,64 @@
   path: /clarity/
   next: /salesforce-lightning-design-system/
   prev: /beehive-design-system/
-  description: Jina founded and organizes the premiere design systems community conference. The event is now on its fifth year.
+  description: >
+    <p>
+      Created the premiere design systems community conference. The event is now
+      on its fifth year.
+    </p>
   image: ClarityTatianaAndBrad
   cover: ClarityTatianaAndBrad
   logo: Clarity
   content:
     - heading:
         text: Overview
-      description: Clarity is a design systems conference focused on how we work together. We provide tools and standards to scale across an increasing number of devices, platforms, and products. But real success comes when people align around a shared vision and language. Diverse perspectives for design, development, and product unite so more people can be a part of the conversation. At Clarity, we elevate our skills through multi-faceted <strong>inclusion</strong>, <strong>empathy</strong>, <strong>technology</strong>, <strong>creativity</strong>, and <strong>collaboration</strong>.
+      description: >
+        <p>
+          Clarity is a design systems conference focused on how we work
+          together. We provide tools and standards to scale across an increasing
+          number of devices, platforms, and products. But real success comes
+          when people align around a shared vision and language. Diverse
+          perspectives for design, development, and product unite so more people
+          can be a part of the conversation. At Clarity, we elevate our skills
+          through multi-faceted <strong>inclusion</strong>,
+          <strong>empathy</strong>, <strong>technology</strong>,
+          <strong>creativity</strong>, and <strong>collaboration</strong>.
+        </p>
       image: ClarityWebsite
       lists: []
-
     - heading:
         text: Story
       description: >
-        In 2014, Jina decided to try their hand at organizing a conference. They decided to focus the event on design systems since that was their main interest. At the time, there were no other events that had this focus. “Clarity” seemed perfect for the name, as it was a word Jina found using quite often in their field.
-
-        The inspiration for the design aesthetic is diamonds (because “clarity”).
+        <p>
+          In 2014, I decided to try my hand at organizing a conference. I
+          decided to focus the event on design systems since that was my main
+          interest. At the time, there were no other events that had this focus.
+          &ldquo;Clarity&rdquo; seemed perfect for the name, as it was a word I
+          found using quite often in my field.
+        </p>
+        <p>
+          The inspiration for the design aesthetic is diamonds (because
+          &ldquo;clarity&dquo;).
+        </p>
       lists: []
-
     - heading:
         text: '2016'
         variant: small
       description: >
-        While Jina bought the website domain right away, it wasn’t until 2016 that they held the first event. They chose the newly-opened Alamo Drafthouse New Mission theatre in San Francisco. Jina enlisted a few folx to help them with a few items (see credits below). Otherwise, Jina executed everything else. This included planning, coordinating, operations, storing, transporting equipment/materials, packing swag bags, etc.
-
-        To Jina’s delight, Richard Danne keynoted the event. He was the designer on the Nasa logo and Graphic Standards Manual from the worm logo era (the 70’s).
+        <p>
+          While I bought the website domain right away, it wasn&rsquo;t until
+          2016 that I held the first event. I chose the newly-opened Alamo
+          Drafthouse New Mission theatre in San Francisco. I enlisted a few folx
+          to help me with a few items (see credits listed). Otherwise, I
+          executed everything else. This included planning, coordinating,
+          operations, storing, transporting equipment/materials, packing swag
+          bags, etc.
+        </p>
+        <p>
+          To my delight, Richard Danne keynoted the event. He was the designer
+          on the Nasa logo and Graphic Standards Manual from the worm logo era
+          (the 70&rsquo;s).
+        </p>
       image: ClarityRichardAndBarbara
       lists:
         - heading:
@@ -64,7 +147,6 @@
             - Speaker Guide Book
             - Social Media/Marketing
             - Website
-
         - heading:
             text: Other Creative Credits
             variant: label
@@ -79,11 +161,15 @@
             - The Noun Project (swag bags)
             - Trish Ang (roll-up banners)
             - Tristan Henry-Wilson (logo animation)
-
     - heading:
         text: '2017'
         variant: small
-      description: After the first successful event, Jina decided to do another one. They used the Alamo Drafthouse again with the attendee count rising closer to 400. They added workshops to the program this year.
+      description: >
+        <p>
+          After the first successful event, I decided to do another one. I used
+          the Alamo Drafthouse again, with the attendee count rising closer to
+          400. I added workshops to the program this year.
+        </p>
       image: ClarityHenri
       lists:
         - heading:
@@ -99,7 +185,6 @@
             - Speaker Guide Book
             - Stickers
             - Website
-
         - heading:
             text: Other Creative Credits
             variant: label
@@ -109,14 +194,22 @@
             - Courtney Quirin (recap video)
             - Matt Fisher (presentation videos)
             - Todd Matthews (photography)
-
     - heading:
         text: '2018'
         variant: small
       description: >
-        After 2 years of self-organizing, Jina realized they needed help. The event was scaling faster than expected. So Jina hired a part-time assistant (Michael Morrison). He took on some of the vendor facilitation, paperwork, and volunteer coordination. Then Jina could focus on the content curation, creative direction, and event experience.
-
-        The third event was in New York City at the SVA Theatre. The event had grown to 500 attendees.
+        <p>
+          After 2 years of self-organizing, I realized I needed assistance. The
+          event was scaling faster than expected. So I hired a part-time
+          assistant (Michael Morrison). He took on some of the vendor
+          facilitation, paperwork, and volunteer coordination. Then I could
+          focus on the content curation, creative direction, and event
+          experience.
+        </p>
+        <p>
+          The third event was in New York City at the SVA Theatre. The
+          conference had grown to 500 attendees.
+        </p>
       image: ClaritySVAMarquee
       lists:
         - heading:
@@ -137,7 +230,6 @@
             - Speaker Guide Book
             - Video editing
             - Website
-
         - heading:
             text: Other Creative Credits
             variant: label
@@ -148,13 +240,20 @@
             - Jeremy Perez-Cruz (photography)
             - Laura Brunow Miner (brand and experience vision exploration)
             - Natalya Shelburne (sketchnotes)
-            - <abbr title="School of Visual Arts">SVA</abbr> Theatre <abbr title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team (presentation video recordings)
+            - <abbr title="School of Visual Arts">SVA</abbr> Theatre <abbr
+              title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team
+              presentation video recordings)
             - Sean Pettis (video editing)
-
     - heading:
         text: '2019'
         variant: small
-      description: The fourth year, the event was back in San Francisco. This time it was at the Blue Shield of California Theatre at YBCA. They needed a larger venue since the attendance had outgrown the Alamo Drafthouse. This year there were 700 attendees.
+      description: >
+        <p>
+          The fourth year, the event was back in San Francisco. This time it was
+          at the Blue Shield of California Theatre at YBCA. I needed a larger
+          venue since the attendance had outgrown the Alamo Drafthouse. This
+          year there were 700 attendees.
+        </p>
       image: ClarityPrograms
       lists:
         - heading:
@@ -171,7 +270,6 @@
             - Sticker
             - Video editing
             - Website
-
         - heading:
             text: Other Creative Credits
             variant: label
@@ -179,16 +277,26 @@
             - Christopher Auyeung (t-shirt design)
             - Courtney Quirin (recap video)
             - Robin McGill (sketchnotes)
-            - Blue Shield of California Theatre at <abbr title="Yerba Buena Center for the Arts">YBCA</abbr> <abbr title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team (presentation video recordings)
+            - Blue Shield of California Theatre at <abbr title="Yerba Buena
+              Center for the Arts">YBCA</abbr> <abbr
+              title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team
+              (presentation video recordings)
             - Wicked Tale LLC (video editing)
-
     - heading:
         text: '2020'
         variant: small
       description: >
-        The event attendance had grown year over year. So this year, instead of an assistant, Jina partnered with Kickass Conferences. This will produce a higher-quality event.
-
-        With the 2020 pandemic, the landscape of events has changed. The event has evolved into an online experience. They have hopes to provide a hybrid experience in future years. This would combine the online and in-person experience.
+        <p>
+          The event attendance has grown year over year. So this year, I opted
+          to switch to using an event management company to help me. I partnered
+          with Kickass Conferences. This will produce a higher-quality event.
+        </p>
+        <p>
+          With the 2020 pandemic, the landscape of events has changed. The event
+          has evolved into an online experience. I have hopes to provide a
+          hybrid experience in future years. This would combine the online and
+          in-person experience.
+        </p>
       lists:
         - heading:
             text: Creative Responsibilities
@@ -199,7 +307,6 @@
             - Patch
             - Printed Program
             - Website
-
         - heading:
             text: Other Creative Credits
             variant: label
@@ -227,20 +334,125 @@
   path: /salesforce-lightning-design-system/
   next: /sass/
   prev: /clarity/
-  description: Jina was the founding Lead Designer of one of the most popular enterprise design systems.
+  description: >
+    <p>
+      Founding Lead Designer of one of the most popular enterprise design
+      systems.
+    </p>
   image: SalesforceLightningDesignSystemWebsite
   cover: SalesforceLightningDesignSystemIllustration
   logo: SalesforceLightningDesignSystem
   content:
     - heading:
         text: Overview
-      description: You can customize applications with a look and feel consistent with Salesforce features. You don’t have to reverse engineer the styles! Download the platform-agnostic CSS framework and get started today. Use the detailed guidelines to design excellent apps with confidence. The apps will fit right into the Salesforce ecosystem. With the Design System, get access to Salesforce visual and interaction design patterns. You can follow established best practices.
+      description: >
+        <p>
+          <abbr title="Salesforce Lightning Design System">SLDS</abbr> saves
+          time and energy, freeing designers and developers to focus on larger
+          issues of usability and meaning. Standardized, reusable components
+          support collaboration, reinforce branding, and provide a consistent
+          look and user experience.
+        </p>
+        <p>
+          <abbr title="Salesforce Lightning Design System">SLDS</abbr> is a
+          living open-source design system. Salesforce is committed to creating
+          products that are perceivable, operable, understandable, and robust
+          for all users. All <abbr title="Salesforce Lightning Design
+          System">SLDS</abbr> components include <abbr title="Accessible Rich
+          Internet Applications">ARIA</abbr> markup and guidelines to help
+          people with disabilities use and contribute to Salesforce
+          applications. Use the <abbr title="Salesforce Lightning Design
+          System">SLDS</abbr> <abbr title="Cascading Stylesheets">CSS</abbr>
+          framework with any <abbr title="technology">tech</abbr> stack, or take
+          advantage of the guidance on using <abbr title="Salesforce Lightning
+          Design System">SLDS</abbr> with Salesforce technologies including
+          Lightning Web Components, Aura, and Visualforce.
+        </p>
       image: SalesforceLightningDesignSystemSystem
       lists: []
-
     - heading:
         text: Story
-      image: SalesforceLightningDesignSystem
+      description: >
+        <p>
+          This is some of the work I am most proud of. During my five and a half
+          years at Salesforce, I had the opportunity to impact how one of the
+          largest enterprise technology companies ship product design.
+        </p>
+      lists: []
+    - heading:
+        text: Early Years
+        variant: small
+      description: >
+        <p>
+          I moved to the core team to work on design systems across the various
+          products. I worked closely with other product designers to standardize
+          and document the design language and specifications for mobile and web
+          application designs.
+        </p>
+        <p>
+          I helped invent design tokens, which became adopted by the industry as
+          a best practice for scaling design in a system.
+        </p>
+      image: Salesforce1StyleGuide
+      lists:
+        - heading:
+            text: Other Credits
+            variant: label
+          items:
+            - Jon Levine (collaborator I worked closely with to ship Design
+              Tokens)
+            - S&ouml;nke Rohde (created the first iteration of Theo, our design
+              token generator tool that was open-sourced)
+    - heading:
+        text: After the Buy-In
+        variant: small
+      description: >
+        <p>
+          I pitched the design system to stakeholders in engineering and design
+          leadership, and got buy-in. With the Lightning Design System funded
+          and a team formalized, I received a title change to clarify my role. I
+          conducted design systems work (which included <abbr title="User
+          Experience">UX</abbr> design, visual design, frontend development, and
+          documentation). I drafted the team vision and charter and worked
+          closely with our team's people manager on planning and presenting our
+          goals with the organization.
+        </p>
+        <p>
+          I also led the <abbr title="user experience">UX</abbr>
+          organization&rsquo;s evangelism and outreach efforts including being
+          the Editor-in-chief for the team blog, the admin for the social media
+          accounts, organizer of various meet ups and conference sponsorships,
+          writing, speaking, and coaching both internal and external people on
+          best practices using the design system.
+        </p>
+        <p>
+          I also mentored designers to level up their skills in frontend
+          development.
+        </p>
+      image: SalesforceLightningDesignSystemInvitation
+      lists:
+        - heading:
+            text: Other Credits
+            variant: label
+          items:
+            - Christopher Auyeung (the team manager I worked closely with)
+            - Stephanie Rewis (the <abbr title="Cascading
+              Stylesheets">CSS</abbr> we hired to take the initial architecture
+              I had set up and build and evolve it further)
+            - Thanh Quach (our visual designer who helped churn out many of the
+              illustrations and graphics, as well as screen explorations)
+            - Brandon Ferrua (hybrid designer/developer we hired during our
+              second wave of hires to help execute a ton of the components)
+    - heading:
+        text: Recognized Leadership
+        variant: small
+      description: >
+        <p>
+          Taking on a larger role as Lead Designer, I led the information
+          architecture, design, and development for the design system. I also
+          partnered with other designers to adopt the system. I continued
+          evangelism efforts internally and externally.
+        </p>
       lists: []
   roles:
     - Design Systems Advocate
@@ -256,20 +468,38 @@
   path: /sass/
   next: /apple-online-store/
   prev: /salesforce-lightning-design-system/
-  description: Jina is a Sass core team member. They lead the brand, website design, frontend UI development, and content direction.
+  description: >
+    <p>
+      Sass core team member, leading the brand, website design, frontend <abbr
+      title="User Interface">UI</abbr> development, and content direction.
+    </p>
   image: SassWebsite
   cover: SassGlasses
   logo: Sass
   content:
     - heading:
         text: Overview
-      description: Sass is a mature, stable, and powerful professional grade CSS extension language. Sass is completely compatible with all versions of CSS. You can use it with any available CSS libraries.
+      description: >
+        <p>
+          Sass is a mature, stable, and powerful professional grade <abbr
+          title="Cascading Style Sheets">CSS</abbr> extension language. Sass is
+          completely compatible with all versions of <abbr title="Cascading
+          Style Sheets">CSS</abbr>. You can use it with any available <abbr
+          title="Cascading Style Sheets">CSS</abbr> libraries.
+        </p>
       image: SassStyleTile
       lists: []
-
     - heading:
         text: Story
-      description: Jina was a fan of using Sass to process their CSS. They were first introduced to it during their time working at Engine Yard. One day, one of the core team members tweeted his frustration with the design of the project. He suggested that it might be why designers were using a competitor instead. So Jina volunteered to lead the redesign of the brand and website.
+      description: >
+        <p>
+          I am a fan of using Sass to process my <abbr title="Cascading
+          Stylesheets">CSS</abbr>. I was first introduced to it during my time
+          working at Engine Yard. One day, one of the core team members tweeted
+          his frustration with the design of the project. He suggested that it
+          might be why designers were using a competitor instead. So I
+          volunteered to lead the redesign of the brand and website.
+        </p>
       image: Sass
       lists: []
   roles:
@@ -288,20 +518,33 @@
   path: /apple-online-store/
   next: /beehive-design-system/
   prev: /sass/
-  description: Jina led the CSS architecture for Apple’s online shopping experience. They also produced/documented the visual language.
+  description: >
+    <p>
+      Led the <abbr title="Cascading Style Sheets">CSS</abbr> architecture for
+      Apple&rsquo;s online shopping experience. Also produced/documented the
+      visual language.
+    </p>
   image: AppleOnlineStoreWebsite
   cover: AppleOnlineStoreWebsite
   logo: AppleOnlineStore
   content:
     - heading:
         text: Overview
-      description: The Apple Online Store was an e-commerce website at store.apple.com. The separate website no longer exists as Apple has merged it into the marketing website.
+      description: >
+        <p>
+          The Apple Online Store was an e-commerce website at store.apple.com.
+          The separate website no longer exists as Apple has merged it into the
+          marketing website.
+        </p>
       image: AppleOnlineStoreSignIn
       lists: []
-
     - heading:
         text: Story
-      description: Jina joined Apple to work on the Online Store right before the launch of the first iPhone. They started as a Frontend UI Engineer.
+      description: >
+        <p>
+          I joined Apple to work on the Online Store right before the launch of
+          the first iPhone. I started as a Frontend UI Engineer.
+        </p>
       image: AppleOnlineStoreCart
       lists: []
   roles:

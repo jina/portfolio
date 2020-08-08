@@ -13,16 +13,16 @@ import WorkData from '../../content/work.yml';
 const IndexPage = () => {
   return (
     <DefaultLayout
-      pageTitle="Design Systems, Communities, &amp;&nbsp;Experiences"
+      pageTitle="Design Systems, Communities, &amp; Experiences"
       pageDescription="Looking for a community-minded senior design lead who likes to code? Let&rsquo;s talk!"
-      heroSidebarLeft={(
+      heroSidebarLeft={
         <div className="-my-6 -mx-4 md:-mx-8">
           <div className="mx-auto max-w-sm">
             <Image.PortraitDrawing />
           </div>
         </div>
-      )}
-      sidebarLeft={(
+      }
+      sidebarLeft={
         <Card heading="Connect">
           <ul className="-mx-4">
             {AboutData.connect.map((data, index) => {
@@ -36,7 +36,7 @@ const IndexPage = () => {
             })}
           </ul>
         </Card>
-      )}
+      }
     >
       <ul className="-mx-4 space-y-6">
         {' '}
@@ -83,7 +83,7 @@ const IndexPage = () => {
                         )}
                       </Heading>
 
-                      <p
+                      <div
                         dangerouslySetInnerHTML={{ __html: data.description }}
                       />
                     </div>

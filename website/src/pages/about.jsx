@@ -14,7 +14,7 @@ const AboutPage = () => {
     <DefaultLayout
       pageTitle="About Jina Anne"
       pageHTMLTitle="About Jina Anne" // not sure why this is required
-      heroSidebarLeft={(
+      heroSidebarLeft={
         <div className="space-y-12">
           <div className="-mt-6 -mx-4 md:-mx-8">
             <div className="mx-auto max-w-lg">
@@ -64,9 +64,9 @@ const AboutPage = () => {
             </ul>
           </Card>
         </div>
-      )}
+      }
       heroSidebarLeftWide
-      heroSidebarRight={(
+      heroSidebarRight={
         <div className="space-y-12">
           <Card heading="Connect">
             <ul className="-mx-4">
@@ -96,8 +96,8 @@ const AboutPage = () => {
             </ul>
           </Card>
         </div>
-      )}
-      heroChildren={(
+      }
+      heroChildren={
         <div className="space-y-12">
           <div className="prose space-y-6">
             <p
@@ -105,7 +105,7 @@ const AboutPage = () => {
               dangerouslySetInnerHTML={{ __html: AboutData.bio.lead }}
             />
 
-            <p
+            <div
               className="space-y-6"
               dangerouslySetInnerHTML={{ __html: AboutData.bio.full }}
             />
@@ -171,7 +171,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      )}
+      }
       sidebarLeftWide
     />
   );

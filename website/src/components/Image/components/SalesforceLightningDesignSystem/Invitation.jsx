@@ -2,10 +2,14 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const SalesforceLightningDesignSystem = ({ props }) => {
+const SalesforceLightningDesignSystemInvitation = ({ props }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "salesforce-logo.png" }) {
+      placeholderImage: file(
+        relativePath: {
+          eq: "salesforce-lightning-design-system-invitation.png"
+        }
+      ) {
         childImageSharp {
           fluid(maxWidth: 1280) {
             ...GatsbyImageSharpFluid_noBase64
@@ -24,8 +28,8 @@ const SalesforceLightningDesignSystem = ({ props }) => {
   );
 };
 
-SalesforceLightningDesignSystem.propTypes = {
+SalesforceLightningDesignSystemInvitation.propTypes = {
   ...Img.propTypes,
 };
 
-export { SalesforceLightningDesignSystem };
+export { SalesforceLightningDesignSystemInvitation };

@@ -30,8 +30,8 @@ const Item = ({
       {children}
 
       {description && (
-        <p
-          className="pl-8 text-gray-700"
+        <div
+          className="pl-8 space-y-1 text-gray-700"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       )}
