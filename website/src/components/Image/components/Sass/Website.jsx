@@ -9,7 +9,7 @@ const SassWebsite = ({ props }) => {
       placeholderImage: file(relativePath: { eq: "sass-website.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280) {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid
           }
         }
       }

@@ -8,7 +8,7 @@ const Clarity = ({ props }) => {
       placeholderImage: file(relativePath: { eq: "clarity-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280) {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid
           }
         }
       }

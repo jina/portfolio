@@ -8,7 +8,7 @@ const PortraitDrawing = ({ props }) => {
       placeholderImage: file(relativePath: { eq: "portrait-drawing.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280) {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid
           }
         }
       }

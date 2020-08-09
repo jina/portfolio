@@ -61,7 +61,7 @@ const DefaultLayout = ({
                 <AddOn spacing={4} align="center">
                   <AddOn.Item role="banner">
                     <div className="-mx-4">
-                      <LinkButton caps bold to="/">
+                      <LinkButton caps bold>
                         {data.site.siteMetadata.title}
                       </LinkButton>
                     </div>

@@ -10,7 +10,7 @@ const CVPage = () => {
   return (
     <DefaultLayout
       pageTitle="Curriculum Vitae"
-      heroSidebarRight={(
+      heroSidebarRight={
         <dl className="space-y-6">
           <Heading element="dt">
             Contact <abbr title="Information">Info</abbr>
@@ -26,9 +26,10 @@ const CVPage = () => {
             </address>
           </dd>
         </dl>
-      )}
-      sidebarLeft={(
-        <ResumeBlock heading="Publications &amp; Presentations">
+      }
+      sidebarLeft={
+        <ResumeBlock heading="Publications">
+          {/* &amp; Presentations */}
           {CVData.publications_and_presentations.map((item, index) => {
             return (
               <ResumeBlock.Item
@@ -56,13 +57,13 @@ const CVPage = () => {
             );
           })}
         </ResumeBlock>
-      )}
+      }
       sidebarLeftWide
-      sidebarRight={(
+      sidebarRight={
         <div className="space-y-6">
           <Heading>Skills</Heading>
 
-          <ul className="space-y-3">
+          <ul className="space-y-6">
             {CVData.skills.map((item, index) => {
               return (
                 <li
@@ -73,7 +74,7 @@ const CVPage = () => {
             })}
           </ul>
         </div>
-      )}
+      }
     >
       <div className="space-y-12">
         <ResumeBlock heading="Education">

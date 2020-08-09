@@ -8,7 +8,7 @@ const SassGlasses = ({ props }) => {
       placeholderImage: file(relativePath: { eq: "sass-glasses.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280) {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid
           }
         }
       }

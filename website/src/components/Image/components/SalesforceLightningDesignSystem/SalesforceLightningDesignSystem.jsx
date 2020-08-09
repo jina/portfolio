@@ -8,7 +8,7 @@ const SalesforceLightningDesignSystem = ({ props }) => {
       placeholderImage: file(relativePath: { eq: "salesforce-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280) {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid
           }
         }
       }

@@ -12,7 +12,7 @@ const SalesforceLightningDesignSystemIllustration = ({ props }) => {
       ) {
         childImageSharp {
           fluid(maxWidth: 1280) {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid
           }
         }
       }

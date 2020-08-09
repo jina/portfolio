@@ -37,7 +37,7 @@ const Image = ({ props }) => {
       placeholderImage: file(relativePath: { eq: "portrait.png" }) {
         childImageSharp {
           fluid(maxWidth: 256) {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid
           }
         }
       }

@@ -83,7 +83,7 @@ const projectTemplate = (props) => {
             </ul>
           </Card>
 
-          <div className="mx-auto w-48">
+          <div className="mx-auto w-24 sm:w-48">
             <LogoElement />
           </div>
         </div>
