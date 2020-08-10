@@ -1,11 +1,13 @@
 import React from 'react';
 
 import { Card } from '../components/Card';
-import DefaultLayout from '../components/DefaultLayout';
 import { Heading } from '../components/Heading';
-import { Horizontal } from '../components/Horizontal';
 import { Image } from '../components/Image';
 import { LinkButton } from '../components/LinkButton';
+
+import { Horizontal } from '../layout/Horizontal';
+
+import DefaultLayout from '../site/DefaultLayout';
 
 import WorkData from '../../content/work.yml';
 

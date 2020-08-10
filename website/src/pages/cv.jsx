@@ -1,8 +1,9 @@
 import React from 'react';
 
-import DefaultLayout from '../components/DefaultLayout';
 import { Heading } from '../components/Heading';
-import { ResumeBlock } from '../components/ResumeBlock';
+
+import DefaultLayout from '../site/DefaultLayout';
+import { ResumeBlock } from '../site/ResumeBlock';
 
 import CVData from '../../content/cv.yml';
 

@@ -1,0 +1,39 @@
+@import '../../assets/styles/dependencies';
+
+$positions: static, fixed, absolute, relative, sticky;
+
+@each $position in $positions {
+  @include breakpoints('#{$position}') {
+    position: $position;
+  }
+
+  @each $pseudo-token, $pseudo-value in $pseudos {
+    @include breakpoints('#{$pseudo-token}_#{$position}#{$pseudo-value}') {
+      position: $position;
+    }
+  }
+}
+
+@each $side in $sides {
+  @each $spacing-name, $spacing-value in $spacing {
+    @include breakpoints('#{$side}-#{$spacing-name}') {
+      #{$side}: $spacing-value;
+
+      &-negative {
+        #{$side}: -$spacing-value;
+      }
+    }
+
+    @each $pseudo-token, $pseudo-value in $pseudos {
+      @include breakpoints(
+        '#{$pseudo-token}_#{$side}-#{$spacing-name}#{$pseudo-value}'
+      ) {
+        #{$side}: $spacing-value;
+
+        &-negative {
+          #{$side}: -$spacing-value;
+        }
+      }
+    }
+  }
+}

@@ -47,7 +47,7 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         defaultLayouts: {
-          default: require.resolve('./src/components/DefaultLayout.jsx'),
+          default: require.resolve('./src/site/DefaultLayout.jsx'),
         },
         // a workaround to solve mdx-remark plugin compat issue
         // https://github.com/gatsbyjs/gatsby/issues/15486

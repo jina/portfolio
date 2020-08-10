@@ -1,0 +1,25 @@
+@import 'assets/styles/dependencies';
+
+@mixin heights($breakpoint-token: '') {
+  $prefix: if(($breakpoint-token != ''), '#{$breakpoint-token}_', '');
+
+  @each $height-token, $height-value in $sizing {
+    .#{$prefix}#{$height-token} {
+      height: $height-value;
+    }
+
+    @each $pseudo-token, $pseudo-value in $pseudos {
+      .#{$prefix}#{$pseudo-token}_#{$height-token}#{$pseudo-value} {
+        height: $height-value;
+      }
+    }
+  }
+}
+
+@include heights;
+
+@each $breakpoint-token, $breakpoint-value in $mq-breakpoints {
+  @include mq($breakpoint-value) {
+    @include heights($breakpoint-token);
+  }
+}

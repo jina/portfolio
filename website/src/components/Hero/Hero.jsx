@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Heading } from '../Heading';
-import { HolyGrail } from '../HolyGrail';
+
+import { HolyGrail } from '../../layout/HolyGrail';
 
 const Hero = ({
   element,
