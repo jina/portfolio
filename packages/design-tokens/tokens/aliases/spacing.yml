@@ -18,3 +18,6 @@ aliases:
 
   spacing_none:
     value: 0
+
+  spacing_auto:
+    value: auto

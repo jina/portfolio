@@ -22,3 +22,9 @@ props:
     value: '{!spacing_horizontal_medium}'
   spacing_horizontal_large:
     value: '{!spacing_horizontal_large}'
+
+  spacing_none:
+    value: '{!spacing_none}'
+
+  spacing_auto:
+    value: '{!spacing_auto}'

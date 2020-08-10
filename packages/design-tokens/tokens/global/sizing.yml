@@ -6,8 +6,15 @@ global:
   type: size
 
 props:
-  sizing_ui_icon:
-    value: '{!sizing_ui_icon}'
+  sizing_full:
+    value: '{!sizing_full}'
+
+  sizing_ui_small:
+    value: '{!sizing_ui_small}'
+  sizing_ui_medium:
+    value: '{!sizing_ui_medium}'
+  sizing_ui_large:
+    value: '{!sizing_ui_large}'
 
   sizing_container_xx_small:
     value: '{!sizing_container_xx_small}'
@@ -23,3 +30,9 @@ props:
     value: '{!sizing_container_x_large}'
   sizing_container_xx_large:
     value: '{!sizing_container_xx_large}'
+
+  sizing_none:
+    value: '{!sizing_none}'
+
+  sizing_auto:
+    value: '{!sizing_auto}'

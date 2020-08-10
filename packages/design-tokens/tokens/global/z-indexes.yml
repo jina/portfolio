@@ -1,0 +1,13 @@
+imports:
+  - '../aliases/z-indexes.yml'
+
+global:
+  category: z-index
+  type: number
+
+props:
+  z_index_root:
+    value: '{!z_index_root}'
+
+  z_index_max:
+    value: '{!z_index_max}'

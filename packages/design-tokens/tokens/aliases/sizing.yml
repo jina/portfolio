@@ -1,6 +1,13 @@
 aliases:
-  sizing_ui_icon:
+  sizing_full:
+    value: 100%
+
+  sizing_ui_small:
+    value: 8px
+  sizing_ui_medium:
     value: 16px
+  sizing_ui_large:
+    value: 32px
 
   sizing_container_xx_small:
     value: 240px
@@ -19,3 +26,6 @@ aliases:
 
   sizing_none:
     value: 0
+
+  sizing_auto:
+    value: auto
