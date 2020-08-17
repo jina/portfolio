@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Card } from '../components/Card';
 import { Heading } from '../components/Heading';
-import { Image } from '../components/Image';
 import { Pagination } from '../components/Pagination';
 import { Prose } from '../components/Prose';
+import { Screenshot } from '../components/Screenshot';
 
 import { Container } from '../layout/Container';
 
@@ -32,9 +32,6 @@ const projectTemplate = (props) => {
     pageRoles,
     pageDeliverables,
   } = pageContext;
-  const CoverElement = Image[pageCover];
-  const ImageElement = Image[pageImage];
-  const LogoElement = Image[pageLogo];
   return (
     <DefaultLayout
       pageTitle={pageTitle}
@@ -43,25 +40,39 @@ const projectTemplate = (props) => {
       heroSidebarAfter={
         <Pagination justify="end" pto={pagePrev} nto={pageNext} />
       }
-      header={
+      header={(
         <>
           <div
             className={`${flushStyles.x_xl} ${flushStyles.y_lg} ${styles.header}`}
           >
             <Container mw="xxxl">
-              <CoverElement className={styles.cover} />
+              {pageCover.screenshot === true ? (
+                <Screenshot>
+                  <img
+                    src={`/images/${pageCover.src}`}
+                    alt={pageCover.alt}
+                    className={styles.cover}
+                  />
+                </Screenshot>
+              ) : (
+                <img
+                  src={`/images/${pageCover.src}`}
+                  alt={pageCover.alt}
+                  className={styles.cover}
+                />
+              )}
             </Container>
           </div>
         </>
-      }
-      sidebarBefore={
+      )}
+      sidebarBefore={(
         <Logo>
-          <LogoElement />
+          <img src={`/images/${pageLogo.src}`} alt={pageLogo.alt} />
         </Logo>
-      }
+      )}
       sidebarBeforeWide
       sidebarBeforeAlign="center"
-      footerSidebarBefore={
+      footerSidebarBefore={(
         <Card heading="Roles">
           <ul>
             {pageRoles.map((data, index) => {
@@ -74,8 +85,8 @@ const projectTemplate = (props) => {
             })}
           </ul>
         </Card>
-      }
-      footerSidebarBefore2={
+      )}
+      footerSidebarBefore2={(
         <Card heading="Deliverables">
           <ul>
             {pageDeliverables.map((data, index) => {
@@ -88,10 +99,17 @@ const projectTemplate = (props) => {
             })}
           </ul>
         </Card>
-      }
-      footer={
+      )}
+      footer={(
         <>
-          {ImageElement !== CoverElement && <ImageElement />}
+          {pageImage.src !== pageCover.src &&
+            (pageImage.screenshot === true ? (
+              <Screenshot>
+                <img src={`/images/${pageImage.src}`} alt={pageImage.alt} />
+              </Screenshot>
+            ) : (
+              <img src={`/images/${pageImage.src}`} alt={pageImage.alt} />
+            ))}
 
           <div className={spacingStyles.y_xxl}>
             {pageContent.map((data, index) => {
@@ -134,56 +152,18 @@ const projectTemplate = (props) => {
                           />
 
                           {data.image &&
-                            // Workaround since <Image[data.image] /> doesn't work
-                            // Also edit components/Image/Image.jsx to include as well
-                            (data.image === 'AppleOnlineStoreCart' ? (
-                              <Image.AppleOnlineStoreCart />
-                            ) : data.image === 'AppleOnlineStoreSignIn' ? (
-                              <Image.AppleOnlineStoreSignIn />
-                            ) : data.image === 'AppleOnlineStoreWebsite' ? (
-                              <Image.AppleOnlineStoreWebsite />
-                            ) : data.image === 'BeehiveApp' ? (
-                              <Image.BeehiveApp />
-                            ) : data.image === 'BeehiveDesignSystemIcons' ? (
-                              <Image.BeehiveDesignSystemIcons />
-                            ) : data.image === 'BeehiveDesignSystemWebsite' ? (
-                              <Image.BeehiveDesignSystemWebsite />
-                            ) : data.image === 'ClarityBox' ? (
-                              <Image.ClarityBox />
-                            ) : data.image === 'ClarityHenri' ? (
-                              <Image.ClarityHenri />
-                            ) : data.image === 'ClarityPrograms' ? (
-                              <Image.ClarityPrograms />
-                            ) : data.image === 'ClarityRichardAndBarbara' ? (
-                              <Image.ClarityRichardAndBarbara />
-                            ) : data.image === 'ClaritySVAMarquee' ? (
-                              <Image.ClaritySVAMarquee />
-                            ) : data.image === 'ClarityTatianaAndBrad' ? (
-                              <Image.ClarityTatianaAndBrad />
-                            ) : data.image === 'ClarityWebsite' ? (
-                              <Image.ClarityWebsite />
-                            ) : data.image === 'Salesforce1StyleGuide' ? (
-                              <Image.Salesforce1StyleGuide />
-                            ) : data.image ===
-                              'SalesforceLightningDesignSystemIllustration' ? (
-                              <Image.SalesforceLightningDesignSystemIllustration />
-                            ) : data.image ===
-                              'SalesforceLightningDesignSystemInvitation' ? (
-                              <Image.SalesforceLightningDesignSystemInvitation />
-                            ) : data.image ===
-                              'SalesforceLightningDesignSystemSystem' ? (
-                              <Image.SalesforceLightningDesignSystemSystem />
-                            ) : data.image ===
-                              'SalesforceLightningDesignSystemWebsite' ? (
-                              <Image.SalesforceLightningDesignSystemWebsite />
-                            ) : data.image === 'SassGlasses' ? (
-                              <Image.SassGlasses />
-                            ) : data.image === 'SassStyleTile' ? (
-                              <Image.SassStyleTile />
-                            ) : data.image === 'SassWebsite' ? (
-                              <Image.SassWebsite />
+                            (data.image.screenshot === true ? (
+                              <Screenshot>
+                                <img
+                                  src={`/images/${data.image.src}`}
+                                  alt={data.image.alt}
+                                />
+                              </Screenshot>
                             ) : (
-                              ''
+                              <img
+                                src={`/images/${data.image.src}`}
+                                alt={data.image.alt}
+                              />
                             ))}
                         </div>
 
@@ -223,7 +203,7 @@ const projectTemplate = (props) => {
             })}
           </div>
         </>
-      }
+      )}
       pagination={(
         <div className={spacingStyles.y_xxl}>
           <Pagination pto={pagePrev} nto={pageNext} />
@@ -266,56 +246,18 @@ const projectTemplate = (props) => {
                   />
 
                   {data.image &&
-                    // Workaround since <Image[data.image] /> doesn't work
-                    // Also edit components/Image/Image.jsx to include as well
-                    (data.image === 'AppleOnlineStoreCart' ? (
-                      <Image.AppleOnlineStoreCart />
-                    ) : data.image === 'AppleOnlineStoreSignIn' ? (
-                      <Image.AppleOnlineStoreSignIn />
-                    ) : data.image === 'AppleOnlineStoreWebsite' ? (
-                      <Image.AppleOnlineStoreWebsite />
-                    ) : data.image === 'BeehiveApp' ? (
-                      <Image.BeehiveApp />
-                    ) : data.image === 'BeehiveDesignSystemIcons' ? (
-                      <Image.BeehiveDesignSystemIcons />
-                    ) : data.image === 'BeehiveDesignSystemWebsite' ? (
-                      <Image.BeehiveDesignSystemWebsite />
-                    ) : data.image === 'ClarityBox' ? (
-                      <Image.ClarityBox />
-                    ) : data.image === 'ClarityHenri' ? (
-                      <Image.ClarityHenri />
-                    ) : data.image === 'ClarityPrograms' ? (
-                      <Image.ClarityPrograms />
-                    ) : data.image === 'ClarityRichardAndBarbara' ? (
-                      <Image.ClarityRichardAndBarbara />
-                    ) : data.image === 'ClaritySVAMarquee' ? (
-                      <Image.ClaritySVAMarquee />
-                    ) : data.image === 'ClarityTatianaAndBrad' ? (
-                      <Image.ClarityTatianaAndBrad />
-                    ) : data.image === 'ClarityWebsite' ? (
-                      <Image.ClarityWebsite />
-                    ) : data.image === 'Salesforce1StyleGuide' ? (
-                      <Image.Salesforce1StyleGuide />
-                    ) : data.image ===
-                      'SalesforceLightningDesignSystemIllustration' ? (
-                      <Image.SalesforceLightningDesignSystemIllustration />
-                    ) : data.image ===
-                      'SalesforceLightningDesignSystemInvitation' ? (
-                      <Image.SalesforceLightningDesignSystemInvitation />
-                    ) : data.image ===
-                      'SalesforceLightningDesignSystemSystem' ? (
-                      <Image.SalesforceLightningDesignSystemSystem />
-                    ) : data.image ===
-                      'SalesforceLightningDesignSystemWebsite' ? (
-                      <Image.SalesforceLightningDesignSystemWebsite />
-                    ) : data.image === 'SassGlasses' ? (
-                      <Image.SassGlasses />
-                    ) : data.image === 'SassStyleTile' ? (
-                      <Image.SassStyleTile />
-                    ) : data.image === 'SassWebsite' ? (
-                      <Image.SassWebsite />
+                    (data.image.screenshot === true ? (
+                      <Screenshot>
+                        <img
+                          src={`/images/${data.image.src}`}
+                          alt={data.image.alt}
+                        />
+                      </Screenshot>
                     ) : (
-                      ''
+                      <img
+                        src={`/images/${data.image.src}`}
+                        alt={data.image.alt}
+                      />
                     ))}
                 </Prose>
               </>

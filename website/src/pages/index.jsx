@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Card } from '../components/Card';
 import { Heading } from '../components/Heading';
-import { Image } from '../components/Image';
 import { LinkButton } from '../components/LinkButton';
+import { Screenshot } from '../components/Screenshot';
 
 import { Circle } from '../layout/Circle';
 import { Container } from '../layout/Container';
@@ -16,7 +16,7 @@ import styles from './index.module.scss';
 import flushStyles from '../layout/Flush/Flush.module.scss';
 import spacingStyles from '../layout/Spacing/Spacing.module.scss';
 
-import PortraitDrawing from '../assets/images/portrait-drawing.gif';
+import Image from '../assets/images/portrait-drawing.gif';
 
 import AboutData from '../../content/about.yml';
 import WorkData from '../../content/work.yml';
@@ -31,7 +31,7 @@ const IndexPage = () => {
           <Container mw="xs">
             <Circle lg_is_not>
               <img
-                src={PortraitDrawing}
+                src={Image}
                 width="320"
                 height="320"
                 alt="Self-portrait drawing"
@@ -60,8 +60,6 @@ const IndexPage = () => {
       <ul className={`${flushStyles.x_xl} ${flushStyles.y_xxl}`}>
         {WorkData.filter((data) => data.draft !== true).map((data, index) => {
           const evenOdd = !(index !== -1 && index % 2 === 0);
-          const LogoElement = Image[data.logo];
-          const ImageElement = Image[data.image];
           return (
             <li key={`project_${index}`} className={styles.item}>
               <HolyGrail>
@@ -72,7 +70,10 @@ const IndexPage = () => {
                     order={evenOdd === true ? `last` : `first`}
                   >
                     <Logo>
-                      <LogoElement />
+                      <img
+                        src={`/images/${data.logo.src}`}
+                        alt={data.logo.alt}
+                      />
                     </Logo>
                   </HolyGrail.Sidebar>
 
@@ -81,7 +82,19 @@ const IndexPage = () => {
                       <LinkButton bhover full to={data.path}>
                         <div className={spacingStyles.y_lg}>
                           <Container mw="xl">
-                            <ImageElement />
+                            {data.image.screenshot === true ? (
+                              <img
+                                src={`/images/${data.image.src}`}
+                                alt={data.image.alt}
+                              />
+                            ) : (
+                              <Screenshot>
+                                <img
+                                  src={`/images/${data.image.src}`}
+                                  alt={data.image.alt}
+                                />
+                              </Screenshot>
+                            )}
                           </Container>
 
                           <div className={spacingStyles.y_sm}>

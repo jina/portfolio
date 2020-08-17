@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Card } from '../components/Card';
 import { Heading } from '../components/Heading';
-import { Image } from '../components/Image';
 import { Prose } from '../components/Prose';
 
 import { Circle } from '../layout/Circle';
@@ -13,6 +12,8 @@ import DefaultLayout from '../site/DefaultLayout';
 import flushStyles from '../layout/Flush/Flush.module.scss';
 import spacingStyles from '../layout/Spacing/Spacing.module.scss';
 
+import Image from '../assets/images/portrait.jpg';
+
 import AboutData from '../../content/about.yml';
 import TimelineData from '../../content/timeline.yml';
 
@@ -21,12 +22,12 @@ const AboutPage = () => {
     <DefaultLayout
       pageTitle="About Jina Anne"
       pageHTMLTitle="About Jina&nbsp;Anne"
-      heroSidebarBefore={(
+      heroSidebarBefore={
         <>
           <div className={`${flushStyles.x_xl} ${flushStyles.t_lg}`}>
             <Container mw="md">
               <Circle is_not sm_is lg_is_not>
-                <Image />
+                <img src={Image} alt="Portrait" />
               </Circle>
             </Container>
           </div>
@@ -45,9 +46,9 @@ const AboutPage = () => {
             </Card.List>
           </Card>
         </>
-      )}
+      }
       heroSidebarBeforeWide
-      heroSidebarAfter={(
+      heroSidebarAfter={
         <Card heading="Connect">
           <Card.List>
             {AboutData.connect.map((data, index) => {
@@ -61,8 +62,8 @@ const AboutPage = () => {
             })}
           </Card.List>
         </Card>
-      )}
-      heroChildren={(
+      }
+      heroChildren={
         <div className={spacingStyles.y_xxl}>
           <Prose>
             <p
@@ -76,8 +77,8 @@ const AboutPage = () => {
             />
           </Prose>
         </div>
-      )}
-      sidebarBefore={(
+      }
+      sidebarBefore={
         <Card heading="Open Source Projects">
           <Card.List block>
             {AboutData.open_source.map((data, index) => {
@@ -91,8 +92,8 @@ const AboutPage = () => {
             })}
           </Card.List>
         </Card>
-      )}
-      sidebarBefore2={(
+      }
+      sidebarBefore2={
         <Card heading="Community Projects">
           <Card.List block>
             {AboutData.community.map((data, index) => {
@@ -106,8 +107,8 @@ const AboutPage = () => {
             })}
           </Card.List>
         </Card>
-      )}
-      sidebarAfter={(
+      }
+      sidebarAfter={
         <Card heading="Collaborations">
           <Card.List>
             {AboutData.collaborations.map((data, index) => {
@@ -121,7 +122,7 @@ const AboutPage = () => {
             })}
           </Card.List>
         </Card>
-      )}
+      }
     >
       <Heading>Speaking</Heading>
 

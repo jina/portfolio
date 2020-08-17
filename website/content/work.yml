@@ -6,9 +6,16 @@
     Design systems and design operations for Amazon Honeycode, a&nbsp;new
     No-code app builder product from Amazon (named&nbsp;&ldquo;Beehive&rdquo;
     prior to the public&nbsp;launch).
-  image: BeehiveDesignSystemWebsite
-  cover: BeehiveDesignSystemIcons
-  logo: BeehiveDesignSystem
+  image:
+    src: beehive-design-system-website.png
+    alt: Beehive Design System website
+    screenshot: true
+  cover:
+    src: beehive-design-system-icons.png
+    alt: Beehive Design System icons
+  logo:
+    src: amazon-honeycode-logo.gif
+    alt: Amazon Honeycode logo
   content:
     - heading:
         text: Overview
@@ -41,7 +48,10 @@
           components and documentation for both the design and engineering
           organizations to use.
         </p>
-      image: BeehiveApp
+      image:
+        src: beehive-app.png
+        alt: Beehive app
+        screenshot: true
       lists:
         - heading:
             text: Other Creative Credits
@@ -75,9 +85,15 @@
   description: >
     Created the premiere design systems community&nbsp;conference. The event is
     now on its fifth&nbsp;year.
-  image: ClarityTatianaAndBrad
-  cover: ClarityTatianaAndBrad
-  logo: Clarity
+  image:
+    src: clarity-tatiana-and-brad.jpg
+    alt: Tatiana Mac and Brad Frost on stage at Clarity
+  cover:
+    src: clarity-tatiana-and-brad.jpg
+    alt: Tatiana Mac and Brad Frost on stage at Clarity
+  logo:
+    src: clarity-logo.gif
+    alt: Clarity logo
   content:
     - heading:
         text: Overview
@@ -108,7 +124,10 @@
           The inspiration for the design aesthetic is diamonds (because
           &ldquo;clarity&rdquo;).
         </p>
-      image: ClarityWebsite
+      image:
+        src: clarity-website.png
+        alt: Clarity 2018
+        screenshot: true
       lists: []
     - heading:
         text: '2016'
@@ -128,7 +147,9 @@
           on the Nasa logo and Graphic Standards Manual from the worm logo era
           (the 70&rsquo;s).
         </p>
-      image: ClarityRichardAndBarbara
+      image:
+        src: clarity-richard-and-barbara.jpg
+        alt: Richard and Barbara Danne
       lists:
         - heading:
             text: Creative Responsibilities
@@ -166,7 +187,9 @@
           the Alamo Drafthouse again, with the attendee count rising closer to
           400. I added workshops to the program this year.
         </p>
-      image: ClarityHenri
+      image:
+        src: clarity-henri.jpg
+        alt: Henri Helvetica on stage at Clarity
       lists:
         - heading:
             text: Creative Responsibilities
@@ -206,7 +229,9 @@
           The third event was in New York City at the SVA Theatre. The
           conference had grown to 500 attendees.
         </p>
-      image: ClaritySVAMarquee
+      image:
+        src: clarity-sva-marquee.jpg
+        alt: Clarity SVA Marquee
       lists:
         - heading:
             text: Creative Responsibilities
@@ -250,7 +275,9 @@
           venue since the attendance had outgrown the Alamo Drafthouse. This
           year there were 700 attendees.
         </p>
-      image: ClarityPrograms
+      image:
+        src: clarity-programs.jpg
+        alt: Clarity programs
       lists:
         - heading:
             text: Creative Responsibilities
@@ -311,7 +338,9 @@
             - Josh Silverman (sticker sheets)
             - Kickass Conferences (badges, design post-production/procurement, social media/marketing, website content updates, etc)
             - Three Wolf Media (video production for <abbr title="New York">NY</abbr> speakers)
-      image: ClarityBox
+      image:
+        src: clarity-box.jpg
+        alt: Clarity box
   roles:
     - Creative Director
     - Design Systems Advocate
@@ -333,9 +362,16 @@
   description: >
     Founding Lead Designer of one of the most popular enterprise
     design&nbsp;systems.
-  image: SalesforceLightningDesignSystemWebsite
-  cover: SalesforceLightningDesignSystemIllustration
-  logo: SalesforceLightningDesignSystem
+  image:
+    src: salesforce-lightning-design-system-website.png
+    alt: Salesforce Lightning Design System website
+    screenshot: true
+  cover:
+    src: salesforce-lightning-design-system-illustration.png
+    alt: Salesforce Lightning Design System illustration
+  logo:
+    src: salesforce-logo.gif
+    alt: Salesforcee logo
   content:
     - heading:
         text: Overview
@@ -371,7 +407,9 @@
           years at Salesforce, I had the opportunity to impact how one of the
           largest enterprise technology companies ship product design.
         </p>
-      image: SalesforceLightningDesignSystemSystem
+      image:
+        src: salesforce-lightning-design-system-system.png
+        alt: Salesforce overview
       lists: []
     - heading:
         text: Early Years
@@ -387,7 +425,10 @@
           I helped invent design tokens, which became adopted by the industry as
           a best practice for scaling design in a system.
         </p>
-      image: Salesforce1StyleGuide
+      image:
+        src: salesforce1-styleguide.png
+        alt: Salesforce1 Style Guide
+        screenshot: true
       lists:
         - heading:
             text: Other Credits
@@ -423,7 +464,9 @@
           I also mentored designers to level up their skills in frontend
           development.
         </p>
-      image: SalesforceLightningDesignSystemInvitation
+      image:
+        src: salesforce-lightning-design-system-invitation.png
+        alt: Salesforce Lightning Design System logo
       lists:
         - heading:
             text: Other Credits
@@ -466,9 +509,16 @@
     Sass core team member, leading&nbsp;the brand, website&nbsp;design,
     frontend&nbsp;<abbr title="User Interface">UI</abbr> development,
     and&nbsp;content&nbsp;direction.
-  image: SassWebsite
-  cover: SassGlasses
-  logo: Sass
+  image:
+    src: sass-website.png
+    alt: Sass website
+    screenshot: true
+  cover:
+    src: sass-glasses.png
+    alt: Sass glasses
+  logo:
+    src: sass-logo.gif
+    alt: Sass logo
   content:
     - heading:
         text: Overview
@@ -492,7 +542,9 @@
           might be why designers were using a competitor instead. So I
           volunteered to lead the redesign of the brand and website.
         </p>
-      image: SassStyleTile
+      image:
+        src: sass-style-tile.png
+        alt: Sass style tile
       lists: []
   roles:
     - Branding
@@ -514,9 +566,17 @@
     Led the <abbr title="Cascading Style Sheets">CSS</abbr> architecture for
     Apple&rsquo;s online shopping experience. Also produced/documented the
     visual language.
-  image: AppleOnlineStoreWebsite
-  cover: AppleOnlineStoreWebsite
-  logo: AppleOnlineStore
+  image:
+    src: apple-online-store-website.png
+    alt: Apple website
+    screenshot: true
+  cover:
+    src: apple-online-store-website.png
+    alt: Apple website
+    screenshot: true
+  logo:
+    src: apple-logo.gif
+    alt: Apple logo
   content:
     - heading:
         text: Overview
@@ -534,12 +594,17 @@
           I joined Apple to work on the Online Store right before the launch of
           the first iPhone. I started as a Frontend UI Engineer.
         </p>
-      image: AppleOnlineStoreSignIn
+      image:
+        src: apple-online-store-sign-in.png
+        alt: Apple overview
       lists: []
     - heading:
         text: Cart Experience
         variant: small
-      image: AppleOnlineStoreCart
+      image:
+        src: apple-online-store-cart.png
+        alt: Apple Online Store cart
+        screenshot: true
   roles:
     - Design Systems Advocate
     - Frontend Developer
