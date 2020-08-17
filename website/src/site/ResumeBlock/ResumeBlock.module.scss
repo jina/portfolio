@@ -1,5 +1,9 @@
 @import '../../assets/styles/dependencies';
 
+.block {
+  content-visibility: auto;
+}
+
 .dates,
 .description,
 .list {

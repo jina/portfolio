@@ -1,5 +1,10 @@
 @import '../assets/styles/dependencies';
 
+.header,
+.project {
+  content-visibility: auto;
+}
+
 .header {
   background: $bg-strong-inverse;
 }

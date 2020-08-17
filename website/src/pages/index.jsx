@@ -30,7 +30,12 @@ const IndexPage = () => {
         <div className={`${flushStyles.x_xl} ${flushStyles.y_lg}`}>
           <Container mw="xs">
             <Circle lg_is_not>
-              <img src={PortraitDrawing} alt="Self-portrait drawing" />
+              <img
+                src={PortraitDrawing}
+                width="320"
+                height="320"
+                alt="Self-portrait drawing"
+              />
             </Circle>
           </Container>
         </div>
@@ -58,7 +63,7 @@ const IndexPage = () => {
           const LogoElement = Image[data.logo];
           const ImageElement = Image[data.image];
           return (
-            <li key={`project_${index}`}>
+            <li key={`project_${index}`} className={styles.item}>
               <HolyGrail>
                 <HolyGrail.Body>
                   <HolyGrail.Sidebar

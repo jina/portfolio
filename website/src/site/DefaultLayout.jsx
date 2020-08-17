@@ -92,7 +92,7 @@ const DefaultLayout = ({
           <AddOn>
             <AddOn.Item role="banner">
               <div className={flushStyles.x_md}>
-                <LinkButton caps bold>
+                <LinkButton caps bold to="/">
                   {data.site.siteMetadata.title}
                 </LinkButton>
               </div>

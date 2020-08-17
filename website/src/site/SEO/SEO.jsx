@@ -63,9 +63,7 @@ const SEO = ({ title, description, lang, meta }) => {
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      <link rel="stylesheet" href="https://use.typekit.net/bso7cts.css" />
-    </Helmet>
+    />
   );
 };
 SEO.propTypes = {

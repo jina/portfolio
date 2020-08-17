@@ -7,9 +7,10 @@ import { Heading } from '../../components/Heading';
 import { Item, NestedList, NestedListItem } from './components';
 
 import spacingStyles from '../../layout/Spacing/Spacing.module.scss';
+import styles from './ResumeBlock.module.scss';
 
 const ResumeBlock = ({ heading, children, className, ...rest }) => {
-  const classes = classNames(spacingStyles.y_lg, className);
+  const classes = classNames(styles.block, spacingStyles.y_lg, className);
 
   return (
     <section className={classes} {...rest}>
