@@ -1,0 +1,21 @@
+imports:
+  - ./aliases/color.yml
+
+global:
+  category: text-color
+  type: color
+
+props:
+  fg_weak:
+    value: '{!gray_700}'
+  fg_default:
+    value: '{!gray_800}'
+  fg_strong:
+    value: '{!black}'
+
+  fg_weak_inverse:
+    value: '{!gray_300}'
+  fg_inverse:
+    value: '{!gray_200}'
+  fg_strong_inverse:
+    value: '{!white}'

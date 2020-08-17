@@ -4,31 +4,33 @@ import classNames from 'classnames';
 
 import { Button } from './components';
 
-const Screenshot = ({ children, element, className, ...rest }) => {
-  const Element = element;
-  const classes = classNames(`overflow-hidden shadow-xl rounded`, className);
+import styles from './Screenshot.module.scss';
+import spacingStyles from '../../layout/Spacing/Spacing.module.scss';
+
+const Screenshot = ({ children, className, ...rest }) => {
+  const classes = classNames(styles.wrapper, className);
 
   return (
-    <Element className={classes} {...rest}>
-      <div className="flex space-x-1 p-2 bg-black">
+    <div className={classes} {...rest}>
+      <div className={`${styles.header} ${spacingStyles.x_base}`}>
         <Button />
+
         <Button />
+
         <Button />
       </div>
 
       {children}
-    </Element>
+    </div>
   );
 };
 
 Screenshot.propTypes = {
   children: PropTypes.node,
-  element: PropTypes.string,
   className: PropTypes.string,
 };
 
 Screenshot.defaultProps = {
-  element: 'div',
   className: '',
 };
 

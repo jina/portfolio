@@ -6,21 +6,23 @@ import { Heading } from '../../components/Heading';
 
 import { Item, NestedList, NestedListItem } from './components';
 
+import spacingStyles from '../../layout/Spacing/Spacing.module.scss';
+
 const ResumeBlock = ({ heading, children, className, ...rest }) => {
-  const classes = classNames(`space-y-6`, className);
+  const classes = classNames(spacingStyles.y_lg, className);
 
   return (
     <section className={classes} {...rest}>
       <Heading>{heading}</Heading>
 
-      <ul className="space-y-6">{children}</ul>
+      <ul className={spacingStyles.y_lg}>{children}</ul>
     </section>
   );
 };
 
 ResumeBlock.propTypes = {
   heading: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   className: PropTypes.string,
 };
 

@@ -2,31 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Label = ({ level, element, className, children, ...rest }) => {
-  const Element = element || `h${level}`;
-  const classes = classNames(
-    `font-semibold text-base leading-tight uppercase tracking-wider`,
-    className,
-  );
+import styles from '../../Heading.module.scss';
+
+const Label = ({ className, children, ...rest }) => {
+  const classes = classNames(styles.label, className);
 
   return (
-    <Element className={classes} {...rest}>
+    <h4 className={classes} {...rest}>
       {children}
-    </Element>
+    </h4>
   );
 };
 
 Label.propTypes = {
-  level: PropTypes.oneOf([2, 3, 4, 5, 6]),
-  element: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Label.defaultProps = {
-  element: '',
   className: '',
-  level: 4,
 };
 
 export { Label };

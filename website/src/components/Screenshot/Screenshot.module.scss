@@ -1,0 +1,21 @@
+@import 'assets/styles/dependencies';
+
+.wrapper {
+  border-radius: $sizing-base;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.header {
+  display: flex;
+  padding: $spacing-xs;
+  background: $bg-strong-inverse;
+}
+
+.button {
+  width: $sizing-xs;
+  height: $sizing-xs;
+  border-radius: 100%;
+  background: $accent-inverse;
+}

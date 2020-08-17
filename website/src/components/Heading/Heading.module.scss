@@ -1,3 +1,31 @@
+@import '../../assets/styles/dependencies';
+
 .title {
+  font-style: italic;
+  font-size: $font-size-xl;
+  line-height: 1;
+  font-family: $unquote-font-family-display;
+  text-transform: uppercase;
+  letter-spacing: $ls-tight;
   word-spacing: 0.0625em;
+
+  @include mq($lg) {
+    font-size: $font-size-xxl;
+  }
+
+  @include mq($xl) {
+    font-size: $font-size-xxxl;
+  }
+}
+
+.wrapper {
+  @include h2;
+}
+
+.small {
+  @include h3;
+}
+
+.label {
+  @include h4;
 }

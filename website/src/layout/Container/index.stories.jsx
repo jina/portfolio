@@ -1,14 +1,9 @@
 import React from 'react';
 import { Container } from '.';
-import { Example } from '../../storybook/example';
 
 export default {
   title: 'Layout/Container',
   component: Container,
 };
 
-export const base = () => (
-  <Container>
-    <Example text="container" />
-  </Container>
-);
+export const base = () => <Container>Container</Container>;

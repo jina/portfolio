@@ -1,13 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
-const NestedListItem = ({ key, role, dates, description, ...rest }) => {
+import { Prose } from '../../../../components/Prose';
+
+import styles from '../../ResumeBlock.module.scss';
+import spacingStyles from '../../../../layout/Spacing/Spacing.module.scss';
+
+const NestedListItem = ({ className, role, dates, description, ...rest }) => {
+  const classes = classNames(spacingStyles.y_sm, className);
   return (
-    <li key={key} {...rest} className="space-y-3">
+    <li className={classes} {...rest}>
       <div>
         {role && (
           <h4
-            className="font-bold"
+            className={styles.role_label}
             dangerouslySetInnerHTML={{ __html: role }}
           />
         )}
@@ -16,24 +23,19 @@ const NestedListItem = ({ key, role, dates, description, ...rest }) => {
       </div>
 
       {description && (
-        <div
-          className="prose space-y-2"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+        <Prose spacing="sm" dangerouslySetInnerHTML={{ __html: description }} />
       )}
     </li>
   );
 };
 
 NestedListItem.propTypes = {
-  key: PropTypes.string,
   role: PropTypes.string,
   dates: PropTypes.string,
   description: PropTypes.string,
 };
 
 NestedListItem.defaultProps = {
-  key: '',
   role: '',
   dates: '',
   description: '',

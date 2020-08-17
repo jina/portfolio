@@ -3,11 +3,17 @@ import React from 'react';
 import { Card } from '../components/Card';
 import { Heading } from '../components/Heading';
 import { Image } from '../components/Image';
-import { LinkButton } from '../components/LinkButton';
+import { Pagination } from '../components/Pagination';
+import { Prose } from '../components/Prose';
 
-import { Horizontal } from '../layout/Horizontal';
+import { Container } from '../layout/Container';
 
 import DefaultLayout from '../site/DefaultLayout';
+import { Logo } from '../site/Logo';
+
+import styles from './Project.module.scss';
+import flushStyles from '../layout/Flush/Flush.module.scss';
+import spacingStyles from '../layout/Spacing/Spacing.module.scss';
 
 import WorkData from '../../content/work.yml';
 
@@ -29,253 +35,293 @@ const projectTemplate = (props) => {
   const CoverElement = Image[pageCover];
   const ImageElement = Image[pageImage];
   const LogoElement = Image[pageLogo];
-
   return (
     <DefaultLayout
       pageTitle={pageTitle}
       pageHTMLTitle={pageHTMLTitle}
       pageDescription={pageDescription}
-      heroSidebarRight={
-        <Horizontal className="space-y-3 sm:space-y-0 justify-end" spacing={4}>
-          <Horizontal.Item>
-            <LinkButton className="text-center" secondary to={pagePrev}>
-              Previous
-            </LinkButton>
-          </Horizontal.Item>
-
-          <Horizontal.Item>
-            <LinkButton className="text-center" secondary to={pageNext}>
-              Next
-            </LinkButton>
-          </Horizontal.Item>
-        </Horizontal>
+      heroSidebarAfter={
+        <Pagination justify="end" pto={pagePrev} nto={pageNext} />
       }
-      header={
-        <div className="-mx-4 md:-mx-8 bg-black">
-          <div className="m-auto lg:max-w-screen-xl">
-            <CoverElement className="w-full" />
-          </div>
-        </div>
-      }
-      sidebarLeft={
-        <div className="space-y-12">
-          <Card heading="Roles">
-            <ul className="space-y-3">
-              {pageRoles.map((data, index) => {
-                return (
-                  <li
-                    key={`responsibility_${index}`}
-                    dangerouslySetInnerHTML={{ __html: data }}
-                  />
-                );
-              })}
-            </ul>
-          </Card>
-
-          <Card heading="Deliverables">
-            <ul className="space-y-3">
-              {pageDeliverables.map((data, index) => {
-                return (
-                  <li
-                    key={`deliverable_${index}`}
-                    dangerouslySetInnerHTML={{ __html: data }}
-                  />
-                );
-              })}
-            </ul>
-          </Card>
-
-          <div className="mx-auto w-24 sm:w-48">
-            <LogoElement />
-          </div>
-        </div>
-      }
-      sidebarLeftWide
-      footer={
+      header={(
         <>
-          <Horizontal
-            className=" space-y-3 sm:space-y-0 justify-center"
-            spacing={4}
+          <div
+            className={`${flushStyles.x_xl} ${flushStyles.y_lg} ${styles.header}`}
           >
-            <Horizontal.Item>
-              <LinkButton className="text-center" secondary to={pagePrev}>
-                Previous
-              </LinkButton>
-            </Horizontal.Item>
-
-            <Horizontal.Item>
-              <LinkButton className="text-center" secondary to={pageNext}>
-                Next
-              </LinkButton>
-            </Horizontal.Item>
-          </Horizontal>
-
-          <Card className="pt-24" heading="View Other Projects">
-            <div className="-mx-4">
-              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 row-gap-3 col-gap-4">
-                {WorkData.filter((data) => data.draft !== true).map(
-                  (data, index) => {
-                    return (
-                      <li key={`project_${index}`}>
-                        <LinkButton full to={data.path}>
-                          {data.htmlTitle !== undefined ? (
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: data.htmlTitle,
-                              }}
-                            />
-                          ) : (
-                            data.title
-                          )}
-                        </LinkButton>
-                      </li>
-                    );
-                  },
-                )}
-              </ul>
-            </div>
-          </Card>
+            <Container mw="xxxl">
+              <CoverElement className={styles.cover} />
+            </Container>
+          </div>
         </>
+      )}
+      sidebarBefore={(
+        <Logo>
+          <LogoElement />
+        </Logo>
+      )}
+      sidebarBeforeWide
+      sidebarBeforeAlign="center"
+      footerSidebarBefore={(
+        <Card heading="Roles">
+          <ul>
+            {pageRoles.map((data, index) => {
+              return (
+                <li
+                  key={`responsibility_${index}`}
+                  dangerouslySetInnerHTML={{ __html: data }}
+                />
+              );
+            })}
+          </ul>
+        </Card>
+      )}
+      footerSidebarBefore2={(
+        <Card heading="Deliverables">
+          <ul>
+            {pageDeliverables.map((data, index) => {
+              return (
+                <li
+                  key={`deliverable_${index}`}
+                  dangerouslySetInnerHTML={{ __html: data }}
+                />
+              );
+            })}
+          </ul>
+        </Card>
+      )}
+      footer={(
+        <>
+          {ImageElement !== CoverElement && <ImageElement />}
+
+          <div className={spacingStyles.y_xxl}>
+            {pageContent.map((data, index) => {
+              return (
+                <React.Fragment key={`content__${index}`}>
+                  {data.heading.text === 'Overview' ? (
+                    ``
+                  ) : (
+                    <div className={spacingStyles.y_lg}>
+                      {data.heading.variant === 'small' ? (
+                        <Heading.Small
+                          dangerouslySetInnerHTML={{
+                            __html: data.heading.text,
+                          }}
+                        />
+                      ) : data.heading.variant === 'label' ? (
+                        <Heading.Label
+                          dangerouslySetInnerrHTML={{
+                            __html: data.heading.text,
+                          }}
+                        />
+                      ) : (
+                        <Heading
+                          dangerouslySetInnerHTML={{
+                            __html: data.heading.text,
+                          }}
+                        />
+                      )}
+
+                      <div className={styles.project}>
+                        <div
+                          className={`${styles.details} ${spacingStyles.y_lg}`}
+                        >
+                          <Prose
+                            spacing="lg"
+                            className={spacingStyles.y_lg}
+                            dangerouslySetInnerHTML={{
+                              __html: data.description,
+                            }}
+                          />
+
+                          {data.image &&
+                            // Workaround since <Image[data.image] /> doesn't work
+                            // Also edit components/Image/Image.jsx to include as well
+                            (data.image === 'AppleOnlineStoreCart' ? (
+                              <Image.AppleOnlineStoreCart />
+                            ) : data.image === 'AppleOnlineStoreSignIn' ? (
+                              <Image.AppleOnlineStoreSignIn />
+                            ) : data.image === 'AppleOnlineStoreWebsite' ? (
+                              <Image.AppleOnlineStoreWebsite />
+                            ) : data.image === 'BeehiveApp' ? (
+                              <Image.BeehiveApp />
+                            ) : data.image === 'BeehiveDesignSystemIcons' ? (
+                              <Image.BeehiveDesignSystemIcons />
+                            ) : data.image === 'BeehiveDesignSystemWebsite' ? (
+                              <Image.BeehiveDesignSystemWebsite />
+                            ) : data.image === 'ClarityBox' ? (
+                              <Image.ClarityBox />
+                            ) : data.image === 'ClarityHenri' ? (
+                              <Image.ClarityHenri />
+                            ) : data.image === 'ClarityPrograms' ? (
+                              <Image.ClarityPrograms />
+                            ) : data.image === 'ClarityRichardAndBarbara' ? (
+                              <Image.ClarityRichardAndBarbara />
+                            ) : data.image === 'ClaritySVAMarquee' ? (
+                              <Image.ClaritySVAMarquee />
+                            ) : data.image === 'ClarityTatianaAndBrad' ? (
+                              <Image.ClarityTatianaAndBrad />
+                            ) : data.image === 'ClarityWebsite' ? (
+                              <Image.ClarityWebsite />
+                            ) : data.image === 'Salesforce1StyleGuide' ? (
+                              <Image.Salesforce1StyleGuide />
+                            ) : data.image ===
+                              'SalesforceLightningDesignSystemIllustration' ? (
+                              <Image.SalesforceLightningDesignSystemIllustration />
+                            ) : data.image ===
+                              'SalesforceLightningDesignSystemInvitation' ? (
+                              <Image.SalesforceLightningDesignSystemInvitation />
+                            ) : data.image ===
+                              'SalesforceLightningDesignSystemSystem' ? (
+                              <Image.SalesforceLightningDesignSystemSystem />
+                            ) : data.image ===
+                              'SalesforceLightningDesignSystemWebsite' ? (
+                              <Image.SalesforceLightningDesignSystemWebsite />
+                            ) : data.image === 'SassGlasses' ? (
+                              <Image.SassGlasses />
+                            ) : data.image === 'SassStyleTile' ? (
+                              <Image.SassStyleTile />
+                            ) : data.image === 'SassWebsite' ? (
+                              <Image.SassWebsite />
+                            ) : (
+                              ''
+                            ))}
+                        </div>
+
+                        {data.lists && (
+                          <div
+                            className={`${styles.lists} ${spacingStyles.y_lg}`}
+                          >
+                            {data.lists.map((item, index) => {
+                              return (
+                                <Card
+                                  key={`item__${index}`}
+                                  heading={item.heading.text}
+                                >
+                                  <ul className={spacingStyles.y_sm}>
+                                    {item.items.map((i, index) => {
+                                      return (
+                                        <li
+                                          key={`i__${index}`}
+                                          dangerouslySetInnerHTML={{
+                                            __html: i,
+                                          }}
+                                        />
+                                      );
+                                    })}
+                                  </ul>
+                                </Card>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </React.Fragment>
+              );
+            })}
+          </div>
+        </>
+      )}
+      pagination={
+        <div className={spacingStyles.y_xxl}>
+          <Pagination pto={pagePrev} nto={pageNext} />
+
+          <Card heading="View Other Projects">
+            <Card.List columns>
+              {WorkData.filter((data) => data.draft !== true).map(
+                (data, index) => {
+                  return (
+                    <Card.Item
+                      to={data.path}
+                      text={
+                        data.htmlTitle !== undefined
+                          ? data.htmlTitle
+                          : data.title
+                      }
+                      key={`newproject_${index}`}
+                    />
+                  );
+                },
+              )}
+            </Card.List>
+          </Card>
+        </div>
       }
     >
-      <div className="space-y-12">
-        {ImageElement !== CoverElement ? <ImageElement /> : ''}
-
-        {pageContent.map((data, index) => {
-          return (
-            <div key={`content__${index}`} className="space-y-6">
-              {data.heading.variant === 'small' ? (
-                <Heading.Small
-                  dangerouslySetInnerHTML={{ __html: data.heading.text }}
-                />
-              ) : data.heading.variant === 'label' ? (
-                <Heading.Label
-                  dangerouslySetInnerrHTML={{ __html: data.heading.text }}
-                />
-              ) : (
+      {pageContent.map((data, index) => {
+        return (
+          <React.Fragment key={`overview__${index}`}>
+            {data.heading.text === 'Overview' && (
+              <>
                 <Heading
                   dangerouslySetInnerHTML={{ __html: data.heading.text }}
                 />
-              )}
 
-              <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-8">
-                <div className="prose space-y-12 w-full">
+                <Prose spacing="xxl">
                   <div
-                    className={`space-y-6 ${
-                      data.heading.text === 'Overview' ? 'lead' : ''
-                    }`}
+                    className={`${spacingStyles.y_lg} lead`}
                     dangerouslySetInnerHTML={{ __html: data.description }}
                   />
 
-                  {data.image && (
-                    <div className={data.lists !== '' ? `` : `lg:-mr-8`}>
-                      {
-                        // Workaround since <Image[data.image] /> doesn't work
-                        // Also edit components/Image/Image.jsx to include as well
-                        data.image === 'AppleOnlineStoreCart' ? (
-                          <Image.AppleOnlineStoreCart />
-                        ) : data.image === 'AppleOnlineStoreSignIn' ? (
-                          <Image.AppleOnlineStoreSignIn />
-                        ) : data.image === 'AppleOnlineStoreWebsite' ? (
-                          <Image.AppleOnlineStoreWebsite />
-                        ) : data.image === 'BeehiveApp' ? (
-                          <Image.BeehiveApp />
-                        ) : data.image === 'BeehiveDesignSystemIcons' ? (
-                          <Image.BeehiveDesignSystemIcons />
-                        ) : data.image === 'BeehiveDesignSystemWebsite' ? (
-                          <Image.BeehiveDesignSystemWebsite />
-                        ) : data.image === 'ClarityBox' ? (
-                          <Image.ClarityBox />
-                        ) : data.image === 'ClarityHenri' ? (
-                          <Image.ClarityHenri />
-                        ) : data.image === 'ClarityPrograms' ? (
-                          <Image.ClarityPrograms />
-                        ) : data.image === 'ClarityRichardAndBarbara' ? (
-                          <Image.ClarityRichardAndBarbara />
-                        ) : data.image === 'ClaritySVAMarquee' ? (
-                          <Image.ClaritySVAMarquee />
-                        ) : data.image === 'ClarityTatianaAndBrad' ? (
-                          <Image.ClarityTatianaAndBrad />
-                        ) : data.image === 'ClarityWebsite' ? (
-                          <Image.ClarityWebsite />
-                        ) : data.image === 'Salesforce1StyleGuide' ? (
-                          <Image.Salesforce1StyleGuide />
-                        ) : data.image ===
-                          'SalesforceLightningDesignSystemIllustration' ? (
-                            <Image.SalesforceLightningDesignSystemIllustration />
-                        ) : data.image ===
-                          'SalesforceLightningDesignSystemInvitation' ? (
-                            <Image.SalesforceLightningDesignSystemInvitation />
-                        ) : data.image ===
-                          'SalesforceLightningDesignSystemSystem' ? (
-                            <Image.SalesforceLightningDesignSystemSystem />
-                        ) : data.image ===
-                          'SalesforceLightningDesignSystemWebsite' ? (
-                            <Image.SalesforceLightningDesignSystemWebsite />
-                        ) : data.image === 'SassGlasses' ? (
-                          <Image.SassGlasses />
-                        ) : data.image === 'SassStyleTile' ? (
-                          <Image.SassStyleTile />
-                        ) : data.image === 'SassWebsite' ? (
-                          <Image.SassWebsite />
-                        ) : (
-                          ''
-                        )
-                      }
-                    </div>
-                  )}
-                </div>
-
-                {data.lists !== '' ? (
-                  <div className="flex flex-col sm:flex-row md:flex-col space-y-12 sm:space-y-0 md:space-y-12 sm:space-x-4 md:space-x-0 lg:flex-none lg:w-1/3">
-                    {data.lists.map((item, index) => {
-                      return (
-                        <div
-                          key={`item__${index}`}
-                          className="space-y-3 sm:flex-none sm:w-1/2 md:flex-1 md:w-auto"
-                        >
-                          {item.heading.variant === 'small' ? (
-                            <Heading.Small
-                              dangerouslySetInnerHTML={{
-                                __html: item.heading.text,
-                              }}
-                            />
-                          ) : item.heading.variant === 'label' ? (
-                            <Heading.Label
-                              dangerouslySetInnerHTML={{
-                                __html: item.heading.text,
-                              }}
-                            />
-                          ) : (
-                            <Heading
-                              dangerouslySetInnerHTMTL={{
-                                __html: item.heading.text,
-                              }}
-                            />
-                          )}
-
-                          <ul className="space-y-3">
-                            {item.items.map((i, index) => {
-                              return (
-                                <li
-                                  key={`i__${index}`}
-                                  dangerouslySetInnerHTML={{ __html: i }}
-                                />
-                              );
-                            })}
-                          </ul>
-                        </div>
-                      );
-                    })}
-                  </div>
-                ) : (
-                  ''
-                )}
-              </div>
-            </div>
-          );
-        })}
-      </div>
+                  {data.image &&
+                    // Workaround since <Image[data.image] /> doesn't work
+                    // Also edit components/Image/Image.jsx to include as well
+                    (data.image === 'AppleOnlineStoreCart' ? (
+                      <Image.AppleOnlineStoreCart />
+                    ) : data.image === 'AppleOnlineStoreSignIn' ? (
+                      <Image.AppleOnlineStoreSignIn />
+                    ) : data.image === 'AppleOnlineStoreWebsite' ? (
+                      <Image.AppleOnlineStoreWebsite />
+                    ) : data.image === 'BeehiveApp' ? (
+                      <Image.BeehiveApp />
+                    ) : data.image === 'BeehiveDesignSystemIcons' ? (
+                      <Image.BeehiveDesignSystemIcons />
+                    ) : data.image === 'BeehiveDesignSystemWebsite' ? (
+                      <Image.BeehiveDesignSystemWebsite />
+                    ) : data.image === 'ClarityBox' ? (
+                      <Image.ClarityBox />
+                    ) : data.image === 'ClarityHenri' ? (
+                      <Image.ClarityHenri />
+                    ) : data.image === 'ClarityPrograms' ? (
+                      <Image.ClarityPrograms />
+                    ) : data.image === 'ClarityRichardAndBarbara' ? (
+                      <Image.ClarityRichardAndBarbara />
+                    ) : data.image === 'ClaritySVAMarquee' ? (
+                      <Image.ClaritySVAMarquee />
+                    ) : data.image === 'ClarityTatianaAndBrad' ? (
+                      <Image.ClarityTatianaAndBrad />
+                    ) : data.image === 'ClarityWebsite' ? (
+                      <Image.ClarityWebsite />
+                    ) : data.image === 'Salesforce1StyleGuide' ? (
+                      <Image.Salesforce1StyleGuide />
+                    ) : data.image ===
+                      'SalesforceLightningDesignSystemIllustration' ? (
+                        <Image.SalesforceLightningDesignSystemIllustration />
+                    ) : data.image ===
+                      'SalesforceLightningDesignSystemInvitation' ? (
+                        <Image.SalesforceLightningDesignSystemInvitation />
+                    ) : data.image ===
+                      'SalesforceLightningDesignSystemSystem' ? (
+                        <Image.SalesforceLightningDesignSystemSystem />
+                    ) : data.image ===
+                      'SalesforceLightningDesignSystemWebsite' ? (
+                        <Image.SalesforceLightningDesignSystemWebsite />
+                    ) : data.image === 'SassGlasses' ? (
+                      <Image.SassGlasses />
+                    ) : data.image === 'SassStyleTile' ? (
+                      <Image.SassStyleTile />
+                    ) : data.image === 'SassWebsite' ? (
+                      <Image.SassWebsite />
+                    ) : (
+                      ''
+                    ))}
+                </Prose>
+              </>
+            )}
+          </React.Fragment>
+        );
+      })}
     </DefaultLayout>
   );
 };

@@ -1,7 +1,1 @@
-// stylelint-disable no-duplicate-selectors
-
-@import 'dependencies';
-
-:global {
-  @import 'tailwind/min', 'tailwind/typography', 'tailwind/overrides';
-}
+@import 'dependencies', 'root';

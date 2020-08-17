@@ -1,23 +1,29 @@
 @import 'assets/styles/dependencies';
 
+code,
+pre,
 .wrapper {
-  background: $color-background-strong-inverse;
-  color: $color-foreground-strong-inverse;
+  font-family: $unquote-font-family-code !important;
+}
 
-  &,
+code,
+pre {
+  font-size: 1em;
+}
+
+.wrapper {
+  background: $bg-strong-inverse;
+  color: $fg-strong-inverse;
+
   pre,
   textarea {
-    font-family: $unquote-font-family-code !important;
-  }
-
-  pre,
-  textarea {
-    padding: $spacing-vertical-small $spacing-horizontal-medium !important;
+    padding: $spacing-sm $spacing-md !important;
     background: transparent !important;
+    font-family: inherit !important;
   }
 
   textarea:focus {
-    outline-color: $color-accent-primary-strong-inverse;
+    outline-color: $accent-default;
     outline-offset: -$border-width-thickline;
   }
 }

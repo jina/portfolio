@@ -1,0 +1,21 @@
+imports:
+  - ./aliases/color.yml
+
+global:
+  category: background-color
+  type: color
+
+props:
+  bg_weak:
+    value: '{!gray_400}'
+  bg_default:
+    value: '{!gray_200}'
+  bg_strong:
+    value: '{!white}'
+
+  bg_weak_inverse:
+    value: '{!gray_600}'
+  bg_inverse:
+    value: '{!gray_800}'
+  bg_strong_inverse:
+    value: '{!black}'

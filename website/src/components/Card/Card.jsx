@@ -1,42 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+
 import { Heading } from '../Heading';
 
-const Card = ({
-  element,
-  className,
-  children,
-  heading,
-  headingElement,
-  ...rest
-}) => {
-  const Element = element;
-  const classes = classNames(`space-y-3`, className);
+import styles from './Card.module.scss';
+import spacingStyles from '../../layout/Spacing/Spacing.module.scss';
+
+import { List, Item } from './components';
+
+const Card = ({ className, children, heading, ...rest }) => {
+  const classes = classNames(styles.wrapper, spacingStyles.y_sm, className);
 
   return (
-    <Element className={classes} {...rest}>
-      {heading && (
-        <Heading.Label element={headingElement}>{heading}</Heading.Label>
-      )}
+    <div className={classes} {...rest}>
+      {heading && <Heading.Label>{heading}</Heading.Label>}
 
       {children}
-    </Element>
+    </div>
   );
 };
 
+Card.List = List;
+Card.Item = Item;
+
 Card.propTypes = {
-  element: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.node,
   heading: PropTypes.string,
-  headingElement: PropTypes.string,
 };
 
 Card.defaultProps = {
-  element: 'div',
   heading: '',
-  headingElement: 'h2',
   className: '',
 };
 

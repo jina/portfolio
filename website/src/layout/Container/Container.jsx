@@ -2,26 +2,34 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Container = ({ element, className, children, ...rest }) => {
-  const Element = element;
-  const classes = classNames(`mx-auto w-full max-w-screen-xl`, className);
+import styles from './Container.module.scss';
+
+const Container = ({ mw, logo, className, children, ...rest }) => {
+  const classes = classNames(
+    styles.wrapper,
+    mw && styles[mw],
+    logo && styles.logo,
+    className,
+  );
 
   return (
-    <Element className={classes} {...rest}>
+    <div className={classes} {...rest}>
       {children}
-    </Element>
+    </div>
   );
 };
 
 Container.propTypes = {
-  element: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+  mw: PropTypes.oneOf(['', 'xs', 'md', 'xl', 'xxxl']),
+  logo: PropTypes.bool,
 };
 
 Container.defaultProps = {
-  element: 'div',
   className: '',
+  mw: '',
+  logo: false,
 };
 
 export { Container };

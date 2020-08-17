@@ -1,7 +1,20 @@
 imports:
-  - './global-only.yml'
-  - './components-only.yml'
+  - ./accent.yml
+  - ./bg.yml
+  - ./bp.yml
+  - ./fg.yml
+  - ./ls.yml
+
+  - ./spacing.yml
+  - ./sizing.yml
+
+  - ./font-size.yml
+  - ./font-family.yml
+
+  - ./borders.yml
+
+  - ./z-indexes.yml
 
 global:
+  category: global
   type: all
-  category: all

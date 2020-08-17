@@ -1,0 +1,21 @@
+imports:
+  - ./aliases/color.yml
+
+global:
+  category: border-color
+  type: color
+
+props:
+  accent_weak:
+    value: '{!gray_400}'
+  accent_default:
+    value: '{!gray_500}'
+  accent_strong:
+    value: '{!gray_600}'
+
+  accent_weak_inverse:
+    value: '{!gray_600}'
+  accent_inverse:
+    value: '{!gray_500}'
+  accent_strong_inverse:
+    value: '{!gray_400}'

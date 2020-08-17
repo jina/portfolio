@@ -2,29 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Content = ({ element, className, children, ...rest }) => {
-  const Element = element;
-  const classes = classNames(
-    `lg:flex-1 py-6 space-y-6 px-4 md:px-8 w-full`,
-    className,
-  );
+import styles from '../../HolyGrail.module.scss';
+
+const Content = ({ className, children, self, ...rest }) => {
+  const classes = classNames(styles.content, self && styles[self], className);
 
   return (
-    <Element className={classes} {...rest}>
+    <div className={classes} {...rest}>
       {children}
-    </Element>
+    </div>
   );
 };
 
 Content.propTypes = {
-  element: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+  self: PropTypes.oneOf(['', 'auto', 'start', 'end', 'center', 'stretch']),
 };
 
 Content.defaultProps = {
-  element: 'div',
   className: '',
+  self: '',
 };
 
 export { Content };

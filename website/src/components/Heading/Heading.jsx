@@ -5,32 +5,26 @@ import { Link } from 'gatsby';
 
 import { Label, Small, Title } from './components';
 
-const Heading = ({ level, element, className, children, to, ...rest }) => {
-  const Element = element || `h${level}`;
-  const classes = classNames(
-    `italic text-2xl leading-tight font-serif tracking-tight`,
-    className,
-  );
+import styles from './Heading.module.scss';
+
+const Heading = ({ className, children, to, ...rest }) => {
+  const classes = classNames(styles.wrapper, className);
 
   return (
-    <Element className={classes} {...rest}>
+    <h2 className={classes} {...rest}>
       {to !== '' ? <Link to={to}>{children}</Link> : children}
-    </Element>
+    </h2>
   );
 };
 
 Heading.propTypes = {
-  level: PropTypes.oneOf([2, 3, 4, 5, 6]),
-  element: PropTypes.string,
   className: PropTypes.string,
   to: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Heading.defaultProps = {
-  element: '',
   className: '',
-  level: 2,
   to: '',
 };
 

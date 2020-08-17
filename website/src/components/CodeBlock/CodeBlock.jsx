@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { mdx } from '@mdx-js/react';
+
 import styles from './CodeBlock.module.scss';
 
 const CodeBlock = ({ children, className, live, render }) => {
@@ -60,7 +61,7 @@ const CodeBlock = ({ children, className, live, render }) => {
 };
 
 CodeBlock.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   className: PropTypes.string,
   live: PropTypes.bool,
   render: PropTypes.bool,

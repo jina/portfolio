@@ -3,25 +3,20 @@ import PropTypes from 'prop-types';
 
 import { Heading } from '../../../../components/Heading';
 
-const Item = ({
-  key,
-  heading,
-  location,
-  dates,
-  description,
-  children,
-  ...rest
-}) => {
+import styles from '../../ResumeBlock.module.scss';
+import spacingStyles from '../../../../layout/Spacing/Spacing.module.scss';
+
+const Item = ({ heading, location, dates, description, children, ...rest }) => {
   return (
-    <li key={key} className="space-y-3" {...rest}>
+    <li {...rest} className={spacingStyles.y_sm}>
       <div>
         <Heading.Small dangerouslySetInnerHTML={{ __html: heading }} />
 
-        {location && <p>{location}</p>}
+        {location && <p dangerouslySetInnerHTML={{ __html: location }} />}
 
         {dates && (
           <p
-            className="text-gray-700"
+            className={styles.dates}
             dangerouslySetInnerHTML={{ __html: dates }}
           />
         )}
@@ -31,7 +26,7 @@ const Item = ({
 
       {description && (
         <div
-          className="pl-8 space-y-1 text-gray-700"
+          className={`${styles.description} ${spacingStyles.y_base}`}
           dangerouslySetInnerHTML={{ __html: description }}
         />
       )}
@@ -40,16 +35,14 @@ const Item = ({
 };
 
 Item.propTypes = {
-  key: PropTypes.string,
   heading: PropTypes.string,
   location: PropTypes.string,
   dates: PropTypes.string,
   description: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Item.defaultProps = {
-  key: '',
   heading: '',
   location: '',
   dates: '',

@@ -18,18 +18,18 @@ addParameters({
     {
       name: 'Follow user preference',
       class: '',
-      color: tokens.colorBackgroundWeak,
+      color: tokens.bgWeak,
       default: true,
     },
     {
       name: 'Light mode',
       class: 'light-mode',
-      color: tokens.colorBackgroundStrong,
+      color: tokens.bgStrong,
     },
     {
       name: 'Dark mode',
       class: 'dark-mode',
-      color: tokens.colorBackgroundStrongInverse,
+      color: tokens.bgStrongInverse,
     },
   ],
   dependencies: {

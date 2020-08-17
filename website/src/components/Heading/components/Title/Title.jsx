@@ -5,11 +5,7 @@ import classNames from 'classnames';
 import styles from '../../Heading.module.scss';
 
 const Title = ({ className, children, ...rest }) => {
-  const classes = classNames(
-    styles.title,
-    `italic text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none font-serif uppercase tracking-tight`,
-    className,
-  );
+  const classes = classNames(styles.title, className);
 
   return (
     <h1 className={classes} {...rest}>
@@ -20,7 +16,7 @@ const Title = ({ className, children, ...rest }) => {
 
 Title.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Title.defaultProps = {

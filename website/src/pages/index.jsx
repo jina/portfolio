@@ -5,9 +5,16 @@ import { Heading } from '../components/Heading';
 import { Image } from '../components/Image';
 import { LinkButton } from '../components/LinkButton';
 
-import { MediaObject } from '../layout/MediaObject';
+import { Circle } from '../layout/Circle';
+import { Container } from '../layout/Container';
+import { HolyGrail } from '../layout/HolyGrail';
 
 import DefaultLayout from '../site/DefaultLayout';
+import { Logo } from '../site/Logo';
+
+import styles from './index.module.scss';
+import flushStyles from '../layout/Flush/Flush.module.scss';
+import spacingStyles from '../layout/Spacing/Spacing.module.scss';
 
 import AboutData from '../../content/about.yml';
 import WorkData from '../../content/work.yml';
@@ -15,18 +22,20 @@ import WorkData from '../../content/work.yml';
 const IndexPage = () => {
   return (
     <DefaultLayout
-      pageTitle="Design Systems, Communities, &amp; Experiences"
-      pageDescription="Looking for a community-minded senior design lead who likes to code? Let&rsquo;s talk!"
-      heroSidebarLeft={
-        <div className="-my-6 -mx-4 md:-mx-8">
-          <div className="mx-auto max-w-sm">
-            <Image.PortraitDrawing />
-          </div>
+      pageTitle="Design Systems, Communities, &amp;&nbsp;Experiences"
+      pageDescription="Looking for a community-minded senior design lead who likes to&nbsp;code? Let&rsquo;s&nbsp;talk!"
+      heroSidebarBefore={
+        <div className={`${flushStyles.x_xl} ${flushStyles.y_lg}`}>
+          <Container mw="xs">
+            <Circle lg_is_not>
+              <Image.PortraitDrawing />
+            </Circle>
+          </Container>
         </div>
       }
-      sidebarLeft={
+      sidebarAfter={
         <Card heading="Connect">
-          <ul className="-mx-4">
+          <Card.List>
             {AboutData.connect.map((data, index) => {
               return (
                 <li key={`connect_item_${index}`}>
@@ -36,84 +45,85 @@ const IndexPage = () => {
                 </li>
               );
             })}
-          </ul>
+          </Card.List>
         </Card>
       }
+      sidebarAfterOrder="first"
     >
-      <ul className="-mx-4 space-y-6">
-        {' '}
+      <ul className={`${flushStyles.x_xl} ${flushStyles.y_xxl}`}>
         {WorkData.filter((data) => data.draft !== true).map((data, index) => {
           const evenOdd = !(index !== -1 && index % 2 === 0);
           const LogoElement = Image[data.logo];
           const ImageElement = Image[data.image];
           return (
-            <MediaObject
-              element="li"
-              className="space-y-3 lg:space-y-0 lg:space-x-8"
-              key={`project_${index}`}
-            >
-              <MediaObject.Body reverse={evenOdd} className="self-center">
-                <div className="mx-auto w-24 sm:w-48">
-                  <LogoElement />
-                </div>
-              </MediaObject.Body>
+            <li key={`project_${index}`}>
+              <HolyGrail>
+                <HolyGrail.Body>
+                  <HolyGrail.Sidebar
+                    wide
+                    self="center"
+                    order={evenOdd === true ? `last` : `first`}
+                  >
+                    <Logo>
+                      <LogoElement />
+                    </Logo>
+                  </HolyGrail.Sidebar>
 
-              <MediaObject.Figure
-                className="lg:w-3/4 xl:w-3/5"
-                spacing={4}
-                reverse={evenOdd}
-              >
-                <LinkButton
-                  full
-                  to={data.path}
-                  interactiveBackground="black"
-                  className="space-y-6"
-                >
-                  <ImageElement />
+                  <HolyGrail.Content>
+                    <div className={`${flushStyles.x_md} ${flushStyles.y_sm}`}>
+                      <LinkButton bhover full to={data.path}>
+                        <div className={spacingStyles.y_lg}>
+                          <Container mw="xl">
+                            <ImageElement />
+                          </Container>
 
-                  <div className="space-y-6">
-                    <div className="space-y-3">
-                      <Heading>
-                        {data.htmlTitle !== undefined ? (
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: data.htmlTitle,
-                            }}
-                          />
-                        ) : (
-                          data.title
-                        )}
-                      </Heading>
+                          <div className={spacingStyles.y_sm}>
+                            <div className={spacingStyles.y_base}>
+                              <Heading>
+                                {data.htmlTitle !== undefined ? (
+                                  <span
+                                    dangerouslySetInnerHTML={{
+                                      __html: data.htmlTitle,
+                                    }}
+                                  />
+                                ) : (
+                                  data.title
+                                )}
+                              </Heading>
 
-                      <div
-                        dangerouslySetInnerHTML={{ __html: data.description }}
-                      />
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: data.description,
+                                }}
+                              />
+                            </div>
+
+                            <LinkButton.Subtle>
+                              <ul>
+                                {data.roles.map((role, index) => {
+                                  return (
+                                    <li
+                                      className={styles.role}
+                                      key={`role_${index}`}
+                                    >
+                                      <span
+                                        dangerouslySetInnerHTML={{
+                                          __html: role,
+                                        }}
+                                      />
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            </LinkButton.Subtle>
+                          </div>
+                        </div>
+                      </LinkButton>
                     </div>
-
-                    <dl className="text-gray-700 parent:hover:text-gray-600">
-                      <dt className="inline mr-2">Roles:</dt>
-
-                      <dd className="inline">
-                        <ul className="inline">
-                          {data.roles.map((role, index) => {
-                            return (
-                              <li
-                                className="inline-block mr-2"
-                                key={`role_${index}`}
-                              >
-                                <span
-                                  dangerouslySetInnerHTML={{ __html: role }}
-                                />
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </dd>
-                    </dl>
-                  </div>
-                </LinkButton>
-              </MediaObject.Figure>
-            </MediaObject>
+                  </HolyGrail.Content>
+                </HolyGrail.Body>
+              </HolyGrail>
+            </li>
           );
         })}
       </ul>

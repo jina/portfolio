@@ -1,51 +1,51 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+
 import { Link } from 'gatsby';
+
+import { Subtle } from './components';
+
+import styles from './LinkButton.module.scss';
 
 const LinkButton = ({
   element,
   className,
   children,
   primary,
-  secondary,
-  interactiveBackground,
   caps,
   href,
   to,
   full,
   bold,
+  center,
+  bhover,
   ...rest
 }) => {
   const Element = element;
-  const variantClasses =
-    primary !== true
-      ? secondary !== true
-        ? `${
-            interactiveBackground !== ''
-              ? `hover:bg-${interactiveBackground} focus:bg-${interactiveBackground} hover:text-white focus:text-white`
-              : `hover:bg-gray-300 focus:bg-gray-300`
-          }`
-        : `bg-gray-200 hover:bg-gray-400 focus:bg-gray-400 shadow-xs`
-      : `hover:bg-gray-900 focus:bg-gray-900 bg-black text-white`;
 
-  const sizeClasses = full !== true ? `md:inline-flex` : `w-full`;
+  const sizeClasses = full === true ? styles.full : styles.not_full;
 
   const baseClasses = classNames(
-    `block py-3 px-4`,
-    bold && `font-semibold`,
-    caps && `uppercase tracking-wider`,
+    styles.wrapper,
+    bold && styles.bold,
+    caps && styles.caps,
+    center && styles.center,
     sizeClasses,
     className,
   );
 
-  const linkClasses = classNames(baseClasses, variantClasses);
+  const linkClasses = classNames(
+    baseClasses,
+    primary && styles.primary,
+    bhover && styles.bhover,
+  );
 
   if (to) {
     return (
       <Link
         className={linkClasses}
-        activeClassName="bg-black hover:bg-black focus:bg-black text-white cursor-default pointer-events-none"
+        activeClassName={styles.active}
         to={to}
         {...rest}
       >
@@ -75,17 +75,20 @@ const LinkButton = ({
   );
 };
 
+LinkButton.Subtle = Subtle;
+
 LinkButton.propTypes = {
   element: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   to: PropTypes.string,
   href: PropTypes.string,
   primary: PropTypes.bool,
-  secondary: PropTypes.bool,
-  interactiveBackground: PropTypes.string,
   full: PropTypes.bool,
+  center: PropTypes.bool,
   bold: PropTypes.bool,
+  bhover: PropTypes.bool,
+  caps: PropTypes.bool,
 };
 
 LinkButton.defaultProps = {
@@ -94,10 +97,11 @@ LinkButton.defaultProps = {
   to: '',
   href: '',
   primary: false,
-  secondary: false,
-  interactiveBackground: '',
+  center: false,
   full: false,
   bold: false,
+  bhover: false,
+  caps: false,
 };
 
 export { LinkButton };

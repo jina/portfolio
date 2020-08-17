@@ -3,11 +3,9 @@
   next: '/clarity/'
   prev: '/apple-online-store/'
   description: >
-    <p>
-      Design systems and design operations for Amazon Honeycode, a new No-code
-      app builder product from Amazon (named &ldquo;Beehive&rdquo; prior to the
-      public launch).
-    </p>
+    Design systems and design operations for Amazon Honeycode, a&nbsp;new
+    No-code app builder product from Amazon (named&nbsp;&ldquo;Beehive&rdquo;
+    prior to the public&nbsp;launch).
   image: BeehiveDesignSystemWebsite
   cover: BeehiveDesignSystemIcons
   logo: BeehiveDesignSystem
@@ -20,7 +18,6 @@
           can build an app to achieve your goals with Amazon Honeycode. No
           programming required.
         </p>
-      image: BeehiveApp
       lists: []
     - heading:
         text: Story
@@ -44,6 +41,7 @@
           components and documentation for both the design and engineering
           organizations to use.
         </p>
+      image: BeehiveApp
       lists:
         - heading:
             text: Other Creative Credits
@@ -75,10 +73,8 @@
   next: /salesforce-lightning-design-system/
   prev: /beehive-design-system/
   description: >
-    <p>
-      Created the premiere design systems community conference. The event is now
-      on its fifth year.
-    </p>
+    Created the premiere design systems community&nbsp;conference. The event is
+    now on its fifth&nbsp;year.
   image: ClarityTatianaAndBrad
   cover: ClarityTatianaAndBrad
   logo: Clarity
@@ -97,7 +93,6 @@
           <strong>empathy</strong>, <strong>technology</strong>,
           <strong>creativity</strong>, and <strong>collaboration</strong>.
         </p>
-      image: ClarityWebsite
       lists: []
     - heading:
         text: Story
@@ -111,8 +106,9 @@
         </p>
         <p>
           The inspiration for the design aesthetic is diamonds (because
-          &ldquo;clarity&dquo;).
+          &ldquo;clarity&rdquo;).
         </p>
+      image: ClarityWebsite
       lists: []
     - heading:
         text: '2016'
@@ -335,10 +331,8 @@
   next: /sass/
   prev: /clarity/
   description: >
-    <p>
-      Founding Lead Designer of one of the most popular enterprise design
-      systems.
-    </p>
+    Founding Lead Designer of one of the most popular enterprise
+    design&nbsp;systems.
   image: SalesforceLightningDesignSystemWebsite
   cover: SalesforceLightningDesignSystemIllustration
   logo: SalesforceLightningDesignSystem
@@ -368,7 +362,6 @@
           Design System">SLDS</abbr> with Salesforce technologies including
           Lightning Web Components, Aura, and Visualforce.
         </p>
-      image: SalesforceLightningDesignSystemSystem
       lists: []
     - heading:
         text: Story
@@ -378,6 +371,7 @@
           years at Salesforce, I had the opportunity to impact how one of the
           largest enterprise technology companies ship product design.
         </p>
+      image: SalesforceLightningDesignSystemSystem
       lists: []
     - heading:
         text: Early Years
@@ -469,12 +463,11 @@
   next: /apple-online-store/
   prev: /salesforce-lightning-design-system/
   description: >
-    <p>
-      Sass core team member, leading the brand, website design, frontend <abbr
-      title="User Interface">UI</abbr> development, and content direction.
-    </p>
+    Sass core team member, leading&nbsp;the brand, website&nbsp;design,
+    frontend&nbsp;<abbr title="User Interface">UI</abbr> development,
+    and&nbsp;content&nbsp;direction.
   image: SassWebsite
-  cover: SassGlasses
+  cover: SassWebsite
   logo: Sass
   content:
     - heading:
@@ -487,7 +480,6 @@
           Style Sheets">CSS</abbr>. You can use it with any available <abbr
           title="Cascading Style Sheets">CSS</abbr> libraries.
         </p>
-      image: SassStyleTile
       lists: []
     - heading:
         text: Story
@@ -500,8 +492,14 @@
           might be why designers were using a competitor instead. So I
           volunteered to lead the redesign of the brand and website.
         </p>
-      image: Sass
+      image: SassGlasses
       lists: []
+    - heading:
+        text: Branding
+        variant: small
+      description: >
+        <p>Color and typography</p>
+      image: SassStyleTile
   roles:
     - Branding
     - Creative Director
@@ -519,11 +517,9 @@
   next: /beehive-design-system/
   prev: /sass/
   description: >
-    <p>
-      Led the <abbr title="Cascading Style Sheets">CSS</abbr> architecture for
-      Apple&rsquo;s online shopping experience. Also produced/documented the
-      visual language.
-    </p>
+    Led the <abbr title="Cascading Style Sheets">CSS</abbr> architecture for
+    Apple&rsquo;s online shopping experience. Also produced/documented the
+    visual language.
   image: AppleOnlineStoreWebsite
   cover: AppleOnlineStoreWebsite
   logo: AppleOnlineStore
@@ -536,7 +532,6 @@
           The separate website no longer exists as Apple has merged it into the
           marketing website.
         </p>
-      image: AppleOnlineStoreSignIn
       lists: []
     - heading:
         text: Story
@@ -545,8 +540,12 @@
           I joined Apple to work on the Online Store right before the launch of
           the first iPhone. I started as a Frontend UI Engineer.
         </p>
-      image: AppleOnlineStoreCart
+      image: AppleOnlineStoreSignIn
       lists: []
+    - heading:
+        text: Cart Experience
+        variant: small
+      image: AppleOnlineStoreCart
   roles:
     - Design Systems Advocate
     - Frontend Developer

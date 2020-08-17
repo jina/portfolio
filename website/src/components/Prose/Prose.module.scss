@@ -1,0 +1,99 @@
+@import '../../assets/styles/dependencies';
+
+.wrapper {
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+  }
+
+  h2 {
+    @include h2;
+  }
+
+  h3 {
+    @include h3;
+  }
+
+  h4 {
+    @include h4;
+  }
+
+  p,
+  li,
+  dd {
+    max-width: 50em;
+  }
+
+  ul > li + li,
+  ol > li + li,
+  dl > div + div,
+  dl > dt + dd,
+  dl > dd + dt,
+  dl > dd + dd,
+  dl > div > dt + dd,
+  dl > div > dd + dt,
+  dl > div > dd + dd {
+    margin-top: 0.75rem;
+  }
+
+  ol,
+  ul {
+    > li {
+      position: relative;
+      padding-left: 2rem;
+
+      &::before {
+        position: absolute;
+      }
+    }
+  }
+
+  ol > li::before,
+  :global(.lead) {
+    color: $fg-weak;
+  }
+
+  ol {
+    counter-reset: list-counter;
+
+    > li {
+      counter-increment: list-counter;
+
+      &::before {
+        left: 0;
+        font-weight: 400;
+        content: counter(list-counter) '.';
+      }
+    }
+  }
+
+  ul > li::before {
+    top: 9px;
+    left: 12px;
+    content: '';
+    background: $accent-default;
+    border-radius: 50%;
+    width: $sizing-base;
+    height: $sizing-base;
+  }
+
+  dd {
+    margin-left: $spacing-xl;
+  }
+
+  hr {
+    box-sizing: content-box;
+    border-color: $accent-default;
+    border-top-width: 1px;
+    height: 0;
+    overflow: visible;
+  }
+
+  :global(.lead) {
+    font-size: 20px;
+
+    @include mq($md) {
+      font-size: $font-size-lg;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+imports:
+  - ./aliases/metrics.yml
+
+global:
+  category: spacing
+  type: size
+
+props:
+  spacing_base:
+    value: '{!base}'
+
+  spacing_xs:
+    value: '{!xs}'
+  spacing_sm:
+    value: '{!sm}'
+  spacing_md:
+    value: '{!md}'
+  spacing_lg:
+    value: '{!lg}'
+  spacing_xl:
+    value: '{!xl}'
+  spacing_xxl:
+    value: '{!xxl}'
+  spacing_xxxl:
+    value: '{!xxxl}'
+  spacing_xxxxl:
+    value: '{!xxxxl}'
+
+  spacing_none:
+    value: 0
+  spacing_auto:
+    value: auto

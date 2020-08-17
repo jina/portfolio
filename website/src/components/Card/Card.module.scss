@@ -1,0 +1,43 @@
+@import '../../assets/styles/dependencies';
+
+@include mq($sm) {
+  .list {
+    display: grid;
+    column-gap: $spacing-md;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .block {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@include mq($md) {
+  .block {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@include mq($lg) {
+  .list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .divide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .columns {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@include mq($xl) {
+  .columns {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}

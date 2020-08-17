@@ -2,28 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Header = ({ element, className, children, ...rest }) => {
-  const Element = element;
-  const classes = classNames(
-    `flex-none py-6 space-y-6 px-4 md:px-8`,
-    className,
-  );
+import styles from '../../HolyGrail.module.scss';
+
+const Header = ({ className, children, ...rest }) => {
+  const classes = classNames(styles.header, className);
 
   return (
-    <Element className={classes} {...rest}>
+    <div className={classes} {...rest}>
       {children}
-    </Element>
+    </div>
   );
 };
 
 Header.propTypes = {
-  element: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Header.defaultProps = {
-  element: 'header',
   className: '',
 };
 

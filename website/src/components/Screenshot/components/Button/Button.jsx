@@ -1,7 +1,9 @@
 import React from 'react';
 
+import styles from '../../Screenshot.module.scss';
+
 const Button = () => {
-  return <span className="inline-flex w-2 h-2 rounded-full bg-gray-600" />;
+  return <span className={styles.button} />;
 };
 
 export { Button };

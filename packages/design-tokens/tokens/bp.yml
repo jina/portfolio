@@ -1,0 +1,16 @@
+imports:
+  - ./aliases/metrics.yml
+
+global:
+  category: breakpoints
+  type: size
+
+props:
+  sm:
+    value: '{!c_md}'
+  md:
+    value: '{!c_lg}'
+  lg:
+    value: '{!c_xxl}'
+  xl:
+    value: '{!c_xxxl}'

@@ -1,0 +1,22 @@
+imports:
+  - ./aliases/metrics.yml
+
+global:
+  category: font-size
+  type: size
+
+props:
+  font_size_sm:
+    value: '{!sm}'
+  font_size_md:
+    value: '{!md}'
+  font_size_lg:
+    value: '{!lg}'
+  font_size_xl:
+    value: '{!xl}'
+  font_size_xxl:
+    value: '{!xxl}'
+  font_size_xxxl:
+    value: '{!xxxl}'
+  font_size_xxxxl:
+    value: '{!xxxxl}'

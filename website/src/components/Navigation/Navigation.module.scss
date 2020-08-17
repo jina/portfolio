@@ -1,0 +1,11 @@
+@import '../../assets/styles/dependencies';
+
+.wrapper {
+  @include mq($sm) {
+    display: flex;
+  }
+
+  @include mq($md) {
+    justify-content: flex-end;
+  }
+}

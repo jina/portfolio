@@ -1,0 +1,23 @@
+@import '../../assets/styles/dependencies';
+
+@each $space-token, $space-value in $space {
+  .x_#{$space-token} {
+    margin: {
+      right: -$space-value;
+      left: -$space-value;
+    }
+  }
+}
+
+@each $space-token, $space-value in $space {
+  .y_#{$space-token} {
+    margin: {
+      top: -$space-value;
+      bottom: -$space-value;
+    }
+  }
+}
+
+.t_lg {
+  margin-top: -$spacing-lg;
+}

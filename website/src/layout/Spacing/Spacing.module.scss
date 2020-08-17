@@ -1,0 +1,15 @@
+@import '../../assets/styles/dependencies';
+
+@each $space-token, $space-value in $space {
+  @include breakpoints(x_#{$space-token}) {
+    > * + * {
+      margin-left: $space-value;
+    }
+  }
+
+  @include breakpoints(y_#{$space-token}) {
+    > * + * {
+      margin-top: $space-value;
+    }
+  }
+}

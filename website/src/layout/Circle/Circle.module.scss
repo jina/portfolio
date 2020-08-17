@@ -1,0 +1,32 @@
+@import '../../assets/styles/dependencies';
+
+@mixin circle {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+@mixin not-circle {
+  border-radius: 0;
+  overflow: visible;
+}
+
+.wrapper,
+.is {
+  @include circle;
+}
+
+.is_not {
+  @include not-circle;
+}
+
+@each $breakpoint-token, $breakpoint-value in $mq-breakpoints {
+  @include mq($breakpoint-value) {
+    .#{$breakpoint-token}_is {
+      @include circle;
+    }
+
+    .#{$breakpoint-token}_is_not {
+      @include not-circle;
+    }
+  }
+}

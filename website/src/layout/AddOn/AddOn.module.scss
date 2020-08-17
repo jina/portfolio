@@ -1,0 +1,12 @@
+@import '../../assets/styles/dependencies';
+
+@include mq($md) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .body {
+    flex: 1;
+  }
+}

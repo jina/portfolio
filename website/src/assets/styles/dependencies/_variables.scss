@@ -1,93 +1,23 @@
 @import '~@dtcg/design-tokens/dist';
 
-$dark-mode: true !default;
-
-$flex-alignments: flex-start, center, flex-end, baseline, stretch;
-
-$sides: top, right, bottom, left;
-
-$vertical-sides: top, bottom;
-
-$horizontal-sides: right, left;
-
-$spacing-horizontals: (
-  base: $spacing-base,
-  small: $spacing-horizontal-small,
-  medium: $spacing-horizontal-medium,
-  large: $spacing-horizontal-large,
-  none: $spacing-none,
-  auto: $spacing-auto,
-);
-
-$spacing-verticals: (
-  base: $spacing-base,
-  small: $spacing-vertical-small,
-  medium: $spacing-vertical-medium,
-  large: $spacing-vertical-large,
-  none: $spacing-none,
-  auto: $spacing-auto,
-);
-
-$spacing: (
-  base: $spacing-base,
-  horizontal-small: $spacing-horizontal-small,
-  vertical-small: $spacing-vertical-small,
-  horizontal-medium: $spacing-horizontal-medium,
-  vertical-medium: $spacing-vertical-medium,
-  horizontal-large: $spacing-horizontal-large,
-  vertical-large: $spacing-vertical-large,
-  none: $spacing-none,
-  auto: $spacing-auto,
-);
-
-$sizing-horizontals: (
-  full: $sizing-full,
-  ui-small: $sizing-ui-small,
-  ui-medium: $sizing-ui-medium,
-  ui-large: $sizing-ui-large,
-  container-xx-small: $sizing-container-xx-small,
-  container-x-small: $sizing-container-x-small,
-  container-small: $sizing-container-small,
-  container-medium: $sizing-container-medium,
-  container-large: $sizing-container-large,
-  container-x-large: $sizing-container-x-large,
-  container-xx-large: $sizing-container-xx-large,
-  none: $sizing-none,
-  auto: $sizing-auto,
-);
-
-$sizing-verticals: (
-  full: $sizing-full,
-  ui-small: $sizing-ui-small,
-  ui-medium: $sizing-ui-medium,
-  ui-large: $sizing-ui-large,
-  none: $sizing-none,
-  auto: $sizing-auto,
-);
-
-$sizing: (
-  full: $sizing-full,
-  ui-small: $sizing-ui-small,
-  ui-medium: $sizing-ui-medium,
-  ui-large: $sizing-ui-large,
-  container-xx-small: $sizing-container-xx-small,
-  container-x-small: $sizing-container-x-small,
-  container-small: $sizing-container-small,
-  container-medium: $sizing-container-medium,
-  container-large: $sizing-container-large,
-  container-x-large: $sizing-container-x-large,
-  container-xx-large: $sizing-container-xx-large,
-  none: $sizing-none,
-  auto: $sizing-auto,
-);
-
 $mq-breakpoints: (
-  small: $sizing-container-small,
-  medium: $sizing-container-medium,
-  large: $sizing-container-large,
-  x-large: $sizing-container-x-large,
-  xx-large: $sizing-container-xx-large,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+);
+
+$space: (
+  base: $spacing-base,
+  xs: $spacing-xs,
+  sm: $spacing-sm,
+  md: $spacing-md,
+  lg: $spacing-lg,
+  xl: $spacing-xl,
+  xxl: $spacing-xxl,
+  none: 0,
 );
 
 $unquote-font-family-body: unquote($font-family-body);
+$unquote-font-family-display: unquote($font-family-display);
 $unquote-font-family-code: unquote($font-family-code);

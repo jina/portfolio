@@ -1,0 +1,16 @@
+@import '../../assets/styles/dependencies';
+
+.dates,
+.description,
+.list {
+  color: $fg-weak;
+}
+
+.description,
+.list {
+  padding-left: $spacing-xl;
+}
+
+.role_label {
+  font-weight: 600;
+}

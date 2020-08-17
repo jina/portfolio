@@ -2,28 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-// import displayStyles from '../../../../utilities/Display/Display.module.scss';
+import styles from '../../HolyGrail.module.scss';
 
-const Body = ({ element, className, children, ...rest }) => {
-  const Element = element;
-  /* displayStyles.flex, */
-  const classes = classNames(`flex flex-col lg:flex-row lg:flex-1`, className);
+const Body = ({ className, children, ...rest }) => {
+  const classes = classNames(styles.body, className);
 
   return (
-    <Element className={classes} {...rest}>
+    <div className={classes} {...rest}>
       {children}
-    </Element>
+    </div>
   );
 };
 
 Body.propTypes = {
-  element: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Body.defaultProps = {
-  element: 'div',
   className: '',
 };
 

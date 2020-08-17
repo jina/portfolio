@@ -8,9 +8,5 @@ header:
     url: /cv/
 
 footer:
-  - title: GitHub
-    url: https://github.com/jina
-  - title: LinkedIn
-    url: https://www.linkedin.com/in/sushiandrobots/
-  - title: Twitter
-    url: https://twitter.com/jina
+  - title: Book an Office Hour
+    url: https://calend.ly/designsystems/advisory-meeting-with-jina

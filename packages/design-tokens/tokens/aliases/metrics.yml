@@ -1,0 +1,146 @@
+aliases:
+  full:
+    value: 100%
+
+  11_of_12:
+    value: 91.666666666666667%
+  10_of_11:
+    value: 90.909090909090909%
+  9_of_10:
+    value: 90%
+  8_of_9:
+    value: 88.888888888888889%
+  7_of_8:
+    value: 87.5%
+  6_of_7:
+    value: 85.714285714285714%
+  5_of_6:
+    value: 83.333333333333333%
+  9_of_11:
+    value: 81.818181818181818%
+  4_of_5:
+    value: 80%
+  7_of_9:
+    value: 77.777777777777778%
+  3_of_4:
+    value: 75%
+  8_of_11:
+    value: 72.727272727272727%
+  5_of_7:
+    value: 71.428571428571429%
+  7_of_10:
+    value: 70%
+  2_of_3:
+    value: 66.666666666666667%
+  7_of_11:
+    value: 63.636363636363636%
+  5_of_8:
+    value: 62.5%
+  3_of_5:
+    value: 60%
+  7_of_12:
+    value: 58.333333333333333%
+  4_of_7:
+    value: 57.142857142857143%
+  5_of_9:
+    value: 55.555555555555556%
+  6_of_11:
+    value: 54.545454545454545%
+  1_of_2:
+    value: 50%
+  5_of_11:
+    value: 45.454545454545455%
+  4_of_9:
+    value: 44.444444444444444%
+  3_of_7:
+    value: 42.857142857142857%
+  5_of_12:
+    value: 41.666666666666667%
+  2_of_5:
+    value: 40%
+  3_of_8:
+    value: 37.5%
+  4_of_11:
+    value: 36.363636363636364%
+  1_of_3:
+    value: 33.333333333333333%
+  3_of_10:
+    value: 30%
+  2_of_7:
+    value: 28.571428571428571%
+  3_of_11:
+    value: 27.272727272727273%
+  1_of_4:
+    value: 25%
+  2_of_9:
+    value: 22.222222222222222%
+  1_of_5:
+    value: 20%
+  2_of_11:
+    value: 18.181818181818182%
+  1_of_6:
+    value: 16.666666666666667%
+  1_of_7:
+    value: 14.285714285714286%
+  1_of_8:
+    value: 12.5%
+  1_of_9:
+    value: 11.111111111111111%
+  1_of_10:
+    value: 10%
+  1_of_11:
+    value: 9.090909090909091%
+  1_of_12:
+    value: 8.333333333333333%
+
+  base:
+    value: 4px
+  xs:
+    value: 8px
+  sm:
+    value: 12px
+  md:
+    value: 16px
+  lg:
+    value: 24px
+  xl:
+    value: 32px
+  xxl:
+    value: 48px
+  xxxl:
+    value: 64px
+  xxxxl:
+    value: 96px
+
+  #containers
+  c_xxxxxxs:
+    value: 40px
+  c_xxxxxs:
+    value: 80px
+  c_xxxxs:
+    value: 120px
+  c_xxxs:
+    value: 160px
+  c_xxs:
+    value: 240px
+  c_xs:
+    value: 320px
+  c_sm:
+    value: 480px
+  c_md:
+    value: 640px
+  c_lg:
+    value: 768px
+  c_xl:
+    value: 960px
+  c_xxl:
+    value: 1024px
+  c_xxxl:
+    value: 1280px
+  c_xxxxl:
+    value: 1920px
+
+  none:
+    value: 0
+  auto:
+    value: auto

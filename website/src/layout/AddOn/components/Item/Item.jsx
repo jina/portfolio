@@ -2,25 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Item = ({ element, className, children, ...rest }) => {
-  const Element = element;
-  const classes = classNames(className);
+import styles from '../../AddOn.module.scss';
+
+const Item = ({ className, children, ...rest }) => {
+  const classes = classNames(styles.item, className);
 
   return (
-    <Element className={classes} {...rest}>
+    <div className={classes} {...rest}>
       {children}
-    </Element>
+    </div>
   );
 };
 
 Item.propTypes = {
-  element: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Item.defaultProps = {
-  element: 'div',
   className: '',
 };
 

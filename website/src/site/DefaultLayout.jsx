@@ -4,17 +4,19 @@ import { MDXProvider } from '@mdx-js/react';
 import PropTypes from 'prop-types';
 
 import { CodeBlock } from '../components/CodeBlock';
-import { Hero } from '../components/Hero';
+import { Heading } from '../components/Heading';
 import { LinkButton } from '../components/LinkButton';
+import { Navigation } from '../components/Navigation';
 
 import { AddOn } from '../layout/AddOn';
 import { Container } from '../layout/Container';
-import { Frame } from '../layout/Frame';
 import { HolyGrail } from '../layout/HolyGrail';
-import { Horizontal } from '../layout/Horizontal';
-import { StickyFooter } from '../layout/StickyFooter';
 
 import { SEO } from './SEO';
+
+import styles from './DefaultLayout.module.scss';
+import flushStyles from '../layout/Flush/Flush.module.scss';
+import spacingStyles from '../layout/Spacing/Spacing.module.scss';
 
 import LayoutData from '../../content/layout.yml';
 
@@ -24,21 +26,51 @@ const components = {
 };
 
 const DefaultLayout = ({
-  pageTitle,
+  children,
+  footer,
+  footerSidebarAfter,
+  footerSidebarAfter2,
+  footerSidebarAfterAlign,
+  footerSidebarAfterAlign2,
+  footerSidebarAfterWide,
+  footerSidebarAfterWide2,
+  footerSidebarBefore,
+  footerSidebarBefore2,
+  footerSidebarBeforeAlign,
+  footerSidebarBeforeAlign2,
+  footerSidebarBeforeWide,
+  footerSidebarBeforeWide2,
+  header,
+  heroChildren,
+  heroSidebarAfter,
+  heroSidebarAfter2,
+  heroSidebarAfterAlign,
+  heroSidebarAfterAlign2,
+  heroSidebarAfterWide,
+  heroSidebarAfterWide2,
+  heroSidebarBefore,
+  heroSidebarBefore2,
+  heroSidebarBeforeAlign,
+  heroSidebarBeforeAlign2,
+  heroSidebarBeforeWide,
+  heroSidebarBeforeWide2,
   pageHTMLTitle,
   pageDescription,
-  children,
-  header,
-  sidebarLeft,
-  sidebarLeftWide,
-  sidebarRight,
-  footer,
-  heroElement,
-  heroSidebarLeft,
-  heroSidebarLeftWide,
-  heroSidebarRight,
-  heroChildren,
-  banner,
+  pageTitle,
+  pagination,
+  sidebarAfter,
+  sidebarAfter2,
+  sidebarAfterAlign,
+  sidebarAfterAlign2,
+  sidebarAfterOrder,
+  sidebarAfterWide,
+  sidebarAfterWide2,
+  sidebarBefore,
+  sidebarBefore2,
+  sidebarBeforeAlign,
+  sidebarBeforeAlign2,
+  sidebarBeforeWide,
+  sidebarBeforeWide2,
 }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -52,187 +84,356 @@ const DefaultLayout = ({
   `);
 
   return (
-    <Frame>
+    <div className={styles.wrapper}>
       <SEO title={pageTitle} description={pageDescription} />
 
-      <Frame.Body element={Container} className="tracking-wide text-black">
-        <StickyFooter>
-          <StickyFooter.Body>
-            <HolyGrail>
-              <HolyGrail.Header>
-                <AddOn spacing={4} align="center">
-                  <AddOn.Item role="banner">
-                    <div className="-mx-4">
-                      <LinkButton caps bold>
-                        {data.site.siteMetadata.title}
-                      </LinkButton>
-                    </div>
-                  </AddOn.Item>
+      <Container className={styles.body}>
+        <HolyGrail.Header className={styles.header}>
+          <AddOn>
+            <AddOn.Item role="banner">
+              <div className={flushStyles.x_md}>
+                <LinkButton caps bold>
+                  {data.site.siteMetadata.title}
+                </LinkButton>
+              </div>
+            </AddOn.Item>
 
-                  <AddOn.Body role="navigation" element="nav">
-                    <Horizontal
-                      spacing={2}
-                      justifyContent="end"
-                      className="-mx-4"
+            <AddOn.Body role="nav">
+              <Navigation>
+                {LayoutData.header.map((data, index) => {
+                  return (
+                    <Navigation.Item
+                      key={`header_link_${index}`}
+                      caps
+                      bold
+                      to={data.url}
                     >
-                      {LayoutData.header.map((data, index) => {
-                        return (
-                          <Horizontal.Item key={`header_link_${index}`}>
-                            <LinkButton caps bold to={data.url}>
-                              {data.htmlTitle !== undefined ? (
-                                <span
-                                  dangerouslySetInnerHTML={{
-                                    __html: data.htmlTitle,
-                                  }}
-                                />
-                              ) : (
-                                data.title
-                              )}
-                            </LinkButton>
-                          </Horizontal.Item>
-                        );
-                      })}
+                      {data.htmlTitle !== undefined ? (
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: data.htmlTitle,
+                          }}
+                        />
+                      ) : (
+                        data.title
+                      )}
+                    </Navigation.Item>
+                  );
+                })}
 
-                      <Horizontal.Item>
-                        <address className="not-italic">
-                          <LinkButton
-                            caps
-                            bold
-                            href="mailto:&#106;&#105;&#110;&#97;&#64;&#100;&#101;&#115;&#105;&#103;&#110;&#46;&#115;&#121;&#115;&#116;&#101;&#109;&#115;"
-                          >
-                            &#106;&#105;&#110;&#97;&#64;&#100;&#101;&#115;&#105;&#103;&#110;&#46;&#115;&#121;&#115;&#116;&#101;&#109;&#115;
-                          </LinkButton>
-                        </address>
-                      </Horizontal.Item>
-                    </Horizontal>
-                  </AddOn.Body>
-                </AddOn>
-              </HolyGrail.Header>
+                <li>
+                  <address>
+                    <LinkButton
+                      caps
+                      bold
+                      href="mailto:&#106;&#105;&#110;&#97;&#64;&#100;&#101;&#115;&#105;&#103;&#110;&#46;&#115;&#121;&#115;&#116;&#101;&#109;&#115;"
+                    >
+                      &#106;&#105;&#110;&#97;&#64;&#100;&#101;&#115;&#105;&#103;&#110;&#46;&#115;&#121;&#115;&#116;&#101;&#109;&#115;
+                    </LinkButton>
+                  </address>
+                </li>
+              </Navigation>
+            </AddOn.Body>
+          </AddOn>
+        </HolyGrail.Header>
 
-              <HolyGrail.Body>
-                <Hero
-                  element={heroElement}
-                  heading={
-                    pageHTMLTitle !== '' ? (
-                      <span
-                        dangerouslySetInnerHTML={{ __html: pageHTMLTitle }}
-                      />
-                    ) : (
-                      pageTitle
-                    )
-                  }
-                  description={pageDescription}
-                  sidebarLeft={heroSidebarLeft}
-                  sidebarLeftWide={heroSidebarLeftWide}
-                  sidebarRight={heroSidebarRight}
-                  banner={banner}
-                >
-                  {heroChildren}
-                </Hero>
-              </HolyGrail.Body>
+        <div className={styles.content}>
+          <HolyGrail>
+            <HolyGrail.Header>
               <HolyGrail>
-                {header && (
-                  <HolyGrail.Header className="px-4 md:px-8">
-                    {header}
-                  </HolyGrail.Header>
-                )}
-
                 <HolyGrail.Body>
-                  <HolyGrail.Content className="px-4 md:px-8">
-                    <MDXProvider components={components}>
-                      {children}
-                    </MDXProvider>
-                  </HolyGrail.Content>
-
-                  {sidebarRight && (
-                    <HolyGrail.SidebarRight>
-                      {sidebarRight}
-                    </HolyGrail.SidebarRight>
+                  {heroSidebarBefore && (
+                    <HolyGrail.Sidebar
+                      wide={heroSidebarBeforeWide}
+                      self={heroSidebarBeforeAlign}
+                      className={spacingStyles.y_lg}
+                    >
+                      {heroSidebarBefore}
+                    </HolyGrail.Sidebar>
                   )}
 
-                  {sidebarLeft && (
-                    <HolyGrail.SidebarLeft wide={sidebarLeftWide}>
-                      {sidebarLeft}
-                    </HolyGrail.SidebarLeft>
+                  {heroSidebarBefore2 && (
+                    <HolyGrail.Sidebar
+                      wide={heroSidebarBeforeWide2}
+                      self={heroSidebarBeforeAlign2}
+                      className={spacingStyles.y_lg}
+                    >
+                      {heroSidebarBefore2}
+                    </HolyGrail.Sidebar>
+                  )}
+
+                  <HolyGrail.Content className={spacingStyles.y_lg}>
+                    <Heading.Title>
+                      {pageHTMLTitle !== null ? (
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: pageHTMLTitle,
+                          }}
+                        />
+                      ) : (
+                        pageTitle
+                      )}
+                    </Heading.Title>
+
+                    {pageDescription && (
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: pageDescription,
+                        }}
+                      />
+                    )}
+
+                    {heroChildren}
+                  </HolyGrail.Content>
+
+                  {heroSidebarAfter && (
+                    <HolyGrail.Sidebar
+                      wide={heroSidebarAfterWide}
+                      self={heroSidebarAfterAlign}
+                      className={spacingStyles.y_lg}
+                    >
+                      {heroSidebarAfter}
+                    </HolyGrail.Sidebar>
+                  )}
+
+                  {heroSidebarAfter2 && (
+                    <HolyGrail.Sidebar
+                      wide={heroSidebarAfterWide2}
+                      self={heroSidebarAfterAlign2}
+                      className={spacingStyles.y_lg}
+                    >
+                      {heroSidebarAfter2}
+                    </HolyGrail.Sidebar>
                   )}
                 </HolyGrail.Body>
 
-                {footer && (
-                  <HolyGrail.Footer className="pt-24 px-4 md:px-8">
-                    {footer}
-                  </HolyGrail.Footer>
-                )}
+                <HolyGrail.Footer>{header}</HolyGrail.Footer>
               </HolyGrail>
-            </HolyGrail>
-          </StickyFooter.Body>
+            </HolyGrail.Header>
 
-          <StickyFooter.Footer className="text-gray-700">
-            <HolyGrail.Footer>
-              <AddOn spacing={4} align="center" className="py-6 ">
-                <AddOn.Body role="contentinfo">
-                  <p>
-                    Copyright &copy; 2000&ndash;{new Date().getFullYear()}{' '}
-                    {data.site.siteMetadata.title}
-                  </p>
-                </AddOn.Body>
+            <HolyGrail.Body>
+              {sidebarBefore && (
+                <HolyGrail.Sidebar
+                  wide={sidebarBeforeWide}
+                  self={sidebarBeforeAlign}
+                  className={spacingStyles.y_lg}
+                >
+                  {sidebarBefore}
+                </HolyGrail.Sidebar>
+              )}
 
-                <AddOn.Item>
-                  <Horizontal
-                    spacing={2}
-                    justifyContent="end"
-                    className="-mx-4"
-                  >
-                    {LayoutData.footer.map((data, index) => {
-                      return (
-                        <Horizontal.Item key={`footer_link_${index}`}>
-                          <LinkButton href={data.url}>
-                            {data.htmlTitle !== undefined ? (
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: data.htmlTitle,
-                                }}
-                              />
-                            ) : (
-                              data.title
-                            )}
-                          </LinkButton>
-                        </Horizontal.Item>
-                      );
-                    })}
-                  </Horizontal>
-                </AddOn.Item>
-              </AddOn>
-            </HolyGrail.Footer>
-          </StickyFooter.Footer>
-        </StickyFooter>
-      </Frame.Body>
-    </Frame>
+              {sidebarBefore2 && (
+                <HolyGrail.Sidebar
+                  wide={sidebarBeforeWide2}
+                  self={sidebarBeforeAlign2}
+                  className={spacingStyles.y_lg}
+                >
+                  {sidebarBefore2}
+                </HolyGrail.Sidebar>
+              )}
+
+              <HolyGrail.Content className={spacingStyles.y_lg}>
+                <MDXProvider components={components}>{children}</MDXProvider>
+              </HolyGrail.Content>
+
+              {sidebarAfter && (
+                <HolyGrail.Sidebar
+                  wide={sidebarAfterWide}
+                  self={sidebarAfterAlign}
+                  order={sidebarAfterOrder}
+                  className={spacingStyles.y_lg}
+                >
+                  {sidebarAfter}
+                </HolyGrail.Sidebar>
+              )}
+
+              {sidebarAfter2 && (
+                <HolyGrail.Sidebar
+                  wide={sidebarAfterWide2}
+                  self={sidebarAfterAlign2}
+                  className={spacingStyles.y_lg}
+                >
+                  {sidebarAfter2}
+                </HolyGrail.Sidebar>
+              )}
+            </HolyGrail.Body>
+
+            {footer && (
+              <HolyGrail.Footer>
+                <HolyGrail>
+                  <HolyGrail.Body>
+                    {footerSidebarBefore && (
+                      <HolyGrail.Sidebar
+                        wide={footerSidebarBeforeWide}
+                        self={footerSidebarBeforeAlign}
+                        className={spacingStyles.y_lg}
+                      >
+                        {footerSidebarBefore}
+                      </HolyGrail.Sidebar>
+                    )}
+
+                    {footerSidebarBefore2 && (
+                      <HolyGrail.Sidebar
+                        wide={footerSidebarBeforeWide2}
+                        self={footerSidebarBeforeAlign2}
+                        className={spacingStyles.y_lg}
+                      >
+                        {footerSidebarBefore2}
+                      </HolyGrail.Sidebar>
+                    )}
+
+                    <HolyGrail.Content className={spacingStyles.y_lg}>
+                      {footer}
+                    </HolyGrail.Content>
+
+                    {footerSidebarAfter && (
+                      <HolyGrail.Sidebar
+                        wide={footerSidebarAfterWide}
+                        self={footerSidebarAfterAlign}
+                        className={spacingStyles.y_lg}
+                      >
+                        {footerSidebarAfter}
+                      </HolyGrail.Sidebar>
+                    )}
+
+                    {footerSidebarAfter2 && (
+                      <HolyGrail.Sidebar
+                        wide={footerSidebarAfterWide2}
+                        self={footerSidebarAfterAlign2}
+                        className={spacingStyles.y_lg}
+                      >
+                        {footerSidebarAfter2}
+                      </HolyGrail.Sidebar>
+                    )}
+                  </HolyGrail.Body>
+                </HolyGrail>
+              </HolyGrail.Footer>
+            )}
+
+            {pagination && (
+              <HolyGrail>
+                <HolyGrail.Footer>{pagination}</HolyGrail.Footer>
+              </HolyGrail>
+            )}
+          </HolyGrail>
+        </div>
+
+        <HolyGrail.Footer className={styles.footer}>
+          <AddOn>
+            <AddOn.Body role="contentinfo">
+              <p>
+                Copyright &copy; 2000&ndash;{new Date().getFullYear()}{' '}
+                {data.site.siteMetadata.title}
+              </p>
+            </AddOn.Body>
+
+            <AddOn.Item>
+              <Navigation>
+                {LayoutData.footer.map((data, index) => {
+                  return (
+                    <Navigation.Item
+                      key={`footer_link_${index}`}
+                      href={data.url}
+                    >
+                      {data.htmlTitle !== undefined ? (
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: data.htmlTitle,
+                          }}
+                        />
+                      ) : (
+                        data.title
+                      )}
+                    </Navigation.Item>
+                  );
+                })}
+              </Navigation>
+            </AddOn.Item>
+          </AddOn>
+        </HolyGrail.Footer>
+      </Container>
+    </div>
   );
 };
 
+const Aligns = ['', 'auto', 'start', 'end', 'center', 'stretch'];
+
 DefaultLayout.propTypes = {
-  pageTitle: PropTypes.string,
-  pageHTMLTitle: PropTypes.node,
-  children: PropTypes.node.isRequired,
-  header: PropTypes.node,
-  sidebarLeft: PropTypes.node,
-  sidebarLeftWide: PropTypes.bool,
-  sidebarRight: PropTypes.node,
+  children: PropTypes.node,
   footer: PropTypes.node,
-  heroElement: PropTypes.string,
-  heroSidebarLeft: PropTypes.node,
-  heroSidebarLeftWide: PropTypes.bool,
-  heroSidebarRight: PropTypes.node,
+  footerSidebarAfter: PropTypes.node,
+  footerSidebarAfter2: PropTypes.node,
+  footerSidebarAfterAlign: PropTypes.oneOf(Aligns),
+  footerSidebarAfterAlign2: PropTypes.oneOf(Aligns),
+  footerSidebarAfterWide: PropTypes.node,
+  footerSidebarAfterWide2: PropTypes.node,
+  footerSidebarBefore: PropTypes.node,
+  footerSidebarBefore2: PropTypes.node,
+  footerSidebarBeforeAlign: PropTypes.oneOf(Aligns),
+  footerSidebarBeforeAlign2: PropTypes.oneOf(Aligns),
+  footerSidebarBeforeWide: PropTypes.bool,
+  footerSidebarBeforeWide2: PropTypes.bool,
+  header: PropTypes.node,
   heroChildren: PropTypes.node,
-  banner: PropTypes.node,
+  heroSidebarAfter: PropTypes.node,
+  heroSidebarAfter2: PropTypes.node,
+  heroSidebarAfterAlign: PropTypes.oneOf(Aligns),
+  heroSidebarAfterAlign2: PropTypes.oneOf(Aligns),
+  heroSidebarAfterWide: PropTypes.node,
+  heroSidebarAfterWide2: PropTypes.node,
+  heroSidebarBefore: PropTypes.node,
+  heroSidebarBefore2: PropTypes.node,
+  heroSidebarBeforeAlign: PropTypes.oneOf(Aligns),
+  heroSidebarBeforeAlign2: PropTypes.oneOf(Aligns),
+  heroSidebarBeforeWide: PropTypes.bool,
+  heroSidebarBeforeWide2: PropTypes.bool,
+  pageHTMLTitle: PropTypes.node,
+  pageDescription: PropTypes.node,
+  pageTitle: PropTypes.string,
+  pagination: PropTypes.node,
+  sidebarAfter: PropTypes.node,
+  sidebarAfter2: PropTypes.node,
+  sidebarAfterAlign: PropTypes.oneOf(Aligns),
+  sidebarAfterAlign2: PropTypes.oneOf(Aligns),
+  sidebarAfterOrder: PropTypes.string,
+  sidebarAfterWide: PropTypes.bool,
+  sidebarAfterWide2: PropTypes.node,
+  sidebarBefore: PropTypes.node,
+  sidebarBefore2: PropTypes.node,
+  sidebarBeforeAlign: PropTypes.oneOf(Aligns),
+  sidebarBeforeAlign2: PropTypes.oneOf(Aligns),
+  sidebarBeforeWide: PropTypes.bool,
+  sidebarBeforeWide2: PropTypes.bool,
 };
 
 DefaultLayout.defaultProps = {
+  footerSidebarAfterAlign: '',
+  footerSidebarAfterAlign2: '',
+  footerSidebarAfterWide: false,
+  footerSidebarAfterWide2: false,
+  footerSidebarBeforeAlign: '',
+  footerSidebarBeforeAlign2: '',
+  footerSidebarBeforeWide: false,
+  footerSidebarBeforeWide2: false,
+  heroSidebarAfterAlign: '',
+  heroSidebarAfterAlign2: '',
+  heroSidebarAfterWide: false,
+  heroSidebarAfterWide2: false,
+  heroSidebarBeforeAlign: '',
+  heroSidebarBeforeAlign2: '',
+  heroSidebarBeforeWide: false,
+  heroSidebarBeforeWide2: false,
+  pageHTMLTitle: null,
   pageTitle: '',
-  pageHTMLTitle: '',
-  sidebarLeftWide: false,
-  heroElement: 'div',
-  heroSidebarLeftWide: false,
+  sidebarAfterAlign: '',
+  sidebarAfterAlign2: '',
+  sidebarAfterOrder: '',
+  sidebarAfterWide: false,
+  sidebarAfterWide2: false,
+  sidebarBeforeAlign: '',
+  sidebarBeforeAlign2: '',
+  sidebarBeforeWide: false,
+  sidebarBeforeWide2: false,
 };
 
 export default DefaultLayout;

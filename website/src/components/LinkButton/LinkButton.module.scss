@@ -1,0 +1,69 @@
+@import 'assets/styles/dependencies';
+
+.wrapper {
+  &,
+  &.active,
+  .subtle {
+    color: $fg-weak;
+  }
+
+  display: block;
+  padding: $spacing-sm $spacing-md;
+
+  @include mq($md) {
+    display: inline-block;
+  }
+}
+
+a.wrapper {
+  color: inherit;
+}
+
+a.primary {
+  background: $bg-inverse;
+  color: $fg-strong-inverse;
+}
+
+a.bhover,
+a.primary {
+  &:hover,
+  &:focus {
+    background: $bg-strong-inverse;
+    color: $fg-strong-inverse;
+  }
+
+  &:hover .subtle,
+  &:focus .subtle,
+  &.active {
+    color: $fg-weak-inverse;
+  }
+
+  &:active {
+    background: $bg-inverse;
+    color: $fg-inverse;
+  }
+}
+
+.full {
+  width: 100%;
+}
+
+.not_full {
+  @include mq($md) {
+    display: inline-flex;
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: $ls-wider;
+}
+
+.active {
+  cursor: default;
+  pointer-events: none;
+}

@@ -2,25 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Body = ({ element, className, children, ...rest }) => {
-  const Element = element;
-  const classes = classNames(`md:flex-1`, className);
+import styles from '../../AddOn.module.scss';
+
+const Body = ({ className, children, ...rest }) => {
+  const classes = classNames(styles.body, className);
 
   return (
-    <Element className={classes} {...rest}>
+    <div className={classes} {...rest}>
       {children}
-    </Element>
+    </div>
   );
 };
 
 Body.propTypes = {
-  element: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Body.defaultProps = {
-  element: 'div',
   className: '',
 };
 

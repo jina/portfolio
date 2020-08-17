@@ -1,0 +1,13 @@
+global:
+  category: letter-spacing
+  type: size
+
+props:
+  ls_tight:
+    value: -0.025em
+  ls_normal:
+    value: 0
+  ls_wide:
+    value: 0.025em
+  ls_wider:
+    value: 0.05em

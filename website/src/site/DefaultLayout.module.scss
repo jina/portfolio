@@ -1,0 +1,105 @@
+@import '../assets/styles/dependencies';
+
+.wrapper,
+.body {
+  height: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  flex: none;
+}
+
+.content {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+@include mq($lg) {
+  body,
+  %frame-color {
+    background: $bg-strong-inverse;
+  }
+}
+
+@include mq($lg) {
+  .wrapper,
+  .body {
+    &::before,
+    &::after {
+      @extend %frame-color;
+
+      position: fixed;
+      display: block;
+      content: ' ';
+      z-index: 9999;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template: {
+      rows: $sizing-xl 1fr $sizing-xl;
+      columns: $sizing-xl 1fr $sizing-xl;
+    }
+  }
+
+  .wrapper::before,
+  .wrapper::after,
+  .body::before {
+    top: 0;
+  }
+
+  .wrapper::after,
+  .body::before,
+  .body::after {
+    right: 0;
+  }
+
+  .wrapper::before,
+  .wrapper::after,
+  .body::after {
+    bottom: 0;
+  }
+
+  .wrapper::before,
+  .body::before,
+  .body::after {
+    left: 0;
+  }
+
+  .wrapper::before,
+  .wrapper::after {
+    width: $sizing-xl;
+  }
+
+  .body {
+    grid: {
+      column: {
+        start: 2;
+        end: 3;
+      }
+      row: {
+        start: 2;
+        end: 3;
+      }
+    }
+
+    overflow: auto;
+    background: $bg-strong;
+
+    &::before,
+    &::after {
+      height: $sizing-xl;
+    }
+  }
+}
+
+.footer {
+  color: $fg-weak;
+}

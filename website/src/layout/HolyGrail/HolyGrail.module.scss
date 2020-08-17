@@ -1,0 +1,92 @@
+@import '../../assets/styles/dependencies';
+
+$alignments: (
+  auto: auto,
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+);
+
+$orders: (
+  first: -9999,
+  last: 9999,
+);
+
+.wrapper,
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper,
+.sidebar {
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.header,
+.sidebar,
+.content,
+.footer {
+  padding: $spacing-lg $spacing-xl;
+
+  > .wrapper {
+    margin: -#{$spacing-lg} -#{$spacing-xl};
+    width: calc(100% + #{$spacing-xl * 2});
+    height: auto;
+  }
+}
+
+.header,
+.footer {
+  flex: none;
+}
+
+.body {
+  flex: 1 0 auto;
+}
+
+@include mq($lg) {
+  .body {
+    flex-direction: row;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .sidebar {
+    width: auto;
+    flex: 0 0 $sizing-1-of-4;
+  }
+
+  .wide {
+    flex: 0 0 $sizing-1-of-3;
+  }
+
+  @each $order-token, $order-value in $orders {
+    .#{$order-token} {
+      order: $order-value;
+    }
+  }
+}
+
+@include mq($xl) {
+  .sidebar {
+    flex: 0 0 $sizing-1-of-6;
+  }
+
+  .wide {
+    flex: 0 0 $sizing-1-of-3;
+  }
+}
+
+@each $alignment-token, $alignment-value in $alignments {
+  .#{$alignment-token} {
+    align-self: $alignment-value;
+  }
+}

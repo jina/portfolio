@@ -1,0 +1,153 @@
+imports:
+  - ./aliases/metrics.yml
+
+global:
+  category: sizing
+  type: size
+
+props:
+  sizing_full:
+    value: '{!full}'
+
+  sizing_11_of_12:
+    value: '{!11_of_12}'
+  sizing_10_of_11:
+    value: '{!10_of_11}'
+  sizing_9_of_10:
+    value: '{!9_of_10}'
+  sizing_8_of_9:
+    value: '{!8_of_9}'
+  sizing_7_of_8:
+    value: '{!7_of_8}'
+  sizing_6_of_7:
+    value: '{!6_of_7}'
+  sizing_5_of_6:
+    value: '{!5_of_6}'
+  sizing_9_of_11:
+    value: '{!9_of_11}'
+  sizing_4_of_5:
+    value: '{!4_of_5}'
+  sizing_7_of_9:
+    value: '{!7_of_9}'
+  sizing_3_of_4:
+    value: '{!3_of_4}'
+  sizing_8_of_11:
+    value: '{!8_of_11}'
+  sizing_5_of_7:
+    value: '{!5_of_7}'
+  sizing_7_of_10:
+    value: '{!7_of_10}'
+  sizing_2_of_3:
+    value: '{!2_of_3}'
+  sizing_7_of_11:
+    value: '{!7_of_11}'
+  sizing_5_of_8:
+    value: '{!5_of_8}'
+  sizing_3_of_5:
+    value: '{!3_of_5}'
+  sizing_7_of_12:
+    value: '{!7_of_12}'
+  sizing_4_of_7:
+    value: '{!4_of_7}'
+  sizing_5_of_9:
+    value: '{!5_of_9}'
+  sizing_6_of_11:
+    value: '{!6_of_11}'
+  sizing_1_of_2:
+    value: '{!1_of_2}'
+  sizing_5_of_11:
+    value: '{!5_of_11}'
+  sizing_4_of_9:
+    value: '{!4_of_9}'
+  sizing_3_of_7:
+    value: '{!3_of_7}'
+  sizing_5_of_12:
+    value: '{!5_of_12}'
+  sizing_2_of_5:
+    value: '{!2_of_5}'
+  sizing_3_of_8:
+    value: '{!3_of_8}'
+  sizing_4_of_11:
+    value: '{!4_of_11}'
+  sizing_1_of_3:
+    value: '{!1_of_3}'
+  sizing_3_of_10:
+    value: '{!3_of_10}'
+  sizing_2_of_7:
+    value: '{!2_of_7}'
+  sizing_3_of_11:
+    value: '{!3_of_11}'
+  sizing_1_of_4:
+    value: '{!1_of_4}'
+  sizing_2_of_9:
+    value: '{!2_of_9}'
+  sizing_1_of_5:
+    value: '{!1_of_5}'
+  sizing_2_of_11:
+    value: '{!2_of_11}'
+  sizing_1_of_6:
+    value: '{!1_of_6}'
+  sizing_1_of_7:
+    value: '{!1_of_7}'
+  sizing_1_of_8:
+    value: '{!1_of_8}'
+  sizing_1_of_9:
+    value: '{!1_of_9}'
+  sizing_1_of_10:
+    value: '{!1_of_10}'
+  sizing_1_of_11:
+    value: '{!1_of_11}'
+  sizing_1_of_12:
+    value: '{!1_of_12}'
+
+  sizing_base:
+    value: '{!base}'
+  sizing_xs:
+    value: '{!xs}'
+  sizing_sm:
+    value: '{!sm}'
+  sizing_md:
+    value: '{!md}'
+  sizing_lg:
+    value: '{!lg}'
+  sizing_xl:
+    value: '{!xl}'
+  sizing_xxl:
+    value: '{!xxl}'
+  sizing_xxxl:
+    value: '{!xxxl}'
+  sizing_xxxxl:
+    value: '{!xxxxl}'
+
+  #containers
+  sizing_c_xxxxxxs:
+    value: '{!c_xxxxxxs}'
+  sizing_c_xxxxxs:
+    value: '{!c_xxxxxs}'
+  sizing_c_xxxxs:
+    value: '{!c_xxxxs}'
+  sizing_c_xxxs:
+    value: '{!c_xxxs}'
+  sizing_c_xxs:
+    value: '{!c_xxs}'
+  sizing_c_xs:
+    value: '{!c_xs}'
+  sizing_c_sm:
+    value: '{!c_sm}'
+  sizing_c_md:
+    value: '{!c_md}'
+  sizing_c_lg:
+    value: '{!c_lg}'
+  sizing_c_xl:
+    value: '{!c_xl}'
+  sizing_c_xxl:
+    value: '{!c_xxl}'
+  sizing_c_xxxl:
+    value: '{!c_xxxl}'
+  sizing_c_xxxxl:
+    value: '{!c_xxxxl}'
+
+  sizing_none:
+    value: '{!none}'
+  sizing_auto:
+    value: '{!auto}'

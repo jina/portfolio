@@ -1,0 +1,32 @@
+@import '../../assets/styles/dependencies';
+
+$containers: (
+  'xs': $sizing-c-xs,
+  'md': $sizing-c-md,
+  'xl': $sizing-c-xl,
+  'xxxl': $sizing-c-xxxl,
+);
+
+.wrapper {
+  margin: {
+    right: auto;
+    left: auto;
+  }
+
+  width: 100%;
+  max-width: $sizing-c-xxxxl;
+}
+
+@each $token, $value in $containers {
+  .#{$token} {
+    max-width: $value;
+  }
+}
+
+.logo {
+  width: $sizing-c-xxxxxs;
+
+  @include mq($lg) {
+    width: $sizing-c-xxxs;
+  }
+}
