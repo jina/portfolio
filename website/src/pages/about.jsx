@@ -93,7 +93,7 @@ const AboutPage = () => {
         </Card>
       )}
       sidebarBefore2={(
-        <Card heading="Other Community Projects">
+        <Card heading="Community Projects">
           <Card.List block>
             {AboutData.community.map((data, index) => {
               return (
@@ -126,7 +126,7 @@ const AboutPage = () => {
       <Heading>Speaking</Heading>
 
       <div className={spacingStyles.y_xxl}>
-        <Card heading="Upcoming">
+        <Card heading="Upcoming" helement="h3">
           <ul>
             {TimelineData.map((data, index) => {
               if (data.event === true) {
@@ -165,7 +165,7 @@ const AboutPage = () => {
           </ul>
         </Card>
 
-        <Card heading="Invite Me to Speak">
+        <Card heading="Invite Me to Speak" helement="h3">
           <Prose
             spacing="lg"
             dangerouslySetInnerHTML={{ __html: AboutData.invite }}

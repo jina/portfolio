@@ -4,22 +4,25 @@ import classNames from 'classnames';
 
 import styles from '../../Heading.module.scss';
 
-const Label = ({ className, children, ...rest }) => {
+const Label = ({ element, className, children, ...rest }) => {
+  const Element = element;
   const classes = classNames(styles.label, className);
 
   return (
-    <h4 className={classes} {...rest}>
+    <Element className={classes} {...rest}>
       {children}
-    </h4>
+    </Element>
   );
 };
 
 Label.propTypes = {
+  element: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.node,
 };
 
 Label.defaultProps = {
+  element: 'h4',
   className: '',
 };
 

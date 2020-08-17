@@ -43,7 +43,7 @@ const projectTemplate = (props) => {
       heroSidebarAfter={
         <Pagination justify="end" pto={pagePrev} nto={pageNext} />
       }
-      header={(
+      header={
         <>
           <div
             className={`${flushStyles.x_xl} ${flushStyles.y_lg} ${styles.header}`}
@@ -53,15 +53,15 @@ const projectTemplate = (props) => {
             </Container>
           </div>
         </>
-      )}
-      sidebarBefore={(
+      }
+      sidebarBefore={
         <Logo>
           <LogoElement />
         </Logo>
-      )}
+      }
       sidebarBeforeWide
       sidebarBeforeAlign="center"
-      footerSidebarBefore={(
+      footerSidebarBefore={
         <Card heading="Roles">
           <ul>
             {pageRoles.map((data, index) => {
@@ -74,8 +74,8 @@ const projectTemplate = (props) => {
             })}
           </ul>
         </Card>
-      )}
-      footerSidebarBefore2={(
+      }
+      footerSidebarBefore2={
         <Card heading="Deliverables">
           <ul>
             {pageDeliverables.map((data, index) => {
@@ -88,8 +88,8 @@ const projectTemplate = (props) => {
             })}
           </ul>
         </Card>
-      )}
-      footer={(
+      }
+      footer={
         <>
           {ImageElement !== CoverElement && <ImageElement />}
 
@@ -196,6 +196,7 @@ const projectTemplate = (props) => {
                                 <Card
                                   key={`item__${index}`}
                                   heading={item.heading.text}
+                                  helement="h3"
                                 >
                                   <ul className={spacingStyles.y_sm}>
                                     {item.items.map((i, index) => {
@@ -222,8 +223,8 @@ const projectTemplate = (props) => {
             })}
           </div>
         </>
-      )}
-      pagination={
+      }
+      pagination={(
         <div className={spacingStyles.y_xxl}>
           <Pagination pto={pagePrev} nto={pageNext} />
 
@@ -247,7 +248,7 @@ const projectTemplate = (props) => {
             </Card.List>
           </Card>
         </div>
-      }
+      )}
     >
       {pageContent.map((data, index) => {
         return (
@@ -297,16 +298,16 @@ const projectTemplate = (props) => {
                       <Image.Salesforce1StyleGuide />
                     ) : data.image ===
                       'SalesforceLightningDesignSystemIllustration' ? (
-                        <Image.SalesforceLightningDesignSystemIllustration />
+                      <Image.SalesforceLightningDesignSystemIllustration />
                     ) : data.image ===
                       'SalesforceLightningDesignSystemInvitation' ? (
-                        <Image.SalesforceLightningDesignSystemInvitation />
+                      <Image.SalesforceLightningDesignSystemInvitation />
                     ) : data.image ===
                       'SalesforceLightningDesignSystemSystem' ? (
-                        <Image.SalesforceLightningDesignSystemSystem />
+                      <Image.SalesforceLightningDesignSystemSystem />
                     ) : data.image ===
                       'SalesforceLightningDesignSystemWebsite' ? (
-                        <Image.SalesforceLightningDesignSystemWebsite />
+                      <Image.SalesforceLightningDesignSystemWebsite />
                     ) : data.image === 'SassGlasses' ? (
                       <Image.SassGlasses />
                     ) : data.image === 'SassStyleTile' ? (

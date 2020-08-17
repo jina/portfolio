@@ -9,12 +9,12 @@ import spacingStyles from '../../layout/Spacing/Spacing.module.scss';
 
 import { List, Item } from './components';
 
-const Card = ({ className, children, heading, ...rest }) => {
+const Card = ({ helement, className, children, heading, ...rest }) => {
   const classes = classNames(styles.wrapper, spacingStyles.y_sm, className);
 
   return (
     <div className={classes} {...rest}>
-      {heading && <Heading.Label>{heading}</Heading.Label>}
+      {heading && <Heading.Label element={helement}>{heading}</Heading.Label>}
 
       {children}
     </div>
@@ -28,10 +28,12 @@ Card.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
   heading: PropTypes.string,
+  helement: PropTypes.string,
 };
 
 Card.defaultProps = {
   heading: '',
+  helement: 'h2',
   className: '',
 };
 

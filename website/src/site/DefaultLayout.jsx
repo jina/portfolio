@@ -98,7 +98,7 @@ const DefaultLayout = ({
               </div>
             </AddOn.Item>
 
-            <AddOn.Body role="nav">
+            <AddOn.Body>
               <Navigation>
                 {LayoutData.header.map((data, index) => {
                   return (
@@ -207,7 +207,7 @@ const DefaultLayout = ({
                   )}
                 </HolyGrail.Body>
 
-                <HolyGrail.Footer>{header}</HolyGrail.Footer>
+                {header && <HolyGrail.Footer>{header}</HolyGrail.Footer>}
               </HolyGrail>
             </HolyGrail.Header>
 

@@ -4,22 +4,25 @@ import classNames from 'classnames';
 
 import styles from '../../Heading.module.scss';
 
-const Small = ({ className, children, ...rest }) => {
+const Small = ({ element, className, children, ...rest }) => {
+  const Element = element;
   const classes = classNames(styles.small, className);
 
   return (
-    <h3 className={classes} {...rest}>
+    <Element className={classes} {...rest}>
       {children}
-    </h3>
+    </Element>
   );
 };
 
 Small.propTypes = {
+  element: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.node,
 };
 
 Small.defaultProps = {
+  element: 'h3',
   className: '',
 };
 

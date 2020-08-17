@@ -8,9 +8,9 @@ const Body = ({ className, children, ...rest }) => {
   const classes = classNames(styles.body, className);
 
   return (
-    <div className={classes} {...rest}>
+    <nav className={classes} {...rest}>
       {children}
-    </div>
+    </nav>
   );
 };
 
