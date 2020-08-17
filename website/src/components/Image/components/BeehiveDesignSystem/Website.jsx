@@ -11,7 +11,7 @@ const BeehiveDesignSystemWebsite = ({ props }) => {
         relativePath: { eq: "beehive-design-system-website.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

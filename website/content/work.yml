@@ -467,7 +467,7 @@
     frontend&nbsp;<abbr title="User Interface">UI</abbr> development,
     and&nbsp;content&nbsp;direction.
   image: SassWebsite
-  cover: SassWebsite
+  cover: SassGlasses
   logo: Sass
   content:
     - heading:
@@ -492,14 +492,8 @@
           might be why designers were using a competitor instead. So I
           volunteered to lead the redesign of the brand and website.
         </p>
-      image: SassGlasses
-      lists: []
-    - heading:
-        text: Branding
-        variant: small
-      description: >
-        <p>Color and typography</p>
       image: SassStyleTile
+      lists: []
   roles:
     - Branding
     - Creative Director

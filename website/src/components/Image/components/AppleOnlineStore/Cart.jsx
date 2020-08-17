@@ -10,7 +10,7 @@ const AppleOnlineStoreCart = ({ props }) => {
         relativePath: { eq: "apple-online-store-cart.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -8,7 +8,7 @@ const ClarityWebsite = ({ props }) => {
     query {
       placeholderImage: file(relativePath: { eq: "clarity-website.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

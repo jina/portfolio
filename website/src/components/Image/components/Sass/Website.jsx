@@ -8,7 +8,7 @@ const SassWebsite = ({ props }) => {
     query {
       placeholderImage: file(relativePath: { eq: "sass-website.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

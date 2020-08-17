@@ -18,7 +18,6 @@ import {
   ClaritySVAMarquee,
   ClarityTatianaAndBrad,
   ClarityWebsite,
-  PortraitDrawing,
   Salesforce1StyleGuide,
   SalesforceLightningDesignSystem,
   SalesforceLightningDesignSystemIllustration,
@@ -34,9 +33,9 @@ import {
 const Image = ({ props }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "portrait.png" }) {
+      placeholderImage: file(relativePath: { eq: "portrait.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 256) {
+          fluid(maxWidth: 640) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -74,7 +73,6 @@ Image.ClarityRichardAndBarbara = ClarityRichardAndBarbara;
 Image.ClaritySVAMarquee = ClaritySVAMarquee;
 Image.ClarityTatianaAndBrad = ClarityTatianaAndBrad;
 Image.ClarityWebsite = ClarityWebsite;
-Image.PortraitDrawing = PortraitDrawing;
 Image.Salesforce1StyleGuide = Salesforce1StyleGuide;
 Image.SalesforceLightningDesignSystem = SalesforceLightningDesignSystem;
 Image.SalesforceLightningDesignSystemIllustration = SalesforceLightningDesignSystemIllustration;

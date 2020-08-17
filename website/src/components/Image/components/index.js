@@ -1,6 +1,5 @@
-export * from './BeehiveDesignSystem';
 export * from './AppleOnlineStore';
+export * from './BeehiveDesignSystem';
 export * from './Clarity';
-export * from './PortraitDrawing';
 export * from './SalesforceLightningDesignSystem';
 export * from './Sass';

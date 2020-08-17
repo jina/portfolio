@@ -7,7 +7,7 @@ const SassStyleTile = ({ props }) => {
     query {
       placeholderImage: file(relativePath: { eq: "sass-style-tile.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

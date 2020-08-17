@@ -6,7 +6,7 @@ const ClarityTatianaAndBrad = ({ props }) => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(
-        relativePath: { eq: "clarity-tatiana-and-brad.png" }
+        relativePath: { eq: "clarity-tatiana-and-brad.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 1280) {

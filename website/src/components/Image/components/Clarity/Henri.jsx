@@ -5,9 +5,9 @@ import Img from 'gatsby-image';
 const ClarityHenri = ({ props }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "clarity-henri.png" }) {
+      placeholderImage: file(relativePath: { eq: "clarity-henri.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

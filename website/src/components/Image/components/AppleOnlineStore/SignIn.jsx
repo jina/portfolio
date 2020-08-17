@@ -11,7 +11,7 @@ const AppleOnlineStoreSignIn = ({ props }) => {
         relativePath: { eq: "apple-online-store-sign-in.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

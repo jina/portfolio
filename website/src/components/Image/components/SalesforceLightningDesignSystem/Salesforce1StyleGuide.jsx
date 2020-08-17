@@ -11,7 +11,7 @@ const Salesforce1StyleGuide = ({ props }) => {
         relativePath: { eq: "salesforce1-styleguide.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -16,6 +16,8 @@ import styles from './index.module.scss';
 import flushStyles from '../layout/Flush/Flush.module.scss';
 import spacingStyles from '../layout/Spacing/Spacing.module.scss';
 
+import PortraitDrawing from '../assets/images/portrait-drawing.gif';
+
 import AboutData from '../../content/about.yml';
 import WorkData from '../../content/work.yml';
 
@@ -24,16 +26,16 @@ const IndexPage = () => {
     <DefaultLayout
       pageTitle="Design Systems, Communities, &amp;&nbsp;Experiences"
       pageDescription="Looking for a community-minded senior design lead who likes to&nbsp;code? Let&rsquo;s&nbsp;talk!"
-      heroSidebarBefore={
+      heroSidebarBefore={(
         <div className={`${flushStyles.x_xl} ${flushStyles.y_lg}`}>
           <Container mw="xs">
             <Circle lg_is_not>
-              <Image.PortraitDrawing />
+              <img src={PortraitDrawing} alt="Self-portrait drawing" />
             </Circle>
           </Container>
         </div>
-      }
-      sidebarAfter={
+      )}
+      sidebarAfter={(
         <Card heading="Connect">
           <Card.List>
             {AboutData.connect.map((data, index) => {
@@ -47,7 +49,7 @@ const IndexPage = () => {
             })}
           </Card.List>
         </Card>
-      }
+      )}
       sidebarAfterOrder="first"
     >
       <ul className={`${flushStyles.x_xl} ${flushStyles.y_xxl}`}>

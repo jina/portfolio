@@ -1,31 +1,8 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import Logo from '../../../../assets/images/salesforce-logo.gif';
 
-const SalesforceLightningDesignSystem = ({ props }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "salesforce-logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1280) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
-  return (
-    <Img
-      {...props}
-      fluid={data.placeholderImage.childImageSharp.fluid}
-      alt="Salesforce Lightning Design System logo"
-    />
-  );
-};
-
-SalesforceLightningDesignSystem.propTypes = {
-  ...Img.propTypes,
+const SalesforceLightningDesignSystem = () => {
+  return <img src={Logo} width="160" height="160" alt="Salesforcee logo" />;
 };
 
 export { SalesforceLightningDesignSystem };

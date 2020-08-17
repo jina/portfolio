@@ -9,7 +9,7 @@ const SalesforceLightningDesignSystemSystem = ({ props }) => {
         relativePath: { eq: "salesforce-lightning-design-system-system.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 1280) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }
