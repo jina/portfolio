@@ -78,14 +78,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        typekit: {
-          id: 'bso7cts',
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true, // Print removed selectors and processed file names
@@ -97,5 +89,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-no-javascript',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: 'bso7cts',
+        },
+      },
+    },
   ],
 };

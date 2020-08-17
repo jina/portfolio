@@ -26,7 +26,7 @@ const IndexPage = () => {
     <DefaultLayout
       pageTitle="Design Systems, Communities, &amp;&nbsp;Experiences"
       pageDescription="Looking for a community-minded senior design lead who likes to&nbsp;code? Let&rsquo;s&nbsp;talk!"
-      heroSidebarBefore={(
+      heroSidebarBefore={
         <div className={`${flushStyles.x_xl} ${flushStyles.y_lg}`}>
           <Container mw="xs">
             <Circle lg_is_not>
@@ -39,8 +39,8 @@ const IndexPage = () => {
             </Circle>
           </Container>
         </div>
-      )}
-      sidebarAfter={(
+      }
+      sidebarAfter={
         <Card heading="Connect">
           <Card.List>
             {AboutData.connect.map((data, index) => {
@@ -54,7 +54,7 @@ const IndexPage = () => {
             })}
           </Card.List>
         </Card>
-      )}
+      }
       sidebarAfterOrder="first"
     >
       <ul className={`${flushStyles.x_xl} ${flushStyles.y_xxl}`}>
@@ -83,17 +83,17 @@ const IndexPage = () => {
                         <div className={spacingStyles.y_lg}>
                           <Container mw="xl">
                             {data.image.screenshot === true ? (
-                              <img
-                                src={`/images/${data.image.src}`}
-                                alt={data.image.alt}
-                              />
-                            ) : (
                               <Screenshot>
                                 <img
                                   src={`/images/${data.image.src}`}
                                   alt={data.image.alt}
                                 />
                               </Screenshot>
+                            ) : (
+                              <img
+                                src={`/images/${data.image.src}`}
+                                alt={data.image.alt}
+                              />
                             )}
                           </Container>
 

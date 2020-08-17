@@ -121,6 +121,8 @@ const SEO = ({ title, description, lang, meta }) => {
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
+
+      <link rel="stylesheet" href="https://use.typekit.net/bso7cts.css" />
     </Helmet>
   );
 };
