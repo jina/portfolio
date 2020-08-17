@@ -33,6 +33,7 @@ $orders: (
 .content,
 .footer {
   padding: $spacing-lg $spacing-xl;
+  content-visibility: auto;
 
   > .wrapper {
     margin: -#{$spacing-lg} -#{$spacing-xl};
