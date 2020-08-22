@@ -6,11 +6,13 @@ import PropTypes from 'prop-types';
 import { CodeBlock } from '../components/CodeBlock';
 import { Heading } from '../components/Heading';
 import { LinkButton } from '../components/LinkButton';
+import { Prose } from '../components/Prose';
 import { Navigation } from '../components/Navigation';
 
 import { AddOn } from '../layout/AddOn';
 import { Container } from '../layout/Container';
 import { HolyGrail } from '../layout/HolyGrail';
+import { Sticky } from '../layout/Sticky';
 
 import { SEO } from './SEO';
 
@@ -146,9 +148,10 @@ const DefaultLayout = ({
                     <HolyGrail.Sidebar
                       wide={heroSidebarBeforeWide}
                       self={heroSidebarBeforeAlign}
-                      className={spacingStyles.y_lg}
                     >
-                      {heroSidebarBefore}
+                      <Sticky t="lg" className={spacingStyles.y_lg}>
+                        {heroSidebarBefore}
+                      </Sticky>
                     </HolyGrail.Sidebar>
                   )}
 
@@ -156,43 +159,49 @@ const DefaultLayout = ({
                     <HolyGrail.Sidebar
                       wide={heroSidebarBeforeWide2}
                       self={heroSidebarBeforeAlign2}
-                      className={spacingStyles.y_lg}
                     >
-                      {heroSidebarBefore2}
+                      <Sticky t="lg" className={spacingStyles.y_lg}>
+                        {heroSidebarBefore2}
+                      </Sticky>
                     </HolyGrail.Sidebar>
                   )}
 
-                  <HolyGrail.Content className={spacingStyles.y_lg}>
-                    <Heading.Title>
-                      {pageHTMLTitle !== null ? (
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: pageHTMLTitle,
-                          }}
-                        />
-                      ) : (
-                        pageTitle
-                      )}
-                    </Heading.Title>
+                  <HolyGrail.Content>
+                    <Sticky t="lg" className={spacingStyles.y_lg}>
+                      <Heading.Title>
+                        {pageHTMLTitle !== null ? (
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: pageHTMLTitle,
+                            }}
+                          />
+                        ) : (
+                          pageTitle
+                        )}
+                      </Heading.Title>
 
-                    {pageDescription && (
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: pageDescription,
-                        }}
-                      />
-                    )}
+                      <Prose>
+                        {pageDescription && (
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: pageDescription,
+                            }}
+                          />
+                        )}
+                      </Prose>
 
-                    {heroChildren}
+                      {heroChildren}
+                    </Sticky>
                   </HolyGrail.Content>
 
                   {heroSidebarAfter && (
                     <HolyGrail.Sidebar
                       wide={heroSidebarAfterWide}
                       self={heroSidebarAfterAlign}
-                      className={spacingStyles.y_lg}
                     >
-                      {heroSidebarAfter}
+                      <Sticky t="lg" className={spacingStyles.y_lg}>
+                        {heroSidebarAfter}
+                      </Sticky>
                     </HolyGrail.Sidebar>
                   )}
 
@@ -200,9 +209,10 @@ const DefaultLayout = ({
                     <HolyGrail.Sidebar
                       wide={heroSidebarAfterWide2}
                       self={heroSidebarAfterAlign2}
-                      className={spacingStyles.y_lg}
                     >
-                      {heroSidebarAfter2}
+                      <Sticky t="lg" className={spacingStyles.y_lg}>
+                        {heroSidebarAfter2}
+                      </Sticky>
                     </HolyGrail.Sidebar>
                   )}
                 </HolyGrail.Body>
@@ -216,9 +226,10 @@ const DefaultLayout = ({
                 <HolyGrail.Sidebar
                   wide={sidebarBeforeWide}
                   self={sidebarBeforeAlign}
-                  className={spacingStyles.y_lg}
                 >
-                  {sidebarBefore}
+                  <Sticky t="lg" className={spacingStyles.y_lg}>
+                    {sidebarBefore}
+                  </Sticky>
                 </HolyGrail.Sidebar>
               )}
 
@@ -226,14 +237,17 @@ const DefaultLayout = ({
                 <HolyGrail.Sidebar
                   wide={sidebarBeforeWide2}
                   self={sidebarBeforeAlign2}
-                  className={spacingStyles.y_lg}
                 >
-                  {sidebarBefore2}
+                  <Sticky t="lg" className={spacingStyles.y_lg}>
+                    {sidebarBefore2}
+                  </Sticky>
                 </HolyGrail.Sidebar>
               )}
 
-              <HolyGrail.Content className={spacingStyles.y_lg}>
-                <MDXProvider components={components}>{children}</MDXProvider>
+              <HolyGrail.Content>
+                <Sticky t="lg" className={spacingStyles.y_lg}>
+                  <MDXProvider components={components}>{children}</MDXProvider>
+                </Sticky>
               </HolyGrail.Content>
 
               {sidebarAfter && (
@@ -241,9 +255,10 @@ const DefaultLayout = ({
                   wide={sidebarAfterWide}
                   self={sidebarAfterAlign}
                   order={sidebarAfterOrder}
-                  className={spacingStyles.y_lg}
                 >
-                  {sidebarAfter}
+                  <Sticky t="lg" className={spacingStyles.y_lg}>
+                    {sidebarAfter}
+                  </Sticky>
                 </HolyGrail.Sidebar>
               )}
 
@@ -251,9 +266,10 @@ const DefaultLayout = ({
                 <HolyGrail.Sidebar
                   wide={sidebarAfterWide2}
                   self={sidebarAfterAlign2}
-                  className={spacingStyles.y_lg}
                 >
-                  {sidebarAfter2}
+                  <Sticky t="lg" className={spacingStyles.y_lg}>
+                    {sidebarAfter2}
+                  </Sticky>
                 </HolyGrail.Sidebar>
               )}
             </HolyGrail.Body>
@@ -266,9 +282,10 @@ const DefaultLayout = ({
                       <HolyGrail.Sidebar
                         wide={footerSidebarBeforeWide}
                         self={footerSidebarBeforeAlign}
-                        className={spacingStyles.y_lg}
                       >
-                        {footerSidebarBefore}
+                        <Sticky t="lg" className={spacingStyles.y_lg}>
+                          {footerSidebarBefore}
+                        </Sticky>
                       </HolyGrail.Sidebar>
                     )}
 
@@ -276,23 +293,27 @@ const DefaultLayout = ({
                       <HolyGrail.Sidebar
                         wide={footerSidebarBeforeWide2}
                         self={footerSidebarBeforeAlign2}
-                        className={spacingStyles.y_lg}
                       >
-                        {footerSidebarBefore2}
+                        <Sticky t="lg" className={spacingStyles.y_lg}>
+                          {footerSidebarBefore2}
+                        </Sticky>
                       </HolyGrail.Sidebar>
                     )}
 
-                    <HolyGrail.Content className={spacingStyles.y_lg}>
-                      {footer}
+                    <HolyGrail.Content>
+                      <Sticky t="lg" className={spacingStyles.y_lg}>
+                        {footer}
+                      </Sticky>
                     </HolyGrail.Content>
 
                     {footerSidebarAfter && (
                       <HolyGrail.Sidebar
                         wide={footerSidebarAfterWide}
                         self={footerSidebarAfterAlign}
-                        className={spacingStyles.y_lg}
                       >
-                        {footerSidebarAfter}
+                        <Sticky t="lg" className={spacingStyles.y_lg}>
+                          {footerSidebarAfter}
+                        </Sticky>
                       </HolyGrail.Sidebar>
                     )}
 
@@ -300,9 +321,10 @@ const DefaultLayout = ({
                       <HolyGrail.Sidebar
                         wide={footerSidebarAfterWide2}
                         self={footerSidebarAfterAlign2}
-                        className={spacingStyles.y_lg}
                       >
-                        {footerSidebarAfter2}
+                        <Sticky t="lg" className={spacingStyles.y_lg}>
+                          {footerSidebarAfter2}
+                        </Sticky>
                       </HolyGrail.Sidebar>
                     )}
                   </HolyGrail.Body>

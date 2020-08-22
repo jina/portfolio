@@ -23,17 +23,33 @@ const AboutPage = () => {
       pageTitle="About Jina Anne"
       pageHTMLTitle="About Jina&nbsp;Anne"
       heroSidebarBefore={
+        <div className={`${flushStyles.x_xl} ${flushStyles.t_lg}`}>
+          <Container mw="md">
+            <Circle is_not sm_is lg_is_not>
+              <img src={Image} alt="Portrait" />
+            </Circle>
+          </Container>
+        </div>
+      }
+      heroSidebarBeforeWide
+      heroSidebarAfter={
         <>
-          <div className={`${flushStyles.x_xl} ${flushStyles.t_lg}`}>
-            <Container mw="md">
-              <Circle is_not sm_is lg_is_not>
-                <img src={Image} alt="Portrait" />
-              </Circle>
-            </Container>
-          </div>
+          <Card heading="Connect">
+            <Card.List>
+              {AboutData.connect.map((data, index) => {
+                return (
+                  <Card.Item
+                    key={`connext_${index}`}
+                    href={data.url}
+                    text={data.name}
+                  />
+                );
+              })}
+            </Card.List>
+          </Card>
 
           <Card heading="Support My Work">
-            <Card.List divide>
+            <Card.List>
               {AboutData.support.map((data, index) => {
                 return (
                   <Card.Item
@@ -47,22 +63,6 @@ const AboutPage = () => {
           </Card>
         </>
       }
-      heroSidebarBeforeWide
-      heroSidebarAfter={
-        <Card heading="Connect">
-          <Card.List>
-            {AboutData.connect.map((data, index) => {
-              return (
-                <Card.Item
-                  key={`connext_${index}`}
-                  href={data.url}
-                  text={data.name}
-                />
-              );
-            })}
-          </Card.List>
-        </Card>
-      }
       heroChildren={
         <div className={spacingStyles.y_xxl}>
           <Prose>
@@ -71,10 +71,19 @@ const AboutPage = () => {
               dangerouslySetInnerHTML={{ __html: AboutData.bio.lead }}
             />
 
-            <div
-              className={spacingStyles.y_lg}
-              dangerouslySetInnerHTML={{ __html: AboutData.bio.full }}
-            />
+            <Heading>My Outlook</Heading>
+
+            {AboutData.bio.philosophy.map((data, index) => {
+              return (
+                <div className={spacingStyles.y_lg} key={`p_${index}`}>
+                  <Heading.Small
+                    dangerouslySetInnerHTML={{ __html: data.heading }}
+                  />
+
+                  <div dangerouslySetInnerHTML={{ __html: data.description }} />
+                </div>
+              );
+            })}
           </Prose>
         </div>
       }
@@ -123,10 +132,15 @@ const AboutPage = () => {
           </Card.List>
         </Card>
       }
-    >
-      <Heading>Speaking</Heading>
-
-      <div className={spacingStyles.y_xxl}>
+      footer={
+        <Card heading="Invite Me to Speak" helement="h3">
+          <Prose
+            spacing="lg"
+            dangerouslySetInnerHTML={{ __html: AboutData.invite }}
+          />
+        </Card>
+      }
+      footerSidebarBefore={
         <Card heading="Upcoming" helement="h3">
           <ul>
             {TimelineData.map((data, index) => {
@@ -165,14 +179,78 @@ const AboutPage = () => {
             })}
           </ul>
         </Card>
-
-        <Card heading="Invite Me to Speak" helement="h3">
-          <Prose
-            spacing="lg"
-            dangerouslySetInnerHTML={{ __html: AboutData.invite }}
-          />
+      }
+      footerSidebarBeforeWide
+      footerSidebarAfter={
+        <Card heading="Information">
+          <Card.List>
+            <Card.Item
+              href="https://github.com/jina/press/tree/master/bio"
+              text="Biography"
+            />
+            <Card.Item href="https://noti.st/jina" text="Past Talks" />
+          </Card.List>
         </Card>
-      </div>
+      }
+    >
+      <Heading>Experience</Heading>
+      <Prose>
+        <p className="lead">
+          I&rsquo;ve been designing and developing professionally for{' '}
+          <strong>19&nbsp;years</strong> (and&nbsp;longer as a hobby for{' '}
+          <strong>23&nbsp;years</strong>). I created my first design system{' '}
+          <strong>16&nbsp;years</strong>&nbsp;ago.
+        </p>
+
+        <ul>
+          <li>
+            I&rsquo;ve worked in-house at Amazon, Salesforce, Apple, GitHub,
+            etc. as&nbsp;well as some start ups and&nbsp;agencies.
+          </li>
+
+          <li>
+            Consulting with companies including IBM, Pfizer, JustWorks,
+            Spotify,&nbsp;etc.
+          </li>
+
+          <li>Start Up Advisory Boards: Haiku&nbsp;and&nbsp;Jobroo</li>
+
+          <li>
+            Workshops, Public&nbsp;Speaking (13&nbsp;years), Writing
+            (several&nbsp;published articles and co-authored three&nbsp;books)
+          </li>
+
+          <li>
+            Freelance partnerships with Superfriendly, Group&nbsp;of Humans,
+            NineLabs, and&nbsp;Josh&nbsp;Silverman
+          </li>
+        </ul>
+      </Prose>
+
+      <Heading.Small>I call myself a Design Systems Advocate.</Heading.Small>
+
+      <Prose>
+        <ul>
+          <li>Founder, Clarity</li>
+
+          <li>Core Team Design/Website&nbsp;Lead, Sass</li>
+
+          <li>Co-chair, Design&nbsp;Tokens W3C Community&nbsp;Group.</li>
+
+          <li>Google Developers&nbsp;Expert</li>
+
+          <li>Design.Systems (Coalition/Slack)</li>
+        </ul>
+      </Prose>
+
+      <Heading>Biography</Heading>
+
+      <div
+        className={spacingStyles.y_lg}
+        dangerouslySetInnerHTML={{ __html: AboutData.bio.full }}
+      />
+
+      <Heading>Speaking</Heading>
     </DefaultLayout>
   );
 };

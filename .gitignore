@@ -10,8 +10,9 @@ node_modules
 .DS_Store
 
 # Build caches
-website/.cache
-website/public
+.cache
+dist
+public
 
 # Yarn
 yarn-error.log

@@ -15,7 +15,7 @@ const CVPage = () => {
   return (
     <DefaultLayout
       pageTitle="Curriculum Vitae"
-      heroSidebarAfter={(
+      heroSidebarAfter={
         <div className={spacingStyles.y_lg}>
           <Heading>
             Contact <abbr title="Information">Info</abbr>
@@ -29,39 +29,59 @@ const CVPage = () => {
             )
           </address>
         </div>
-      )}
-      sidebarAfter={(
-        <>
-          <ResumeBlock heading="Publications">
-            {/* &amp; Presentations */}
-            {CVData.publications_and_presentations.map((item, index) => {
+      }
+      sidebarAfter={
+        <ResumeBlock heading="Publications">
+          {/* &amp; Presentations */}
+          {CVData.publications_and_presentations.map((item, index) => {
+            return (
+              <ResumeBlock.Item
+                key={`item__${index}`}
+                heading={item.name}
+                location={item.location}
+                dates={item.dates}
+                description={item.description}
+              >
+                {item.roles && (
+                  <ResumeBlock.NestedList>
+                    {item.roles.map((role, index) => {
+                      return (
+                        <ResumeBlock.NestedListItem
+                          key={`role_${index}`}
+                          role={role.role}
+                          description={role.description}
+                          dates={role.dates}
+                        />
+                      );
+                    })}
+                  </ResumeBlock.NestedList>
+                )}
+              </ResumeBlock.Item>
+            );
+          })}
+        </ResumeBlock>
+      }
+      sidebarAfterWide
+      sidebarAfterOrder="first"
+      sidebarAfter2={
+        <Card>
+          <Heading>Skills</Heading>
+
+          <Card.List>
+            {CVData.skills.map((item, index) => {
               return (
-                <ResumeBlock.Item
-                  key={`item__${index}`}
-                  heading={item.name}
-                  location={item.location}
-                  dates={item.dates}
-                  description={item.description}
-                >
-                  {item.roles && (
-                    <ResumeBlock.NestedList>
-                      {item.roles.map((role, index) => {
-                        return (
-                          <ResumeBlock.NestedListItem
-                            key={`role_${index}`}
-                            role={role.role}
-                            description={role.description}
-                            dates={role.dates}
-                          />
-                        );
-                      })}
-                    </ResumeBlock.NestedList>
-                  )}
-                </ResumeBlock.Item>
+                <li key={`item__${index}`}>
+                  <LinkButton
+                    dangerouslySetInnerHTML={{ __html: item.skill }}
+                  />
+                </li>
               );
             })}
-          </ResumeBlock>
-
+          </Card.List>
+        </Card>
+      }
+      footerSidebarBefore={
+        <div className={spacingStyles.y_xxl}>
           <ResumeBlock heading="Awards &amp; Honors">
             {CVData.awards_and_honors.map((item, index) => {
               return (
@@ -119,116 +139,99 @@ const CVPage = () => {
               );
             })}
           </ResumeBlock>
-        </>
-      )}
-      sidebarAfterWide
-      sidebarAfterOrder="first"
-      sidebarAfter2={(
-        <Card>
-          <Heading>Skills</Heading>
-
-          <Card.List>
-            {CVData.skills.map((item, index) => {
+        </div>
+      }
+      footerSidebarBeforeWide
+      footer={
+        <div className={spacingStyles.y_xxl}>
+          <ResumeBlock heading="Experience">
+            {CVData.experience.map((item, index) => {
               return (
-                <li key={`item__${index}`}>
-                  <LinkButton
-                    dangerouslySetInnerHTML={{ __html: item.skill }}
-                  />
-                </li>
+                <ResumeBlock.Item
+                  key={`item__${index}`}
+                  heading={item.name}
+                  location={item.location}
+                  dates={item.dates}
+                  description={item.description}
+                >
+                  {item.roles && (
+                    <ResumeBlock.NestedList>
+                      {item.roles.map((role, index) => {
+                        return (
+                          <ResumeBlock.NestedListItem
+                            key={`role_${index}`}
+                            role={role.role}
+                            description={role.description}
+                            dates={role.dates}
+                          />
+                        );
+                      })}
+                    </ResumeBlock.NestedList>
+                  )}
+                </ResumeBlock.Item>
               );
             })}
-          </Card.List>
-        </Card>
-      )}
+          </ResumeBlock>
+
+          <ResumeBlock heading="Advisory Boards">
+            {CVData.advisor.map((item, index) => {
+              return (
+                <ResumeBlock.Item
+                  key={`item__${index}`}
+                  heading={item.name}
+                  location={item.location}
+                  dates={item.dates}
+                  description={item.description}
+                >
+                  {item.roles && (
+                    <ResumeBlock.NestedList>
+                      {item.roles.map((role, index) => {
+                        return (
+                          <ResumeBlock.NestedListItem
+                            key={`role_${index}`}
+                            role={role.role}
+                            description={role.description}
+                            dates={role.dates}
+                          />
+                        );
+                      })}
+                    </ResumeBlock.NestedList>
+                  )}
+                </ResumeBlock.Item>
+              );
+            })}
+          </ResumeBlock>
+        </div>
+      }
     >
-      <div className={spacingStyles.y_xxl}>
-        <ResumeBlock heading="Education">
-          {CVData.education.map((item, index) => {
-            return (
-              <ResumeBlock.Item
-                key={`item__${index}`}
-                heading={item.name}
-                location={item.location}
-                dates={item.dates}
-                description={item.description}
-              >
-                {item.roles && (
-                  <ResumeBlock.NestedList>
-                    {item.roles.map((role, index) => {
-                      return (
-                        <ResumeBlock.NestedListItem
-                          key={`role_${index}`}
-                          role={role.role}
-                          description={role.description}
-                          dates={role.dates}
-                        />
-                      );
-                    })}
-                  </ResumeBlock.NestedList>
-                )}
-              </ResumeBlock.Item>
-            );
-          })}
-        </ResumeBlock>
-
-        <ResumeBlock heading="Experience">
-          {CVData.experience.map((item, index) => {
-            return (
-              <ResumeBlock.Item
-                key={`item__${index}`}
-                heading={item.name}
-                location={item.location}
-                dates={item.dates}
-                description={item.description}
-              >
-                {item.roles && (
-                  <ResumeBlock.NestedList>
-                    {item.roles.map((role, index) => {
-                      return (
-                        <ResumeBlock.NestedListItem
-                          key={`role_${index}`}
-                          role={role.role}
-                          description={role.description}
-                          dates={role.dates}
-                        />
-                      );
-                    })}
-                  </ResumeBlock.NestedList>
-                )}
-              </ResumeBlock.Item>
-            );
-          })}
-        </ResumeBlock>
-
-        <ResumeBlock heading="Advisory Boards">
-          {CVData.advisor.map((item, index) => {
-            return (
-              <ResumeBlock.Item
-                key={`item__${index}`}
-                heading={item.name}
-                location={item.location}
-                dates={item.dates}
-                description={item.description}
-              >
-                {item.roles && (
-                  <ResumeBlock.NestedList>
-                    {item.roles.map((role, index) => {
-                      return (
-                        <ResumeBlock.NestedListItem
-                          key={`role_${index}`}
-                          role={role.role}
-                          description={role.description}
-                          dates={role.dates}
-                        />
-                      );
-                    })}
-                  </ResumeBlock.NestedList>
-                )}
-              </ResumeBlock.Item>
-            );
-          })}
-        </ResumeBlock>
-      </div>
+      <ResumeBlock heading="Education">
+        {CVData.education.map((item, index) => {
+          return (
+            <ResumeBlock.Item
+              key={`item__${index}`}
+              heading={item.name}
+              location={item.location}
+              dates={item.dates}
+              description={item.description}
+            >
+              {item.roles && (
+                <ResumeBlock.NestedList>
+                  {item.roles.map((role, index) => {
+                    return (
+                      <ResumeBlock.NestedListItem
+                        key={`role_${index}`}
+                        role={role.role}
+                        description={role.description}
+                        dates={role.dates}
+                      />
+                    );
+                  })}
+                </ResumeBlock.NestedList>
+              )}
+            </ResumeBlock.Item>
+          );
+        })}
+      </ResumeBlock>
     </DefaultLayout>
   );
 };

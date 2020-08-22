@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jina Anne -- Designer -- @jina
+
+# THANKS
+
+    Kaelig Deloumeaux-Prigent (for setting up designtokens.org repo which I based this from)
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    HTML5 Boilerplate, Normalize.css

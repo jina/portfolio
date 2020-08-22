@@ -1,10 +1,84 @@
 bio:
   lead: >
-    I am super passionate about design systems, design&nbsp;tools,
-    and&nbsp;design processes. But&nbsp;more importantly, I&nbsp;enjoy looking
-    at ways to improve collaboration and improving communication; I&nbsp;love
-    community and people. It&rsquo;s&nbsp;why I love design systems in the first
-    place. Because&nbsp;<strong>design systems are for&nbsp;people</strong>.
+    I enjoy design systems, tools, and&nbsp;processes. More&nbsp;importantly,
+    I&nbsp;like looking at ways to improve collaboration and improving
+    communication; I&nbsp;love community and people. It&rsquo;s&nbsp;why I love
+    design systems in the first place. Because&nbsp;<strong>design systems are
+    for&nbsp;people</strong>.
+  philosophy:
+    - heading: Design systems are for&nbsp;people
+      description: >
+        <ul>
+          <li>
+            Be open, inclusive, and&nbsp;community-driven. Open&nbsp;source.
+            Share&nbsp;what you&nbsp;learn.
+          </li>
+
+          <li>
+            &ldquo;There is no design system&rdquo;. 😜 Or, rather&nbsp;than
+            only focusing on the artifact (a&nbsp;style guide website, <abbr
+            title="User Interface">UI</abbr>&nbsp;Kit, pattern&nbsp;library,
+            etc) &mdash; see&nbsp;Design Systems is a continuous way of thinking
+            &amp;&nbsp;working.
+          </li>
+
+          <li>
+            Technology stacks and tools come and go. Be&nbsp;agnostically-minded
+            and&nbsp;future-proof.
+          </li>
+        </ul>
+    - heading: Design Systems are a shared&nbsp;ownership
+      description: >
+        <ul>
+          <li>
+            Anyone should be empowered to contribute to design&nbsp;systems.
+          </li>
+
+          <li>Close gaps (rather&nbsp;than simply bridging&nbsp;them).</li>
+
+          <li>
+            Design Systems are more successful with cross-functional
+            skills&nbsp;represented.
+          </li>
+
+          <li>Avoid&nbsp;silos.</li>
+        </ul>
+    - heading: Hybrids have a place in design&nbsp;systems
+      description: >
+        <ul>
+          <li>
+            There is no need to &ldquo;bucket&rdquo; someone to focus only on
+            design or only on engineering. Let&nbsp;people shine by using their
+            diverse range of&nbsp;skills.
+          </li>
+
+          <li>
+            The &ldquo;design&rdquo; in design systems is to solve problems for
+            the overall experience. Everyone&nbsp;impacts&nbsp;that.
+          </li>
+
+          <li>
+            Designers who code and coders who design are able to show their work
+            in exciting ways. Let&rsquo;s&nbsp;embrace&nbsp;that.
+          </li>
+        </ul>
+    - heading: Show. Don&rsquo;t&nbsp;tell.
+      description: >
+        <ul>
+          <li>
+            To get buy-in, don&rsquo;t&nbsp;just talk about potential.
+            Show&nbsp;examples and concepts. Prove&nbsp;it with visible outcomes
+            and incremental&nbsp;progress.
+          </li>
+
+          <li>
+            Rather than aiming for massive impact that takes awhile,
+            focus&nbsp;on the incremental wins. The&nbsp;smaller success stories
+            cultivate adoption&nbsp;faster.
+          </li>
+
+          <li>Share the vision with everyone. (Posters&nbsp;can&nbsp;help!)</li>
+        </ul>
   full: >
     <p>
       I am a design systems advocate. I&nbsp;advise companies including <a

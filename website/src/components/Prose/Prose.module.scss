@@ -48,11 +48,6 @@
     }
   }
 
-  ol > li::before,
-  :global(.lead) {
-    color: $fg-weak;
-  }
-
   ol {
     counter-reset: list-counter;
 
@@ -63,6 +58,7 @@
         left: 0;
         font-weight: 400;
         content: counter(list-counter) '.';
+        color: $fg-weak;
       }
     }
   }
@@ -91,6 +87,8 @@
 
   :global(.lead) {
     font-size: 20px;
+    font-family: $unquote-font-family-display;
+    letter-spacing: $ls-tight;
 
     @include mq($md) {
       font-size: $font-size-lg;

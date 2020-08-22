@@ -8,7 +8,7 @@ module.exports = {
       summary: '',
     },
     description: 'Portfolio',
-    siteUrl: `https://www.jina.me/`,
+    siteUrl: `https://jina.design/`,
     social: {
       twitter: 'jina',
     },
@@ -97,7 +97,22 @@ module.exports = {
         },
       },
     },
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Jina Anne`,
+        short_name: `jina`,
+        description: 'Portfolio',
+        lang: 'en',
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/assets/images/portrait-drawing.gif`,
+      },
+    },
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-offline',
-    'gatsby-plugin-no-javascript',
   ],
 };

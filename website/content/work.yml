@@ -27,6 +27,10 @@
         </p>
       lists: []
     - heading:
+        text: Challenge
+      description: >
+        <p>hi</p>
+    - heading:
         text: Story
       description: >
         <p>
@@ -100,29 +104,33 @@
       description: >
         <p>
           Clarity is a design systems conference focused on how we work
-          together. We provide tools and standards to scale across an increasing
-          number of devices, platforms, and products. But real success comes
-          when people align around a shared vision and language. Diverse
-          perspectives for design, development, and product unite so more people
-          can be a part of the conversation. At Clarity, we elevate our skills
-          through multi-faceted <strong>inclusion</strong>,
-          <strong>empathy</strong>, <strong>technology</strong>,
-          <strong>creativity</strong>, and <strong>collaboration</strong>.
+          together. We&nbsp;provide tools and standards to scale across an
+          increasing number of devices, platforms, and&nbsp;products.
+          But&nbsp;real success comes when people align around a shared vision
+          and language. Diverse&nbsp;perspectives for design, development,
+          and&nbsp;product unite so more people can be a part of the
+          conversation. At&nbsp;Clarity, we&nbsp;elevate our skills through
+          multi-faceted <strong>inclusion</strong>, <strong>empathy</strong>,
+          <strong>technology</strong>, <strong>creativity</strong>,
+          and&nbsp;<strong>collaboration</strong>.
         </p>
       lists: []
     - heading:
-        text: Story
+        text: Challenge
       description: >
         <p>
-          In 2014, I decided to try my hand at organizing a conference. I
-          decided to focus the event on design systems since that was my main
-          interest. At the time, there were no other events that had this focus.
-          &ldquo;Clarity&rdquo; seemed perfect for the name, as it was a word I
-          found using quite often in my field.
+          Design Systems as a full-time job were beginning to become a norm.
+          But&nbsp;there weren&rsquo;t too many resources or events dedicated to
+          people like&nbsp;us.
         </p>
+    - heading:
+        text: The Plan
+      description: >
         <p>
-          The inspiration for the design aesthetic is diamonds (because
-          &ldquo;clarity&rdquo;).
+          I found myself using the word &ldquo;clarity&rdquo; a lot in my work.
+          So&nbsp;in 2014, I&nbsp;bought <i>clarityconf.com</i>. But&nbsp;the
+          first event wasn&rsquo;t until 2016. It&nbsp;allowed time to consider
+          and plan what the event experience should&nbsp;be.
         </p>
       image:
         src: clarity-website.png
@@ -134,19 +142,11 @@
         variant: small
       description: >
         <p>
-          While I bought the website domain right away, it wasn&rsquo;t until
-          2016 that I held the first event. I chose the newly-opened Alamo
-          Drafthouse New Mission theatre in San Francisco. I enlisted a few folx
-          to help me with a few items (see credits listed). Otherwise, I
-          executed everything else. This included planning, coordinating,
-          operations, storing, transporting equipment/materials, packing swag
-          bags, etc.
+          I organized the conference mostly by myself, with&nbsp;a few
+          volunteers and vendors that I directed which included designers,
+          a&nbsp;sketch note artist, videographers, photographer, and&nbsp;more.
         </p>
-        <p>
-          To my delight, Richard Danne keynoted the event. He was the designer
-          on the Nasa logo and Graphic Standards Manual from the worm logo era
-          (the 70&rsquo;s).
-        </p>
+        <p>The event had almost 300&nbsp;attendees.</p>
       image:
         src: clarity-richard-and-barbara.jpg
         alt: Richard and Barbara Danne
@@ -183,9 +183,12 @@
         variant: small
       description: >
         <p>
-          After the first successful event, I decided to do another one. I used
-          the Alamo Drafthouse again, with the attendee count rising closer to
-          400. I added workshops to the program this year.
+          The next year, I&nbsp;had almost 400 attendees, but&nbsp;I worked with
+          the same venue and many of the same&nbsp;people.
+        </p>
+        <p>
+          I added an additional day of full-day workshops to the schedule for
+          attendees to choose&nbsp;from.
         </p>
       image:
         src: clarity-henri.jpg
@@ -218,16 +221,12 @@
         variant: small
       description: >
         <p>
-          After 2 years of self-organizing, I realized I needed assistance. The
-          event was scaling faster than expected. So I hired a part-time
-          assistant (Michael Morrison). He took on some of the vendor
-          facilitation, paperwork, and volunteer coordination. Then I could
-          focus on the content curation, creative direction, and event
-          experience.
-        </p>
-        <p>
-          The third event was in New York City at the SVA Theatre. The
-          conference had grown to 500 attendees.
+          The third year, the&nbsp;attendee count grew to 500 and the event was
+          in New York City. This&nbsp;was to meet the customer demands of an
+          east-coast event. So&nbsp;I hired a part-time assistant.
+          I&nbsp;workshopped with a consultant to develop the mission statement
+          and principles. And&nbsp;I continued directing creative volunteers
+          and&nbsp;vendors.
         </p>
       image:
         src: clarity-sva-marquee.jpg
@@ -270,10 +269,11 @@
         variant: small
       description: >
         <p>
-          The fourth year, the event was back in San Francisco. This time it was
-          at the Blue Shield of California Theatre at YBCA. I needed a larger
-          venue since the attendance had outgrown the Alamo Drafthouse. This
-          year there were 700 attendees.
+          Back in SF, the&nbsp;event grew to 700 people. In&nbsp;addition to the
+          assistant, volunteers, and&nbsp;vendors, I&nbsp;worked closer with
+          sponsors to improve the attendee/sponsor experience. I&nbsp;negotiated
+          a three-year top-tier sponsorship with InVision, and&nbsp;I partnered
+          with Adobe to host a full day of workshops at their&nbsp;offices.
         </p>
       image:
         src: clarity-programs.jpg
@@ -310,15 +310,12 @@
         variant: small
       description: >
         <p>
-          The event attendance has grown year over year. So this year, I opted
-          to switch to using an event management company to help me. I partnered
-          with Kickass Conferences. This will produce a higher-quality event.
-        </p>
-        <p>
-          With the 2020 pandemic, the landscape of events has changed. The event
-          has evolved into an online experience. I have hopes to provide a
-          hybrid experience in future years. This would combine the online and
-          in-person experience.
+          Initially expecting 800+ attendees, I&nbsp;switched to investing in an
+          event production team to achieve that scale and a higher quality.
+          However, with&nbsp;the pandemic, plans&nbsp;changed
+          (from&nbsp;in-person to online and attendance forecasted to 500).
+          We&rsquo;ve met every week since February and have created what we
+          expect to be a high-quality, engaging&nbsp;experience.
         </p>
       lists:
         - heading:
@@ -336,11 +333,136 @@
           items:
             - Alexander Tran (sketchnotes)
             - Josh Silverman (sticker sheets)
-            - Kickass Conferences (badges, design post-production/procurement, social media/marketing, website content updates, etc)
-            - Three Wolf Media (video production for <abbr title="New York">NY</abbr> speakers)
+            - Kickass Conferences (badges,
+              design&nbsp;post-production/procurement,
+              social&nbsp;media/marketing, website&nbsp;content updates, etc)
+            - Three Wolf Media (video&nbsp;production for <abbr title="New
+              York">NY</abbr>&nbsp;speakers)
       image:
         src: clarity-box.jpg
         alt: Clarity box
+    - heading:
+        text: Results
+      variant: small
+      description: >
+        <p>
+          I&rsquo;ve built an engaged community of design systems practitioners
+          that has grown steadily each year for 5 years. While&nbsp;2020 has
+          challenges, the&nbsp;community is still active, excited,
+          and&nbsp;engaged.
+        </p>
+        <div>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Oh look, <a
+              href="https://twitter.com/Clarity_conf?ref_src=twsrc%5Etfw">@clarity_conf</a>&nbsp;2020
+              will be online! This&nbsp;is one of the best conferences out
+              there, and&nbsp;<a
+              href="https://twitter.com/jina?ref_src=twsrc%5Etfw">@jina</a> does
+              amazing work curating. Check&nbsp;it out, if&nbsp;you can! <a
+              href="https://t.co/DP0W3IZgCn">https://t.co/DP0W3IZgCn</a>
+            </p>
+            &mdash;&nbsp;Mia || Miriam (@MiriSuzanne) <a
+            href="https://twitter.com/MiriSuzanne/status/1263561094808784897?ref_src=twsrc%5Etfw">May
+            21,&nbsp;2020</a>
+          </blockquote>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Amazing conference at <a
+              href="https://twitter.com/Clarity_conf?ref_src=twsrc%5Etfw">@clarity_conf</a>
+              with amazing people and amazing ideas. Y&rsquo;all&nbsp;are
+              freakin awesome ❤️!<a
+              href="https://twitter.com/hashtag/clarity2019?src=hash&amp;ref_src=twsrc%5Etfw">#clarity2019</a>
+            </p>
+            &mdash;&nbsp;Salem (Ghoweri) Cobalt (@salem_cobalt) <a
+            href="https://twitter.com/salem_cobalt/status/1164424858098253825?ref_src=twsrc%5Etfw">August
+            22,&nbsp;2019</a>
+          </blockquote>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              <a
+              href="https://twitter.com/Clarity_conf?ref_src=twsrc%5Etfw">@clarity_conf</a>
+              wow&hellip; what&nbsp;an amazing conference. Each&nbsp;year is
+              more amazing than the last. Thank&nbsp;you SO MUCH <a
+              href="https://twitter.com/jina?ref_src=twsrc%5Etfw">@jina</a> for
+              the opportunity to share our story with this awesome group and
+              thanks to all who visited with myself and Teresa to share your
+              stories and admiration of our talk.
+            </p>
+            &mdash;&nbsp;Nicole Torgersen (@nzassenhaus) <a
+            href="https://twitter.com/nzassenhaus/status/1164422028788559872?ref_src=twsrc%5Etfw">August
+            22,&nbsp;2019</a>
+          </blockquote>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Thanks so much <a
+              href="https://twitter.com/jina?ref_src=twsrc%5Etfw">@jina</a>!
+              Clarity&nbsp;is one of the best conferences I&rsquo;ve ever had
+              the pleasure of attending! The&nbsp;line up is diverse and you put
+              so much intention bringing together a community of Systems lovers
+              ❤️. Thank&nbsp;you 🙏🏾 for all you do! Only&nbsp;12 more days to <a
+              href="https://twitter.com/hashtag/clarity2019?src=hash&amp;ref_src=twsrc%5Etfw">#clarity2019</a>
+              🌈👏🏾
+            </p>
+            &mdash;&nbsp;kim williams (@kimwms_) <a
+            href="https://twitter.com/kimwms_/status/1159538925230161920?ref_src=twsrc%5Etfw">August
+            8,&nbsp;2019</a>
+          </blockquote>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Had an amazing time <a
+              href="https://twitter.com/Clarity_conf?ref_src=twsrc%5Etfw">@clarity_conf</a>
+              Big&nbsp;ups to <a
+              href="https://twitter.com/jina?ref_src=twsrc%5Etfw">@jina</a> and
+              the staff and volunteers! Inspiring, informative,
+              thought-provoking and ~diverse~ lineup that other conferences
+              should aspire to&nbsp;👏👏👏💯
+            </p>
+            &mdash;&nbsp;Liz Khoo (@lizkhoo) <a
+            href="https://twitter.com/lizkhoo/status/1072968654365618177?ref_src=twsrc%5Etfw">December
+            12,&nbsp;2018</a>
+          </blockquote>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              <a
+              href="https://twitter.com/Clarity_conf?ref_src=twsrc%5Etfw">@clarity_conf</a>
+              was easily the best conference I&#39;ve attended in years,
+              content-&nbsp;and people-wise. Wish&nbsp;I could make it
+              this&nbsp;year!
+            </p>
+            &mdash;&nbsp;Shannon Hale (@shannonsans) <a
+            href="https://twitter.com/shannonsans/status/921081238693167104?ref_src=twsrc%5Etfw">October
+            19,&nbsp;2017</a>
+          </blockquote>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              .<a
+              href="https://twitter.com/Clarity_conf?ref_src=twsrc%5Etfw">@clarity_conf</a>
+              was one of the best conferences i&rsquo;ve ever been to.
+              amazing&nbsp;venue &amp; speakers, lots&nbsp;of thoughtful details
+              <a
+              href="https://twitter.com/jina?ref_src=twsrc%5Etfw">@jina</a>&nbsp;is
+              the&nbsp;best!!
+            </p>
+
+            &mdash;&nbsp;ally palanzi (@mylifeasalllly) <a
+            href="https://twitter.com/mylifeasalllly/status/716073457859952641?ref_src=twsrc%5Etfw">April
+            2,&nbsp;2016</a>
+          </blockquote>
+        </div>
+
   roles:
     - Creative Director
     - Design Systems Advocate
@@ -399,6 +521,14 @@
           Lightning Web Components, Aura, and Visualforce.
         </p>
       lists: []
+    - heading:
+        text: Challenge
+      description: >
+        <p>
+          Salesforce needed to modernize and overhaul the mobile and desktop
+          experience across several products, teams, and&nbsp;platforms.
+        </p>
+
     - heading:
         text: Story
       description: >
@@ -532,19 +662,52 @@
         </p>
       lists: []
     - heading:
-        text: Story
+        text: Challenge
       description: >
         <p>
-          I am a fan of using Sass to process my <abbr title="Cascading
-          Stylesheets">CSS</abbr>. I was first introduced to it during my time
-          working at Engine Yard. One day, one of the core team members tweeted
-          his frustration with the design of the project. He suggested that it
-          might be why designers were using a competitor instead. So I
-          volunteered to lead the redesign of the brand and website.
+          While Sass was first to market, Less&nbsp;had become more popular with
+          designers. Sass&rsquo;s website and brand was not inspiring designers
+          to use it. Also, the&nbsp;brand was also controversial&nbsp;(sexist).
+        </p>
+      image:
+        src: sass-color.gif
+        alt: Sass color guide
+        screenshot: true
+      lists:
+        - heading:
+            text: The Team
+          items:
+            - The Core Team &&nbsp;Team Sass&nbsp;Design
+            - Contributors from the Sass&nbsp;community
+            - Attendees at Sass&nbsp;Conf
+    - heading:
+        text: The Story
+      description: >
+        <p>
+          I am a fan of using Sass to process my CSS. I&nbsp;was first
+          introduced to it during my time working at Engine Yard. One&nbsp;day,
+          one&nbsp;of the core team members tweeted his frustration with the
+          design of the project. He&nbsp;suggested that it might be why
+          designers were using a competitor instead. So&nbsp;I volunteered to
+          lead the redesign of the brand and&nbsp;website.
         </p>
       image:
         src: sass-style-tile.png
-        alt: Sass style tile
+        alt: Style Tile
+    - heading:
+        text: Results
+      description: >
+        <p>
+          The brand has not only been embraced by the community, but&nbsp;many
+          companies, tools, and&nbsp;resources have adopted the language.
+          The&nbsp;most popular <abbr title="Cascading Stylesheets">CSS</abbr>
+          framework (Bootstrap) abandoned&nbsp;Less in favor of Sass.
+          The&nbsp;United States Web Design System uses it. Hillary&nbsp;Clinton
+          even wore a replica of the glasses I drew to hire&nbsp;developers.
+        </p>
+      image:
+        src: sassy-hillary.jpg
+        alt: Sassy Hillary
       lists: []
   roles:
     - Branding

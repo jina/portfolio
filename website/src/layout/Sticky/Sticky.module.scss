@@ -1,0 +1,12 @@
+@import '../../assets/styles/dependencies';
+
+.wrapper {
+  position: sticky;
+  top: 0;
+}
+
+@each $space-token, $space-value in $space {
+  @include breakpoints(t_#{$space-token}) {
+    top: $space-value;
+  }
+}

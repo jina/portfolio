@@ -97,9 +97,9 @@ const IndexPage = () => {
                             )}
                           </Container>
 
-                          <div className={spacingStyles.y_sm}>
+                          <div className={spacingStyles.y_lg}>
                             <div className={spacingStyles.y_base}>
-                              <Heading>
+                              <Heading.Small>
                                 {data.htmlTitle !== undefined ? (
                                   <span
                                     dangerouslySetInnerHTML={{
@@ -109,7 +109,7 @@ const IndexPage = () => {
                                 ) : (
                                   data.title
                                 )}
-                              </Heading>
+                              </Heading.Small>
 
                               <p
                                 dangerouslySetInnerHTML={{

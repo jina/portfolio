@@ -40,7 +40,7 @@ const projectTemplate = (props) => {
       heroSidebarAfter={
         <Pagination justify="end" pto={pagePrev} nto={pageNext} />
       }
-      header={(
+      header={
         <>
           <div
             className={`${flushStyles.x_xl} ${flushStyles.y_lg} ${styles.header}`}
@@ -64,15 +64,15 @@ const projectTemplate = (props) => {
             </Container>
           </div>
         </>
-      )}
-      sidebarBefore={(
+      }
+      sidebarBefore={
         <Logo>
           <img src={`/images/${pageLogo.src}`} alt={pageLogo.alt} />
         </Logo>
-      )}
+      }
       sidebarBeforeWide
       sidebarBeforeAlign="center"
-      footerSidebarBefore={(
+      footerSidebarBefore={
         <Card heading="Roles">
           <ul>
             {pageRoles.map((data, index) => {
@@ -85,8 +85,8 @@ const projectTemplate = (props) => {
             })}
           </ul>
         </Card>
-      )}
-      footerSidebarBefore2={(
+      }
+      footerSidebarBefore2={
         <Card heading="Deliverables">
           <ul>
             {pageDeliverables.map((data, index) => {
@@ -99,8 +99,8 @@ const projectTemplate = (props) => {
             })}
           </ul>
         </Card>
-      )}
-      footer={(
+      }
+      footer={
         <>
           {pageImage.src !== pageCover.src &&
             (pageImage.screenshot === true ? (
@@ -203,8 +203,8 @@ const projectTemplate = (props) => {
             })}
           </div>
         </>
-      )}
-      pagination={(
+      }
+      pagination={
         <div className={spacingStyles.y_xxl}>
           <Pagination pto={pagePrev} nto={pageNext} />
 
@@ -228,7 +228,7 @@ const projectTemplate = (props) => {
             </Card.List>
           </Card>
         </div>
-      )}
+      }
     >
       {pageContent.map((data, index) => {
         return (
