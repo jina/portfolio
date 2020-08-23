@@ -4,6 +4,8 @@ import classNames from 'classnames';
 
 import { Prose } from '../../../../components/Prose';
 
+import { MarkdownContent } from '../../../MarkdownContent';
+
 import styles from '../../ResumeBlock.module.scss';
 import spacingStyles from '../../../../layout/Spacing/Spacing.module.scss';
 
@@ -19,11 +21,13 @@ const NestedListItem = ({ className, role, dates, description, ...rest }) => {
           />
         )}
 
-        {dates && <p dangerouslySetInnerHTML={{ __html: dates }} />}
+        {dates && <MarkdownContent content={dates} />}
       </div>
 
       {description && (
-        <Prose spacing="sm" dangerouslySetInnerHTML={{ __html: description }} />
+        <Prose>
+          <MarkdownContent spacing="sm" content={description} />
+        </Prose>
       )}
     </li>
   );

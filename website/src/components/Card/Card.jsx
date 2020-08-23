@@ -14,7 +14,12 @@ const Card = ({ helement, className, children, heading, ...rest }) => {
 
   return (
     <div className={classes} {...rest}>
-      {heading && <Heading.Label element={helement}>{heading}</Heading.Label>}
+      {heading && (
+        <Heading.Label
+          element={helement}
+          dangerouslySetInnerHTML={{ __html: heading }}
+        />
+      )}
 
       {children}
     </div>

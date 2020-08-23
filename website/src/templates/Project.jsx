@@ -10,6 +10,7 @@ import { Container } from '../layout/Container';
 
 import DefaultLayout from '../site/DefaultLayout';
 import { Logo } from '../site/Logo';
+import { MarkdownContent } from '../site/MarkdownContent';
 
 import styles from './Project.module.scss';
 import flushStyles from '../layout/Flush/Flush.module.scss';
@@ -72,6 +73,7 @@ const projectTemplate = (props) => {
       }
       sidebarBeforeWide
       sidebarBeforeAlign="center"
+      contentAlign="center"
       footerSidebarBefore={
         <Card heading="Roles">
           <ul>
@@ -101,7 +103,7 @@ const projectTemplate = (props) => {
         </Card>
       }
       footer={
-        <>
+        <div className={spacingStyles.y_xxl}>
           {pageImage.src !== pageCover.src &&
             (pageImage.screenshot === true ? (
               <Screenshot>
@@ -111,98 +113,72 @@ const projectTemplate = (props) => {
               <img src={`/images/${pageImage.src}`} alt={pageImage.alt} />
             ))}
 
-          <div className={spacingStyles.y_xxl}>
-            {pageContent.map((data, index) => {
-              return (
-                <React.Fragment key={`content__${index}`}>
-                  {data.heading.text === 'Overview' ? (
-                    ``
-                  ) : (
-                    <div className={spacingStyles.y_lg}>
-                      {data.heading.variant === 'small' ? (
-                        <Heading.Small
-                          dangerouslySetInnerHTML={{
-                            __html: data.heading.text,
-                          }}
-                        />
-                      ) : data.heading.variant === 'label' ? (
-                        <Heading.Label
-                          dangerouslySetInnerrHTML={{
-                            __html: data.heading.text,
-                          }}
-                        />
-                      ) : (
-                        <Heading
-                          dangerouslySetInnerHTML={{
-                            __html: data.heading.text,
-                          }}
-                        />
-                      )}
+          {pageContent.map((data, index) => {
+            return (
+              <React.Fragment key={`content__${index}`}>
+                {data.heading.text === 'Overview' ? (
+                  ``
+                ) : (
+                  <div className={spacingStyles.y_lg}>
+                    {data.heading.variant === 'small' ? (
+                      <Heading.Small
+                        dangerouslySetInnerHTML={{
+                          __html: data.heading.text,
+                        }}
+                      />
+                    ) : data.heading.variant === 'label' ? (
+                      <Heading.Label
+                        dangerouslySetInnerrHTML={{
+                          __html: data.heading.text,
+                        }}
+                      />
+                    ) : (
+                      <Heading
+                        dangerouslySetInnerHTML={{
+                          __html: data.heading.text,
+                        }}
+                      />
+                    )}
 
-                      <div className={styles.project}>
-                        <div
-                          className={`${styles.details} ${spacingStyles.y_lg}`}
-                        >
-                          <Prose
-                            spacing="lg"
-                            className={spacingStyles.y_lg}
-                            dangerouslySetInnerHTML={{
-                              __html: data.description,
-                            }}
-                          />
+                    <div className={styles.project}>
+                      <div
+                        className={`${styles.details} ${spacingStyles.y_lg}`}
+                      >
+                        <Prose>
+                          <MarkdownContent content={data.description} />
+                        </Prose>
 
-                          {data.image &&
-                            (data.image.screenshot === true ? (
-                              <Screenshot>
-                                <img
-                                  src={`/images/${data.image.src}`}
-                                  alt={data.image.alt}
-                                />
-                              </Screenshot>
-                            ) : (
+                        {data.image &&
+                          (data.image.screenshot === true ? (
+                            <Screenshot>
                               <img
                                 src={`/images/${data.image.src}`}
                                 alt={data.image.alt}
                               />
-                            ))}
-                        </div>
-
-                        {data.lists && (
-                          <div
-                            className={`${styles.lists} ${spacingStyles.y_lg}`}
-                          >
-                            {data.lists.map((item, index) => {
-                              return (
-                                <Card
-                                  key={`item__${index}`}
-                                  heading={item.heading.text}
-                                  helement="h3"
-                                >
-                                  <ul className={spacingStyles.y_sm}>
-                                    {item.items.map((i, index) => {
-                                      return (
-                                        <li
-                                          key={`i__${index}`}
-                                          dangerouslySetInnerHTML={{
-                                            __html: i,
-                                          }}
-                                        />
-                                      );
-                                    })}
-                                  </ul>
-                                </Card>
-                              );
-                            })}
-                          </div>
-                        )}
+                            </Screenshot>
+                          ) : (
+                            <img
+                              src={`/images/${data.image.src}`}
+                              alt={data.image.alt}
+                            />
+                          ))}
                       </div>
+
+                      {data.sidebar && (
+                        <Prose>
+                          <MarkdownContent
+                            className={styles.sidebar}
+                            content={data.sidebar}
+                          />
+                        </Prose>
+                      )}
                     </div>
-                  )}
-                </React.Fragment>
-              );
-            })}
-          </div>
-        </>
+                  </div>
+                )}
+              </React.Fragment>
+            );
+          })}
+        </div>
       }
       pagination={
         <div className={spacingStyles.y_xxl}>
@@ -240,9 +216,9 @@ const projectTemplate = (props) => {
                 />
 
                 <Prose spacing="xxl">
-                  <div
-                    className={`${spacingStyles.y_lg} lead`}
-                    dangerouslySetInnerHTML={{ __html: data.description }}
+                  <MarkdownContent
+                    className="lead"
+                    content={data.description}
                   />
 
                   {data.image &&

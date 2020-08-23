@@ -14,6 +14,7 @@ import { Container } from '../layout/Container';
 import { HolyGrail } from '../layout/HolyGrail';
 import { Sticky } from '../layout/Sticky';
 
+import { MarkdownContent } from './MarkdownContent';
 import { SEO } from './SEO';
 
 import styles from './DefaultLayout.module.scss';
@@ -29,7 +30,9 @@ const components = {
 
 const DefaultLayout = ({
   children,
+  contentAlign,
   footer,
+  footerContentAlign,
   footerSidebarAfter,
   footerSidebarAfter2,
   footerSidebarAfterAlign,
@@ -44,6 +47,7 @@ const DefaultLayout = ({
   footerSidebarBeforeWide2,
   header,
   heroChildren,
+  heroContentAlign,
   heroSidebarAfter,
   heroSidebarAfter2,
   heroSidebarAfterAlign,
@@ -166,32 +170,26 @@ const DefaultLayout = ({
                     </HolyGrail.Sidebar>
                   )}
 
-                  <HolyGrail.Content>
-                    <Sticky t="lg" className={spacingStyles.y_lg}>
-                      <Heading.Title>
-                        {pageHTMLTitle !== null ? (
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: pageHTMLTitle,
-                            }}
-                          />
-                        ) : (
-                          pageTitle
-                        )}
-                      </Heading.Title>
+                  <HolyGrail.Content self={heroContentAlign}>
+                    <Heading.Title>
+                      {pageHTMLTitle !== null ? (
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: pageHTMLTitle,
+                          }}
+                        />
+                      ) : (
+                        pageTitle
+                      )}
+                    </Heading.Title>
 
-                      <Prose>
-                        {pageDescription && (
-                          <p
-                            dangerouslySetInnerHTML={{
-                              __html: pageDescription,
-                            }}
-                          />
-                        )}
-                      </Prose>
+                    <Prose>
+                      {pageDescription && (
+                        <MarkdownContent content={pageDescription} />
+                      )}
+                    </Prose>
 
-                      {heroChildren}
-                    </Sticky>
+                    {heroChildren}
                   </HolyGrail.Content>
 
                   {heroSidebarAfter && (
@@ -244,10 +242,8 @@ const DefaultLayout = ({
                 </HolyGrail.Sidebar>
               )}
 
-              <HolyGrail.Content>
-                <Sticky t="lg" className={spacingStyles.y_lg}>
-                  <MDXProvider components={components}>{children}</MDXProvider>
-                </Sticky>
+              <HolyGrail.Content self={contentAlign}>
+                <MDXProvider components={components}>{children}</MDXProvider>
               </HolyGrail.Content>
 
               {sidebarAfter && (
@@ -300,10 +296,8 @@ const DefaultLayout = ({
                       </HolyGrail.Sidebar>
                     )}
 
-                    <HolyGrail.Content>
-                      <Sticky t="lg" className={spacingStyles.y_lg}>
-                        {footer}
-                      </Sticky>
+                    <HolyGrail.Content self={footerContentAlign}>
+                      {footer}
                     </HolyGrail.Content>
 
                     {footerSidebarAfter && (
@@ -382,7 +376,9 @@ const Aligns = ['', 'auto', 'start', 'end', 'center', 'stretch'];
 
 DefaultLayout.propTypes = {
   children: PropTypes.node,
+  contentAlign: PropTypes.string,
   footer: PropTypes.node,
+  footerContentAlign: PropTypes.string,
   footerSidebarAfter: PropTypes.node,
   footerSidebarAfter2: PropTypes.node,
   footerSidebarAfterAlign: PropTypes.oneOf(Aligns),
@@ -397,6 +393,7 @@ DefaultLayout.propTypes = {
   footerSidebarBeforeWide2: PropTypes.bool,
   header: PropTypes.node,
   heroChildren: PropTypes.node,
+  heroContentAlign: PropTypes.string,
   heroSidebarAfter: PropTypes.node,
   heroSidebarAfter2: PropTypes.node,
   heroSidebarAfterAlign: PropTypes.oneOf(Aligns),
@@ -429,6 +426,8 @@ DefaultLayout.propTypes = {
 };
 
 DefaultLayout.defaultProps = {
+  contentAlign: '',
+  footerContentAlign: '',
   footerSidebarAfterAlign: '',
   footerSidebarAfterAlign2: '',
   footerSidebarAfterWide: false,
@@ -437,6 +436,7 @@ DefaultLayout.defaultProps = {
   footerSidebarBeforeAlign2: '',
   footerSidebarBeforeWide: false,
   footerSidebarBeforeWide2: false,
+  heroContentAlign: '',
   heroSidebarAfterAlign: '',
   heroSidebarAfterAlign2: '',
   heroSidebarAfterWide: false,

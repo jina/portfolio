@@ -15,6 +15,20 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Jina Anne`,
+        short_name: `jina`,
+        description: 'Portfolio',
+        lang: 'en',
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/assets/images/portrait-drawing.gif`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-sass',
       options: {
         sourceMap: true,
@@ -77,17 +91,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true, // Print removed selectors and processed file names
-        develop: true, // Enable while using `gatsby develop`
-        // tailwind: true, // Enable tailwindcss support
-        whitelist: ['::-moz-selection', ':focus', ':active', 'img'], // Don't remove this selector
-        // ignore: ['global.scss'], // Ignore files/folders
-        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-      },
-    },
 
     {
       resolve: 'gatsby-plugin-web-font-loader',
@@ -97,22 +100,41 @@ module.exports = {
         },
       },
     },
-
+    `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        name: `Jina Anne`,
-        short_name: `jina`,
-        description: 'Portfolio',
-        lang: 'en',
-        start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#000000`,
-        display: `standalone`,
-        icon: `src/assets/images/portrait-drawing.gif`,
+        // Probably best to place after other plugins
+        plugins: [
+          // Valid remark-smartypants options may passed to the plugin.
+          // For more on valid options refer to the remark-smartypants API
+          // https://github.com/retextjs/retext-smartypants#api
+          {
+            resolve: 'gatsby-remark-smartypants',
+          },
+          // Avoid widows in titles, paragraphs, etc.
+          {
+            resolve: 'gatsby-remark-widows',
+            // Default options:
+            // options: {
+            //   minLength: 4,
+            //   maxLength: null,
+            // },
+          },
+        ],
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        whitelist: ['::-moz-selection', ':focus', ':active', 'img', 'i', 'em'], // Don't remove this selector
+        // ignore: ['global.scss'], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+      },
+    },
     'gatsby-plugin-offline',
   ],
 };

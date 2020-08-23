@@ -11,6 +11,7 @@ import { HolyGrail } from '../layout/HolyGrail';
 
 import DefaultLayout from '../site/DefaultLayout';
 import { Logo } from '../site/Logo';
+import { MarkdownContent } from '../site/MarkdownContent';
 
 import styles from './index.module.scss';
 import flushStyles from '../layout/Flush/Flush.module.scss';
@@ -111,11 +112,7 @@ const IndexPage = () => {
                                 )}
                               </Heading.Small>
 
-                              <p
-                                dangerouslySetInnerHTML={{
-                                  __html: data.description,
-                                }}
-                              />
+                              <MarkdownContent content={data.description} />
                             </div>
 
                             <LinkButton.Subtle>

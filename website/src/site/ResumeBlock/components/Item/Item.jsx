@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Heading } from '../../../../components/Heading';
+import { MarkdownContent } from '../../../MarkdownContent';
 
 import styles from '../../ResumeBlock.module.scss';
 import spacingStyles from '../../../../layout/Spacing/Spacing.module.scss';
@@ -12,22 +13,18 @@ const Item = ({ heading, location, dates, description, children, ...rest }) => {
       <div>
         <Heading.Small dangerouslySetInnerHTML={{ __html: heading }} />
 
-        {location && <p dangerouslySetInnerHTML={{ __html: location }} />}
+        {location && <MarkdownContent content={location} />}
 
-        {dates && (
-          <p
-            className={styles.dates}
-            dangerouslySetInnerHTML={{ __html: dates }}
-          />
-        )}
+        {dates && <MarkdownContent className={styles.dates} content={dates} />}
       </div>
 
       {children}
 
       {description && (
-        <div
-          className={`${styles.description} ${spacingStyles.y_base}`}
-          dangerouslySetInnerHTML={{ __html: description }}
+        <MarkdownContent
+          className={styles.description}
+          spacing="base"
+          content={description}
         />
       )}
     </li>

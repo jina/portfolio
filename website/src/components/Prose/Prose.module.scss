@@ -88,7 +88,7 @@
   :global(.lead) {
     font-size: 20px;
     font-family: $unquote-font-family-display;
-    letter-spacing: $ls-tight;
+    letter-spacing: $ls-normal;
 
     @include mq($md) {
       font-size: $font-size-lg;

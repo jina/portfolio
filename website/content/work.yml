@@ -1,4 +1,5 @@
 - title: Beehive Design System
+  htmlTitle: Beehive Design&nbsp;System
   path: /beehive-design-system/
   next: '/clarity/'
   prev: '/apple-online-store/'
@@ -20,66 +21,63 @@
     - heading:
         text: Overview
       description: >
-        <p>
-          You need to manage your tasks, your projects, and your team. Now you
-          can build an app to achieve your goals with Amazon Honeycode. No
-          programming required.
-        </p>
-      lists: []
-    - heading:
-        text: Challenge
-      description: >
-        <p>hi</p>
+        You need to manage your tasks, your&nbsp;projects, and&nbsp;your team.
+        Now&nbsp;you can build an app to achieve your goals with Amazon
+        Honeycode. No&nbsp;programming&nbsp;required.
     - heading:
         text: Story
       description: >
-        <p>
-          I was recruited by fellow former Salesforce employees who worked with
-          me to join them at Amazon. They wanted me to recreate the success of
-          the Salesforce Lightning Design System. In a contract-turned-full-time
-          engagement, I worked closely with product designers by providing
-          design direction for visuals and interactions. I also worked with
-          engineers to ensure their <abbr title="CSS">CSS</abbr> was to
-          specifications as well as guidance on accessibility.
-        </p>
-        <p>
-          My role also included some design operations as well, including
-          provisioning access to the design tools used on the team, project
-          management, and providing education and workshops opportunities.
-        </p>
-        <p>
-          During my time there, I built a React-based style guide with
-          components and documentation for both the design and engineering
-          organizations to use.
-        </p>
+        I was recruited by fellow former Salesforce employees who worked with me
+        to join them at Amazon. They&nbsp;wanted me to recreate the success of
+        the Salesforce Lightning Design System. In&nbsp;a
+        contract-turned-full-time engagement, I&nbsp;worked closely with product
+        designers by providing design direction for visuals and interactions.
+        I&nbsp;also worked with engineers to ensure their <abbr
+        title="CSS">CSS</abbr> was to specifications as well as guidance
+        on&nbsp;accessibility.
+
+
+        My role also included some design operations as well,
+        including&nbsp;provisioning access to the design tools used on the team,
+        project&nbsp;management, and&nbsp;providing education and
+        workshops&nbsp;opportunities.
+
+
+        During my time there, I&nbsp;built a React-based style guide with
+        components and documentation for both the design and engineering
+        organizations to&nbsp;use.
       image:
         src: beehive-app.png
         alt: Beehive app
         screenshot: true
-      lists:
-        - heading:
-            text: Other Creative Credits
-          items:
-            - Rebecca Buck (initial design manager)
-            - Scott Perket (initial branding and design language)
-            - Christian Gin (assisted with design specifications and Sketch
-              <abbr title="User Interface">UI</abbr> Kit)
-            - The rest of the design team for all the product design work which
-              informed the design system
-            - Patrick Woo (provided lots of feedback and guidance for the React
-              style guide I was building)
-            - James Khatiblou (helped set up the initial framework for the style
-              guide)
+      sidebar: >
+        #### Other Creative Credits
+
+        - Rebecca Buck (initial&nbsp;design&nbsp;manager)
+
+        - Scott Perket (initial&nbsp;branding and design&nbsp;language)
+
+        - Christian Gin (assisted&nbsp;with design specifications and Sketch
+          <abbr title="User Interface">UI</abbr>&nbsp;Kit)
+
+        - The rest of the design team for all the product design work which
+          informed the design&nbsp;system
+
+        - Patrick Woo (provided&nbsp;lots of feedback and guidance for the React
+          style guide I was&nbsp;building)
+
+        - James Khatiblou (helped&nbsp;set up the initial framework for the
+          style&nbsp;guide)
   roles:
-    - Creative Director
-    - Design Systems Advocate
-    - Frontend Developer
-    - Project Manager
+    - Creative&nbsp;Director
+    - Design Systems&nbsp;Advocate
+    - Frontend&nbsp;Developer
+    - Project&nbsp;Manager
     - <abbr title="User Experience">UX</abbr> Designer
     - Visual Designer
   deliverables:
-    - <abbr title="User Interface">UI</abbr> Kit
-    - Style Guide
+    - <abbr title="User Interface">UI</abbr>&nbsp;Kit
+    - Style&nbsp;Guide
     - Website
 
 - title: Clarity
@@ -87,7 +85,7 @@
   next: /salesforce-lightning-design-system/
   prev: /beehive-design-system/
   description: >
-    Created the premiere design systems community&nbsp;conference. The event is
+    Created the premiere design systems community conference. The&nbsp;event is
     now on its fifth&nbsp;year.
   image:
     src: clarity-tatiana-and-brad.jpg
@@ -102,242 +100,276 @@
     - heading:
         text: Overview
       description: >
-        <p>
-          Clarity is a design systems conference focused on how we work
-          together. We&nbsp;provide tools and standards to scale across an
-          increasing number of devices, platforms, and&nbsp;products.
-          But&nbsp;real success comes when people align around a shared vision
-          and language. Diverse&nbsp;perspectives for design, development,
-          and&nbsp;product unite so more people can be a part of the
-          conversation. At&nbsp;Clarity, we&nbsp;elevate our skills through
-          multi-faceted <strong>inclusion</strong>, <strong>empathy</strong>,
-          <strong>technology</strong>, <strong>creativity</strong>,
-          and&nbsp;<strong>collaboration</strong>.
-        </p>
-      lists: []
+        Clarity is a design systems conference focused on how we work together.
+        We&nbsp;provide tools and standards to scale across an increasing number
+        of devices, platforms, and&nbsp;products. But&nbsp;real success comes
+        when people align around a shared vision and language.
+        Diverse&nbsp;perspectives for design, development, and&nbsp;product
+        unite so more people can be a part of the conversation. At&nbsp;Clarity,
+        we&nbsp;elevate our skills through multi-faceted **inclusion**,
+        **empathy**, **technology**, **creativity**, and&nbsp;**collaboration**.
     - heading:
         text: Challenge
       description: >
-        <p>
-          Design Systems as a full-time job were beginning to become a norm.
-          But&nbsp;there weren&rsquo;t too many resources or events dedicated to
-          people like&nbsp;us.
-        </p>
+        Design Systems as a full-time job were beginning to become a norm.
+        But&nbsp;there weren&rsquo;t too many resources or events dedicated to
+        people like&nbsp;us.
     - heading:
-        text: The Plan
+        text: The&nbsp;Plan
       description: >
-        <p>
-          I found myself using the word &ldquo;clarity&rdquo; a lot in my work.
-          So&nbsp;in 2014, I&nbsp;bought <i>clarityconf.com</i>. But&nbsp;the
-          first event wasn&rsquo;t until 2016. It&nbsp;allowed time to consider
-          and plan what the event experience should&nbsp;be.
-        </p>
+        I found myself using the word &ldquo;clarity&rdquo; a lot in my work.
+        So&nbsp;in 2014, I&nbsp;bought _clarityconf.com_. But&nbsp;the first
+        event wasn&rsquo;t until 2016. It&nbsp;allowed time to consider and plan
+        what the event experience should&nbsp;be.
       image:
         src: clarity-website.png
         alt: Clarity 2018
         screenshot: true
-      lists: []
     - heading:
         text: '2016'
         variant: small
       description: >
-        <p>
-          I organized the conference mostly by myself, with&nbsp;a few
-          volunteers and vendors that I directed which included designers,
-          a&nbsp;sketch note artist, videographers, photographer, and&nbsp;more.
-        </p>
-        <p>The event had almost 300&nbsp;attendees.</p>
+        I organized the conference mostly by myself, with&nbsp;a few volunteers
+        and vendors that I directed which included designers, a&nbsp;sketch note
+        artist, videographers, photographer, and&nbsp;more.
+
+
+        The event had almost 300&nbsp;attendees.
       image:
         src: clarity-richard-and-barbara.jpg
         alt: Richard and Barbara Danne
-      lists:
-        - heading:
-            text: Creative Responsibilities
-            variant: label
-          items:
-            - Attendee Guide Book
-            - Badges &amp; Lanyards
-            - Event Decor/Appearance
-            - Interstitial Slides
-            - Marquee Signage
-            - Printed Program
-            - Speaker Guide Book
-            - Social Media/Marketing
-            - Website
-        - heading:
-            text: Other Creative Credits
-            variant: label
-          items:
-            - Cate Zheng (photography)
-            - Christopher Auyeung (scarf, sticker, swag bag)
-            - FairPlay Video (recap video)
-            - Jesse Hernandez (identity)
-            - Josh Silverman (identity)
-            - Matt Fisher (presentation videos)
-            - Susan Lin (sketchnotes)
-            - The Noun Project (swag bags)
-            - Trish Ang (roll-up banners)
-            - Tristan Henry-Wilson (logo animation)
+      sidebar: >
+        #### Creative&nbsp;Responsibilities
+
+        - Attendee Guide&nbsp;Book
+
+        - Badges &amp;&nbsp;Lanyards
+
+        - Event Decor/Appearance
+
+        - Interstitial&nbsp;Slides
+
+        - Marquee&nbsp;Signage
+
+        - Printed&nbsp;Program
+
+        - Speaker Guide&nbsp;Book
+
+        - Social Media/Marketing
+
+        - Website
+
+        #### Other Creative&nbsp;Credits
+
+        - Cate Zheng (photography)
+
+        - Christopher Auyeung (scarf, sticker, swag&nbsp;bag)
+
+        - FairPlay Video (recap&nbsp;video)
+
+        - Jesse Hernandez (identity)
+
+        - Josh Silverman (identity)
+
+        - Matt Fisher (presentation&nbsp;videos)
+
+        - Susan Lin (sketchnotes)
+
+        - The Noun Project (swag&nbsp;bags)
+
+        - Trish Ang (roll-up&nbsp;banners)
+
+        - Tristan Henry-Wilson (logo&nbsp;animation)
     - heading:
         text: '2017'
         variant: small
       description: >
-        <p>
-          The next year, I&nbsp;had almost 400 attendees, but&nbsp;I worked with
-          the same venue and many of the same&nbsp;people.
-        </p>
-        <p>
-          I added an additional day of full-day workshops to the schedule for
-          attendees to choose&nbsp;from.
-        </p>
+        The next year, I&nbsp;had almost 400 attendees, but&nbsp;I worked with
+        the same venue and many of the same&nbsp;people.
+
+
+        I added an additional day of full-day workshops to the schedule for
+        attendees to choose&nbsp;from.
       image:
         src: clarity-henri.jpg
         alt: Henri Helvetica on stage at Clarity
-      lists:
-        - heading:
-            text: Creative Responsibilities
-            variant: label
-          items:
-            - Attendee Guide Book
-            - Badges &amp; Lanyards
-            - Interstitial Slides
-            - Marquee Signage
-            - Printed Program
-            - Social Media/Marketing
-            - Speaker Guide Book
-            - Stickers
-            - Website
-        - heading:
-            text: Other Creative Credits
-            variant: label
-          items:
-            - Christopher Auyeung (enamel pins, socks, sticker)
-            - Cindy Chang (sketchnotes)
-            - Courtney Quirin (recap video)
-            - Matt Fisher (presentation videos)
-            - Todd Matthews (photography)
+      sidebar: >
+        ####  Creative&nbsp;Responsibilities
+
+        - Attendee Guide&nbsp;Book
+
+        - Badges &amp;&nbsp;Lanyards
+
+        - Interstitial&nbsp;Slides
+
+        - Marquee&nbsp;Signage
+
+        - Printed&nbsp;Program
+
+        - Social Media/Marketing
+
+        - Speaker Guide&nbsp;Book
+
+        - Stickers
+
+        - Website
+
+        #### Other Creative&nbsp;Credits
+
+        - Christopher Auyeung (enamel&nbsp;pins, socks, sticker)
+
+        - Cindy Chang (sketchnotes)
+
+        - Courtney Quirin (recap&nbsp;video)
+
+        - Matt Fisher (presentation&nbsp;videos)
+
+        - Todd Matthews (photography)
     - heading:
         text: '2018'
         variant: small
       description: >
-        <p>
-          The third year, the&nbsp;attendee count grew to 500 and the event was
-          in New York City. This&nbsp;was to meet the customer demands of an
-          east-coast event. So&nbsp;I hired a part-time assistant.
-          I&nbsp;workshopped with a consultant to develop the mission statement
-          and principles. And&nbsp;I continued directing creative volunteers
-          and&nbsp;vendors.
-        </p>
+        The third year, the&nbsp;attendee count grew to 500 and the event was in
+        New York City. This&nbsp;was to meet the customer demands of an
+        east-coast event. So&nbsp;I hired a part-time assistant.
+        I&nbsp;workshopped with a consultant to develop the mission statement
+        and principles. And&nbsp;I continued directing creative volunteers
+        and&nbsp;vendors.
       image:
         src: clarity-sva-marquee.jpg
         alt: Clarity SVA Marquee
-      lists:
-        - heading:
-            text: Creative Responsibilities
-            variant: label
-          items:
-            - Attendee Guide Book
-            - Badges &amp; Lanyards
-            - Beanies
-            - Bracelets
-            - Information Posters
-            - Information Screens
-            - Interstitial Slides
-            - Journals
-            - Marquee Signage
-            - Printed Program
-            - Social Media/Marketing
-            - Speaker Guide Book
-            - Video editing
-            - Website
-        - heading:
-            text: Other Creative Credits
-            variant: label
-          items:
-            - Josh Silverman (brand update, pencil, pencil case, swag bag)
-            - Christopher Auyeung (sticker)
-            - Courtney Quirin (recap video)
-            - Jeremy Perez-Cruz (photography)
-            - Laura Brunow Miner (brand and experience vision exploration)
-            - Natalya Shelburne (sketchnotes)
-            - <abbr title="School of Visual Arts">SVA</abbr> Theatre <abbr
-              title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team
-              presentation video recordings)
-            - Sean Pettis (video editing)
+      sidebar: >
+        #### Creative&nbsp;Responsibilities
+
+        - Attendee Guide&nbsp;Book
+
+        - Badges &amp;&nbsp;Lanyards
+
+        - Beanies
+
+        - Bracelets
+
+        - Information&nbsp;Posters
+
+        - Information&nbsp;Screens
+
+        - Interstitial&nbsp;Slides
+
+        - Journals
+
+        - Marquee&nbsp;Signage
+
+        - Printed&nbsp;Program
+
+        - Social Media/Marketing
+
+        - Speaker Guide&nbsp;Book
+
+        - Video&nbsp;editing
+
+        - Website
+
+        #### Other Creative&nbsp;Credits
+
+        - Josh Silverman (brand&nbsp;update, pencil, pencil case, swag&nbsp;bag)
+
+        - Christopher Auyeung (sticker)
+
+        - Courtney Quirin (recap&nbsp;video)
+
+        - Jeremy Perez-Cruz (photography)
+
+        - Laura Brunow Miner (brand&nbsp;and experience vision&nbsp;exploration)
+
+        - Natalya Shelburne (sketchnotes)
+
+        - <abbr title="School of Visual Arts">SVA</abbr> Theatre <abbr
+          title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team
+          (presentation&nbsp;video&nbsp;recordings)
+
+        - Sean Pettis (video&nbsp;editing)
     - heading:
         text: '2019'
         variant: small
       description: >
-        <p>
-          Back in SF, the&nbsp;event grew to 700 people. In&nbsp;addition to the
-          assistant, volunteers, and&nbsp;vendors, I&nbsp;worked closer with
-          sponsors to improve the attendee/sponsor experience. I&nbsp;negotiated
-          a three-year top-tier sponsorship with InVision, and&nbsp;I partnered
-          with Adobe to host a full day of workshops at their&nbsp;offices.
-        </p>
+        Back in SF, the&nbsp;event grew to 700 people. In&nbsp;addition to the
+        assistant, volunteers, and&nbsp;vendors, I&nbsp;worked closer with
+        sponsors to improve the attendee/sponsor experience. I&nbsp;negotiated a
+        three-year top-tier sponsorship with InVision, and&nbsp;I partnered with
+        Adobe to host a full day of workshops at their&nbsp;offices.
       image:
         src: clarity-programs.jpg
         alt: Clarity programs
-      lists:
-        - heading:
-            text: Creative Responsibilities
-            variant: label
-          items:
-            - Attendee Guide Book
-            - Badges &amp; Lanyards
-            - Information Screens
-            - Interstitial Slides
-            - Printed Program
-            - Social Media/Marketing
-            - Speaker Guide Book
-            - Sticker
-            - Video editing
-            - Website
-        - heading:
-            text: Other Creative Credits
-            variant: label
-          items:
-            - Christopher Auyeung (t-shirt design)
-            - Courtney Quirin (recap video)
-            - Robin McGill (sketchnotes)
-            - Blue Shield of California Theatre at <abbr title="Yerba Buena
-              Center for the Arts">YBCA</abbr> <abbr
-              title="Audio">A</abbr>/<abbr title="Visual">V</abbr> Team
-              (presentation video recordings)
-            - Wicked Tale LLC (video editing)
+      sidebar: >
+        #### Creative&nbsp;Responsibilities
+
+        - Attendee Guide&nbsp;Book
+
+        - Badges &amp;&nbsp;Lanyards
+
+        - Information&nbsp;Screens
+
+        - Interstitial&nbsp;Slides
+
+        - Printed&nbsp;Program
+
+        - Social Media/Marketing
+
+        - Speaker Guide&nbsp;Book
+
+        - Sticker
+
+        - Video&nbsp;editing
+
+        - Website
+
+        #### Other Creative&nbsp;Credits
+
+        - Christopher Auyeung (t-shirt&nbsp;design)
+
+        - Courtney Quirin (recap&nbsp;video)
+
+        - Robin McGill (sketchnotes)
+
+        - Blue Shield of California Theatre at <abbr title="Yerba Buena Center
+          for the Arts">YBCA</abbr> <abbr title="Audio">A</abbr>/<abbr
+          title="Visual">V</abbr> Team (presentation&nbsp;video&nbsp;recordings)
+
+        - Wicked Tale LLC (video&nbsp;editing)
     - heading:
         text: '2020'
         variant: small
       description: >
-        <p>
-          Initially expecting 800+ attendees, I&nbsp;switched to investing in an
-          event production team to achieve that scale and a higher quality.
-          However, with&nbsp;the pandemic, plans&nbsp;changed
-          (from&nbsp;in-person to online and attendance forecasted to 500).
-          We&rsquo;ve met every week since February and have created what we
-          expect to be a high-quality, engaging&nbsp;experience.
-        </p>
-      lists:
-        - heading:
-            text: Creative Responsibilities
-            variant: label
-          items:
-            - Enamel Pin
-            - Mailer Box
-            - Patch
-            - Printed Program
-            - Website
-        - heading:
-            text: Other Creative Credits
-            variant: label
-          items:
-            - Alexander Tran (sketchnotes)
-            - Josh Silverman (sticker sheets)
-            - Kickass Conferences (badges,
-              design&nbsp;post-production/procurement,
-              social&nbsp;media/marketing, website&nbsp;content updates, etc)
-            - Three Wolf Media (video&nbsp;production for <abbr title="New
-              York">NY</abbr>&nbsp;speakers)
+        Initially expecting 800+ attendees, I&nbsp;switched to investing in an
+        event production team to achieve that scale and a higher quality.
+        However, with&nbsp;the pandemic, plans&nbsp;changed (from&nbsp;in-person
+        to online and attendance forecasted to 500). We&rsquo;ve met every week
+        since February and have created what we expect to be a high-quality,
+        engaging&nbsp;experience.
+      sidebar: >
+        #### Creative&nbsp;Responsibilities
+
+        - Enamel&nbsp;Pin
+
+        - Mailer&nbsp;Box
+
+        - Patch
+
+        - Printed&nbsp;Program
+
+        - Website
+
+        #### Other Creative&nbsp;Credits
+
+        - Alexander Tran (sketchnotes)
+
+        - Josh Silverman (sticker&nbsp;sheets)
+
+        - Kickass Conferences (badges, design&nbsp;post-production/procurement,
+          social&nbsp;media/marketing, website&nbsp;content updates,&nbsp;etc)
+
+        - Three Wolf Media (video&nbsp;production for <abbr title="New
+          York">NY</abbr>&nbsp;speakers)
       image:
         src: clarity-box.jpg
         alt: Clarity box
@@ -345,12 +377,11 @@
         text: Results
       variant: small
       description: >
-        <p>
-          I&rsquo;ve built an engaged community of design systems practitioners
-          that has grown steadily each year for 5 years. While&nbsp;2020 has
-          challenges, the&nbsp;community is still active, excited,
-          and&nbsp;engaged.
-        </p>
+        I&rsquo;ve built an engaged community of design systems practitioners
+        that has grown steadily each year for 5 years. While&nbsp;2020 has
+        challenges, the&nbsp;community is still active, excited,
+        and&nbsp;engaged.
+
         <div>
           <blockquote class="twitter-tweet">
             <p lang="en" dir="ltr">
@@ -464,20 +495,21 @@
         </div>
 
   roles:
-    - Creative Director
-    - Design Systems Advocate
-    - Event Planner
-    - Frontend Developer
-    - Project Manager
-    - <abbr title="User Experience">UX</abbr> Designer
-    - Visual Designer
+    - Creative&nbsp;Director
+    - Design Systems&nbsp;Advocate
+    - Event&nbsp;Planner
+    - Frontend&nbsp;Developer
+    - Project&nbsp;Manager
+    - <abbr title="User Experience">UX</abbr>&nbsp;Designer
+    - Visual&nbsp;Designer
   deliverables:
     - Conference
-    - Printed Collateral
-    - Style Guide
+    - Printed&nbsp;Collateral
+    - Style&nbsp;Guide
     - Website
 
 - title: Salesforce Lightning Design System
+  htmlTitle: Salesforce Lightning Design&nbsp;System
   path: /salesforce-lightning-design-system/
   next: /sass/
   prev: /clarity/
@@ -498,137 +530,146 @@
     - heading:
         text: Overview
       description: >
-        <p>
-          <abbr title="Salesforce Lightning Design System">SLDS</abbr> saves
-          time and energy, freeing designers and developers to focus on larger
-          issues of usability and meaning. Standardized, reusable components
-          support collaboration, reinforce branding, and provide a consistent
-          look and user experience.
-        </p>
-        <p>
-          <abbr title="Salesforce Lightning Design System">SLDS</abbr> is a
-          living open-source design system. Salesforce is committed to creating
-          products that are perceivable, operable, understandable, and robust
-          for all users. All <abbr title="Salesforce Lightning Design
-          System">SLDS</abbr> components include <abbr title="Accessible Rich
-          Internet Applications">ARIA</abbr> markup and guidelines to help
-          people with disabilities use and contribute to Salesforce
-          applications. Use the <abbr title="Salesforce Lightning Design
-          System">SLDS</abbr> <abbr title="Cascading Stylesheets">CSS</abbr>
-          framework with any <abbr title="technology">tech</abbr> stack, or take
-          advantage of the guidance on using <abbr title="Salesforce Lightning
-          Design System">SLDS</abbr> with Salesforce technologies including
-          Lightning Web Components, Aura, and Visualforce.
-        </p>
-      lists: []
+        <abbr title="Salesforce Lightning Design System">SLDS</abbr> is a living
+        open-source design system. Salesforce&nbsp;is committed to creating
+        products that are perceivable, operable, understandable, and&nbsp;robust
+        for all users. All&nbsp;<abbr title="Salesforce Lightning Design
+        System">SLDS</abbr> components include <abbr title="Accessible Rich
+        Internet Applications">ARIA</abbr> markup and guidelines to help people
+        with disabilities use and contribute to Salesforce applications.
+        Use&nbsp;the <abbr title="Salesforce Lightning Design
+        System">SLDS</abbr> <abbr title="Cascading Stylesheets">CSS</abbr>
+        framework with any <abbr title="technology">tech</abbr> stack,
+        or&nbsp;take advantage of the guidance on using <abbr title="Salesforce
+        Lightning Design System">SLDS</abbr> with Salesforce technologies
+        including Lightning Web Components, Aura, and&nbsp;Visualforce.
     - heading:
         text: Challenge
       description: >
-        <p>
-          Salesforce needed to modernize and overhaul the mobile and desktop
-          experience across several products, teams, and&nbsp;platforms.
-        </p>
+        Salesforce needed to modernize and overhaul the mobile and desktop
+        experience across several products, teams, and&nbsp;platforms.
 
     - heading:
         text: Story
       description: >
-        <p>
-          This is some of the work I am most proud of. During my five and a half
-          years at Salesforce, I had the opportunity to impact how one of the
-          largest enterprise technology companies ship product design.
-        </p>
+        This is some of the work I am most proud of. During&nbsp;my five and a
+        half years at Salesforce, I&nbsp;had the opportunity to impact how one
+        of the largest enterprise technology companies ship product&nbsp;design.
       image:
         src: salesforce-lightning-design-system-system.png
         alt: Salesforce overview
-      lists: []
     - heading:
-        text: Early Years
+        text: Salesforce1
         variant: small
       description: >
-        <p>
-          I moved to the core team to work on design systems across the various
-          products. I worked closely with other product designers to standardize
-          and document the design language and specifications for mobile and web
-          application designs.
-        </p>
-        <p>
-          I helped invent design tokens, which became adopted by the industry as
-          a best practice for scaling design in a system.
-        </p>
+        Working with PMs and engineering for Salesforce1 and the precursor to
+        the Lightning Experience, design&nbsp;system priorities were aligned
+        with&nbsp;product.
       image:
         src: salesforce1-styleguide.png
         alt: Salesforce1 Style Guide
         screenshot: true
-      lists:
-        - heading:
-            text: Other Credits
-            variant: label
-          items:
-            - Jon Levine (collaborator I worked closely with to ship Design
-              Tokens)
-            - S&ouml;nke Rohde (created the first iteration of Theo, our design
-              token generator tool that was open-sourced)
+      sidebar: >
+        #### The&nbsp;Team
+
+        - Visual team/Salesforce Cloud team: one&nbsp;manager, one&nbsp;creative
+          director, three&nbsp;hybrid designer/devs (including&nbsp;myself),
+          two&nbsp;designers
     - heading:
-        text: After the Buy-In
+        text: Design Tokens &amp;&nbsp;Theo
         variant: small
       description: >
-        <p>
-          I pitched the design system to stakeholders in engineering and design
-          leadership, and got buy-in. With the Lightning Design System funded
-          and a team formalized, I received a title change to clarify my role. I
-          conducted design systems work (which included <abbr title="User
-          Experience">UX</abbr> design, visual design, frontend development, and
-          documentation). I drafted the team vision and charter and worked
-          closely with our team's people manager on planning and presenting our
-          goals with the organization.
-        </p>
-        <p>
-          I also led the <abbr title="user experience">UX</abbr>
-          organization&rsquo;s evangelism and outreach efforts including being
-          the Editor-in-chief for the team blog, the admin for the social media
-          accounts, organizer of various meet ups and conference sponsorships,
-          writing, speaking, and coaching both internal and external people on
-          best practices using the design system.
-        </p>
-        <p>
-          I also mentored designers to level up their skills in frontend
-          development.
-        </p>
+        I paired closely with engineering to architect and implement design
+        tokens, which&nbsp;became an industry-standard way of scaling design
+        systems across multiple platforms and devices. We&nbsp;also built an
+        open-source tool called Theo to generate the&nbsp;tokens.
+
+
+        During this time, I&nbsp;managed to convince the entire organization to
+        move to a four-based metric&nbsp;system!
+      image:
+        src: salesforce-design-tokens.png
+        alt: Design Tokens
+        screenshot: true
+      sidebar: >
+        #### Additional&nbsp;Credits
+
+        - Jon Levine (collaborator&nbsp;I worked closely with to ship
+          Design&nbsp;Tokens)
+
+        - S&ouml;nke Rohde (developed&nbsp;the first iteration of Theo,
+          our&nbsp;design token generator tool that was&nbsp;open-sourced)
+    - heading:
+        text: Getting Buy-In
+        variant: small
+      description: >
+        I pitched the design system to stakeholders in engineering and design
+        leadership, and&nbsp;got buy-in. With&nbsp;the Lightning Design System
+        funded and a team formalized, I&nbsp;received a title change to clarify
+        my role. I&nbsp;conducted design systems work (which&nbsp;included <abbr
+        title="User Experience">UX</abbr> design, visual&nbsp;design,
+        frontend&nbsp;development, and&nbsp;documentation). I&nbsp;drafted the
+        team vision and charter and worked closely with our team&rsquo;s people
+        manager on planning and presenting our goals with the&nbsp;organization.
+
+
+        Partnered with a researcher, we&nbsp;user-tested early and often with
+        proof of concepts. We&nbsp;facilitated conversations with third-party
+        <abbr title="application">app</abbr> developers to find pinpoints for
+        the design system&nbsp;framework.
+
+
+        Additionally, I&nbsp;led the <abbr title="user experience">UX</abbr>
+        organization&rsquo;s evangelism and outreach efforts including being the
+        Editor-in-chief for the team blog, the&nbsp;admin for the social media
+        accounts, organizer&nbsp;of various meet ups and conference
+        sponsorships, writing, speaking, and&nbsp;coaching both internal and
+        external people on best practices using the design&nbsp;system.
+
+
+        I also mentored designers to level up their skills in
+        frontend&nbsp;development.
       image:
         src: salesforce-lightning-design-system-invitation.png
         alt: Salesforce Lightning Design System logo
-      lists:
-        - heading:
-            text: Other Credits
-            variant: label
-          items:
-            - Christopher Auyeung (the team manager I worked closely with)
-            - Stephanie Rewis (the <abbr title="Cascading
-              Stylesheets">CSS</abbr> we hired to take the initial architecture
-              I had set up and build and evolve it further)
-            - Thanh Quach (our visual designer who helped churn out many of the
-              illustrations and graphics, as well as screen explorations)
-            - Brandon Ferrua (hybrid designer/developer we hired during our
-              second wave of hires to help execute a ton of the components)
+      sidebar: >
+        #### Additional&nbsp;Credits
+
+        - Craig Villamor (chief design&nbsp;architect who I met with weekly in
+          mentoring sessions, and&nbsp;championed the vision among the
+          executive&nbsp;leadership)
+
+        - Christopher Auyeung (the&nbsp;team manager I worked closely&nbsp;with)
+
+        - Stephanie Rewis (the&nbsp;<abbr title="Cascading
+          Stylesheets">CSS</abbr> we hired to take the initial architecture I
+          had set up and build and evolve it&nbsp;further)
+
+        - Thanh Quach (our&nbsp;visual designer who helped churn out many of the
+          illustrations and graphics, as&nbsp;well as screen&nbsp;explorations)
+
+        - Brandon Ferrua (hybrid&nbsp;designer/developer we hired during our
+          second wave of hires to help execute a ton of the&nbsp;components)
     - heading:
-        text: Recognized Leadership
+        text: Leadership
         variant: small
       description: >
-        <p>
-          Taking on a larger role as Lead Designer, I led the information
-          architecture, design, and development for the design system. I also
-          partnered with other designers to adopt the system. I continued
-          evangelism efforts internally and externally.
-        </p>
-      lists: []
+        After elevating our team&rsquo;s output and perceived brand both
+        internally and externally, I&nbsp;took on more responsibilities in
+        mentoring other designers and developers, as&nbsp;well as being the
+        point person for the information architecture and design patterns for
+        the design&nbsp;system.
+      image:
+        src: salesforce-on-twitter.jpg
+        alt: Design Systems on Twitter
   roles:
-    - Design Systems Advocate
-    - Event Planner
-    - Frontend Developer
-    - <abbr title="User Experience">UX</abbr> Designer
-    - Visual Designer
+    - Design Systems&nbsp;Advocate
+    - Event&nbsp;Planner
+    - Frontend&nbsp;Developer
+    - <abbr title="User Experience">UX</abbr>&nbsp;Designer
+    - Visual&nbsp;Designer
   deliverables:
-    - Style Guide
+    - Style&nbsp;Guide
     - Website
 
 - title: Sass
@@ -653,82 +694,75 @@
     - heading:
         text: Overview
       description: >
-        <p>
-          Sass is a mature, stable, and powerful professional grade <abbr
-          title="Cascading Style Sheets">CSS</abbr> extension language. Sass is
-          completely compatible with all versions of <abbr title="Cascading
-          Style Sheets">CSS</abbr>. You can use it with any available <abbr
-          title="Cascading Style Sheets">CSS</abbr> libraries.
-        </p>
-      lists: []
+        Sass is a mature, stable, and&nbsp;powerful professional grade <abbr
+        title="Cascading Style Sheets">CSS</abbr> extension language.
+        Sass&nbsp;is completely compatible with all versions of <abbr
+        title="Cascading Style Sheets">CSS</abbr>. You&nbsp;can use it with any
+        available <abbr title="Cascading Style
+        Sheets">CSS</abbr>&nbsp;libraries.
     - heading:
         text: Challenge
       description: >
-        <p>
-          While Sass was first to market, Less&nbsp;had become more popular with
-          designers. Sass&rsquo;s website and brand was not inspiring designers
-          to use it. Also, the&nbsp;brand was also controversial&nbsp;(sexist).
-        </p>
+        While Sass was first to market, Less&nbsp;had become more popular with
+        designers. Sass&rsquo;s website and brand was not inspiring designers to
+        use it. Also, the&nbsp;brand was also controversial&nbsp;(sexist).
       image:
         src: sass-color.gif
         alt: Sass color guide
         screenshot: true
-      lists:
-        - heading:
-            text: The Team
-          items:
-            - The Core Team &&nbsp;Team Sass&nbsp;Design
-            - Contributors from the Sass&nbsp;community
-            - Attendees at Sass&nbsp;Conf
+      sidebar: >
+        #### The&nbsp;Team
+
+        - The Core Team &&nbsp;Team Sass&nbsp;Design
+
+        - Contributors from the Sass&nbsp;community
+
+        - Attendees at Sass&nbsp;Conf
     - heading:
         text: The Story
       description: >
-        <p>
-          I am a fan of using Sass to process my CSS. I&nbsp;was first
-          introduced to it during my time working at Engine Yard. One&nbsp;day,
-          one&nbsp;of the core team members tweeted his frustration with the
-          design of the project. He&nbsp;suggested that it might be why
-          designers were using a competitor instead. So&nbsp;I volunteered to
-          lead the redesign of the brand and&nbsp;website.
-        </p>
+        I am a fan of using Sass to process my CSS. I&nbsp;was first introduced
+        to it during my time working at Engine Yard. One&nbsp;day, one&nbsp;of
+        the core team members tweeted his frustration with the design of the
+        project. He&nbsp;suggested that it might be why designers were using a
+        competitor instead. So&nbsp;I volunteered to lead the redesign of the
+        brand and&nbsp;website.
       image:
         src: sass-style-tile.png
         alt: Style Tile
     - heading:
         text: Results
       description: >
-        <p>
-          The brand has not only been embraced by the community, but&nbsp;many
-          companies, tools, and&nbsp;resources have adopted the language.
-          The&nbsp;most popular <abbr title="Cascading Stylesheets">CSS</abbr>
-          framework (Bootstrap) abandoned&nbsp;Less in favor of Sass.
-          The&nbsp;United States Web Design System uses it. Hillary&nbsp;Clinton
-          even wore a replica of the glasses I drew to hire&nbsp;developers.
-        </p>
+        The brand has not only been embraced by the community, but&nbsp;many
+        companies, tools, and&nbsp;resources have adopted the language.
+        The&nbsp;most popular <abbr title="Cascading Stylesheets">CSS</abbr>
+        framework (Bootstrap) abandoned&nbsp;Less in favor of Sass.
+        The&nbsp;United States Web Design System uses it. Hillary&nbsp;Clinton
+        even wore a replica of the glasses I drew to hire&nbsp;developers.
       image:
         src: sassy-hillary.jpg
         alt: Sassy Hillary
-      lists: []
   roles:
     - Branding
-    - Creative Director
-    - Design Systems Advocate
-    - Event Planner
-    - Frontend Developer
-    - <abbr title="User Experience">UX</abbr> Designer
-    - Visual Designer
+    - Creative&nbsp;Director
+    - Design Systems&nbsp;Advocate
+    - Event&nbsp;Planner
+    - Frontend&nbsp;Developer
+    - <abbr title="User Experience">UX</abbr>&nbsp;Designer
+    - Visual&nbsp;Designer
   deliverables:
-    - Style Guide
+    - Style&nbsp;Guide
     - Website
 
 - title: Apple Online Store
+  htmlTitle: Apple Online&nbsp;Store
   path: /apple-online-store/
   next: /beehive-design-system/
   prev: /sass/
   description: >
     Led the <abbr title="Cascading Style Sheets">CSS</abbr> architecture for
-    Apple&rsquo;s online shopping experience. Also produced/documented the
-    visual language.
+    Apple&rsquo;s online shopping experience. Also&nbsp;produced/documented the
+    visual&nbsp;language.
   image:
     src: apple-online-store-website.png
     alt: Apple website
@@ -744,23 +778,17 @@
     - heading:
         text: Overview
       description: >
-        <p>
-          The Apple Online Store was an e-commerce website at store.apple.com.
-          The separate website no longer exists as Apple has merged it into the
-          marketing website.
-        </p>
-      lists: []
+        The Apple Online Store was an e-commerce website at store.apple.com.
+        The&nbsp;separate website no longer exists as Apple has merged it into
+        the marketing&nbsp;website.
     - heading:
         text: Story
       description: >
-        <p>
-          I joined Apple to work on the Online Store right before the launch of
-          the first iPhone. I started as a Frontend UI Engineer.
-        </p>
+        I joined Apple to work on the Online Store right before the launch of
+        the first iPhone. I&nbsp;started as a Frontend UI Engineer.
       image:
         src: apple-online-store-sign-in.png
         alt: Apple overview
-      lists: []
     - heading:
         text: Cart Experience
         variant: small
@@ -769,9 +797,9 @@
         alt: Apple Online Store cart
         screenshot: true
   roles:
-    - Design Systems Advocate
-    - Frontend Developer
-    - Visual Designer
+    - Design Systems&nbsp;Advocate
+    - Frontend&nbsp;Developer
+    - Visual&nbsp;Designer
   deliverables:
-    - Style Guide
+    - Style&nbsp;Guide
     - Website

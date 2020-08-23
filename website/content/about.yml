@@ -1,155 +1,145 @@
-bio:
+lead: >
+  I enjoy design systems, tools, and&nbsp;processes. More&nbsp;importantly,
+  I&nbsp;like looking at ways to improve collaboration and improving
+  communication; I&nbsp;love community and people. It&rsquo;s&nbsp;why I love
+  design systems in the first place. Because **design systems are
+  for&nbsp;people**.
+philosophy: >
+  ## My Outlook
+
+  ### Design systems are _for_&nbsp;people
+
+  - Be open, inclusive, and&nbsp;community-driven. Open&nbsp;source.
+    Share&nbsp;what you&nbsp;learn.
+
+  - &ldquo;There is no design system&rdquo;. 😜 Or, rather&nbsp;than only
+    focusing on the artifact (a&nbsp;style guide website, <abbr title="User
+    Interface">UI</abbr>&nbsp;Kit, pattern&nbsp;library, etc) &mdash;
+    see&nbsp;Design Systems is a continuous way of thinking &amp;&nbsp;working.
+
+  - Technology stacks and tools come and go. Be&nbsp;agnostically-minded
+    and&nbsp;future-proof.
+
+  ### Design Systems are a shared&nbsp;ownership
+
+  - Anyone should be empowered to contribute to design&nbsp;systems.
+
+  - Close gaps (rather&nbsp;than simply bridging&nbsp;them).
+
+  - Design Systems are more successful with cross-functional
+    skills&nbsp;represented.
+
+  - Avoid&nbsp;silos.
+
+  ### Hybrids have a place in design&nbsp;systems
+
+  - There is no need to &ldquo;bucket&rdquo; someone to focus only on design or
+    only on engineering. Let&nbsp;people shine by using their diverse range
+    of&nbsp;skills.
+
+  - The &ldquo;design&rdquo; in design systems is to solve problems for the
+    overall experience. Everyone&nbsp;impacts&nbsp;that.
+
+  - Designers who code and coders who design are able to show their work in
+    exciting ways. Let&rsquo;s&nbsp;embrace&nbsp;that.
+
+  ### Show. Don&rsquo;t&nbsp;tell.
+
+  - To get buy-in, don&rsquo;t&nbsp;just talk about potential.
+    Show&nbsp;examples and concepts. Prove&nbsp;it with visible outcomes and
+    incremental&nbsp;progress.
+
+  - Rather than aiming for massive impact that takes awhile, focus&nbsp;on the
+    incremental wins. The&nbsp;smaller success stories cultivate
+    adoption&nbsp;faster.
+
+  - Share the vision with everyone. (Posters&nbsp;can&nbsp;help!)
+experience:
   lead: >
-    I enjoy design systems, tools, and&nbsp;processes. More&nbsp;importantly,
-    I&nbsp;like looking at ways to improve collaboration and improving
-    communication; I&nbsp;love community and people. It&rsquo;s&nbsp;why I love
-    design systems in the first place. Because&nbsp;<strong>design systems are
-    for&nbsp;people</strong>.
-  philosophy:
-    - heading: Design systems are for&nbsp;people
-      description: >
-        <ul>
-          <li>
-            Be open, inclusive, and&nbsp;community-driven. Open&nbsp;source.
-            Share&nbsp;what you&nbsp;learn.
-          </li>
+    I&rsquo;ve been designing and developing professionally for
+    **19&nbsp;years** (and&nbsp;longer as a hobby for **23&nbsp;years**).
+    I&nbsp;created my first design system **16&nbsp;years**&nbsp;ago.
+  content: >
+    - I was a Senior Design Systems and Design Operations Lead and Project
+      Manager for [Amazon Honeycode](https://www.honeycode.aws/), a&nbsp;new
+      no-code&nbsp;product.
 
-          <li>
-            &ldquo;There is no design system&rdquo;. 😜 Or, rather&nbsp;than
-            only focusing on the artifact (a&nbsp;style guide website, <abbr
-            title="User Interface">UI</abbr>&nbsp;Kit, pattern&nbsp;library,
-            etc) &mdash; see&nbsp;Design Systems is a continuous way of thinking
-            &amp;&nbsp;working.
-          </li>
+    - I was also the founding Lead Designer on the [Salesforce Lightning Design
+      System](https://www.lightningdesignsystem.com/). During&nbsp;my time at
+      Salesforce, I&nbsp;also led the overall Salesforce <abbr title="User
+      Experience">UX</abbr> community and evangelism efforts, by&nbsp;acting as
+      Editor-in-Chief for the [Salesforce <abbr title="User
+      Experience">UX</abbr> blog](https://medium.com/salesforce-ux),
+      managing&nbsp;the social media accounts, organizing&nbsp;and setting up
+      sponsorships for meet ups and conferences, and&nbsp;coordinating speakers.
 
-          <li>
-            Technology stacks and tools come and go. Be&nbsp;agnostically-minded
-            and&nbsp;future-proof.
-          </li>
-        </ul>
-    - heading: Design Systems are a shared&nbsp;ownership
-      description: >
-        <ul>
-          <li>
-            Anyone should be empowered to contribute to design&nbsp;systems.
-          </li>
+    - I led the <abbr title="Cascading Stylesheets">CSS</abbr> architecture and
+      style guide for the [Apple Online Store](https://www.apple.com/).
 
-          <li>Close gaps (rather&nbsp;than simply bridging&nbsp;them).</li>
+    - I also worked at [GitHub](https://github.com/),
+      [Engine&nbsp;Yard](https://www.engineyard.com/), [Crush&nbsp;&amp;
+      Lovely](https://crushlovely.com/),
+      [inferno](https://creativeinferno.com/), [Oden](https://www.oden.com/),
+      and&nbsp;[Memphis Brooks Museum of Art](https://www.brooksmuseum.org/).
 
-          <li>
-            Design Systems are more successful with cross-functional
-            skills&nbsp;represented.
-          </li>
+    - Through consulting, I&rsquo;ve&nbsp;worked on projects including [<abbr
+      title="International Business Machines Corporation">IBM</abbr>&rsquo;s
+      Carbon Design System](https://www.carbondesignsystem.com/), a&nbsp;large
+      global airline, a&nbsp;large pharmaceutical company,
+      [JustWorks](https://justworks.com/), [Spotify&rsquo;s&nbsp;Encore Design
+      System](https://spotify.design/article/reimagining-design-systems-at-spotify),
+      [<abbr title="World Wide Web Consortium">W3C</abbr>&nbsp;Web Accessibility
+      Initiative](https://www.w3.org/WAI/redesign/project.php#ack),
+      [Mass.gov](https://www.mass.gov/), [FedEx](https://www.fedex.com/),
+      and&nbsp;[International&nbsp;Paper](http://www.internationalpaper.com/).
 
-          <li>Avoid&nbsp;silos.</li>
-        </ul>
-    - heading: Hybrids have a place in design&nbsp;systems
-      description: >
-        <ul>
-          <li>
-            There is no need to &ldquo;bucket&rdquo; someone to focus only on
-            design or only on engineering. Let&nbsp;people shine by using their
-            diverse range of&nbsp;skills.
-          </li>
+    - Start Up Advisory Boards: Haiku&nbsp;and&nbsp;Jobroo
 
-          <li>
-            The &ldquo;design&rdquo; in design systems is to solve problems for
-            the overall experience. Everyone&nbsp;impacts&nbsp;that.
-          </li>
+    - Workshops, Public&nbsp;Speaking (13&nbsp;years), Writing
+      (several&nbsp;published articles and co-authored three&nbsp;books)
 
-          <li>
-            Designers who code and coders who design are able to show their work
-            in exciting ways. Let&rsquo;s&nbsp;embrace&nbsp;that.
-          </li>
-        </ul>
-    - heading: Show. Don&rsquo;t&nbsp;tell.
-      description: >
-        <ul>
-          <li>
-            To get buy-in, don&rsquo;t&nbsp;just talk about potential.
-            Show&nbsp;examples and concepts. Prove&nbsp;it with visible outcomes
-            and incremental&nbsp;progress.
-          </li>
+    - Freelance partnerships with Superfriendly, Group&nbsp;of Humans, NineLabs,
+      and&nbsp;Josh&nbsp;Silverman
 
-          <li>
-            Rather than aiming for massive impact that takes awhile,
-            focus&nbsp;on the incremental wins. The&nbsp;smaller success stories
-            cultivate adoption&nbsp;faster.
-          </li>
+    ### I call myself a Design Systems Advocate.
 
-          <li>Share the vision with everyone. (Posters&nbsp;can&nbsp;help!)</li>
-        </ul>
-  full: >
-    <p>
-      I am a design systems advocate. I&nbsp;advise companies including <a
-      href="https://www.jobroo.com/">Jobroo</a>. In&nbsp;the <a
-      href="https://developers.google.com/community/experts">Google Developers
-      Experts</a> program, I&nbsp;am a Web Technologies Expert (and&nbsp;I was a
-      Product Design Expert until Google sunset that category). I&nbsp;have been
-      making designing and developing (mostly&nbsp;for the web) for over 23
-      years, 19&nbsp;of which professionally. 16&nbsp;of those years I have been
-      doing design systems. I&nbsp;am a co-chair of the <a
-      href="https://www.w3.org/community/design-tokens/">Design Tokens <abbr
-      title="World Wide Web Consortium">W3C</abbr> Community Group</a>.
-      I&nbsp;am currently coaching and consulting with companies on design
-      systems, visual&nbsp;design, and&nbsp;user&nbsp;experience.
-    </p>
-    <p>
-      I was a Senior Design Systems and Design Operations Lead and Project
-      Manager for <a href="https://www.honeycode.aws/">Amazon Honeycode</a>,
-      a&nbsp;new no-code product. I&nbsp;was also the founding Lead Designer on
-      the <a href="https://www.lightningdesignsystem.com/">Salesforce Lightning
-      Design System</a>. During&nbsp;my time at Salesforce, I&nbsp;also led the
-      overall Salesforce <abbr title="User Experience">UX</abbr> community and
-      evangelism efforts, by&nbsp;acting as Editor-in-Chief for the <a
-      href="https://medium.com/salesforce-ux">Salesforce <abbr title="User
-      Experience">UX</abbr> blog</a>, managing&nbsp;the social media accounts,
-      organizing&nbsp;and setting up sponsorships for meet ups and conferences,
-      and&nbsp;coordinating speakers. Previously, I&nbsp;led the <abbr
-      title="Cascading Stylesheets">CSS</abbr> architecture and style guide for
-      the <a href="https://www.apple.com/">Apple Online Store</a>. I&nbsp;also
-      worked at <a href="https://github.com/">GitHub</a>, <a
-      href="https://www.engineyard.com/">Engine&nbsp;Yard</a>, <a
-      href="https://crushlovely.com/">Crush&nbsp;&amp; Lovely</a>, <a
-      href="https://creativeinferno.com/">inferno</a>, <a
-      href="https://www.oden.com/">Oden</a>, and&nbsp;<a
-      href="https://www.brooksmuseum.org/">Memphis Brooks Museum <i>of</i>
-      Art</a>. Through&nbsp;consulting, I&rsquo;ve&nbsp;worked on projects
-      including <a href="https://www.w3.org/WAI/redesign/project.php#ack"><abbr
-      title="World Wide Web Consortium">W3C</abbr> Web Accessibility
-      Initiative</a>, <a href="https://www.mass.gov/">Mass.gov</a>, <a
-      href="https://www.fedex.com/global/choose-location.html">FedEx</a>,
-      and&nbsp;<a
-      href="http://www.internationalpaper.com/">International&nbsp;Paper</a>.
-    </p>
-    <p>
-      Print Magazine featured me as a leading San Francisco creative.
-      I&nbsp;have been said to be one of the most cheerful&nbsp;goths.
-    </p>
+    - Founder, [Clarity](https://wwww.clarityconf.com/)
+
+    - Core Team Design/Website&nbsp;Lead, [Sass](https://sass-lang.com/)
+
+    - Co-chair, [Design&nbsp;Tokens W3C
+      Community&nbsp;Group](https://www.designtokens.org/)
+
+    - [Google Developers
+      Experts](https://developers.google.com/community/experts),
+      Web&nbsp;Technologies (and&nbsp;previously Product Design until Google
+      sunset that&nbsp;category)
+
+    - [Design.Systems](http://design.systems/) (Coalition/Slack)
 
 invite: >
-  <p>
-    I love speaking at conferences! If&nbsp;you would like to invite me to speak
-    at your event, please&nbsp;review the following&nbsp;details.
-  </p>
-  <ul>
-    <li>
-      I only speak at conferences that have an actionable and enforced Code
-      of&nbsp;Conduct.
-    </li>
-    <li>
-      I require travel expenses to be covered by the event. I&nbsp;prefer doing
-      this as a reimbursement so that I can book my own travel.
-    </li>
-    <li>
-      I require an honorarium (speaking&nbsp;fee). If&nbsp;you are a non-profit,
-      we&nbsp;can discuss terms to make the engagement&nbsp;possible.
-    </li>
-    <li>
-      When contacting me, please&nbsp;let me know what actions you are taking to
-      ensure a diverse and inclusive&nbsp;event.
-    </li>
-  </ul>
+  ### Invite Me to&nbsp;Speak
+
+  I love speaking at conferences! If&nbsp;you would like to invite me to speak
+  at your event, please&nbsp;review the following&nbsp;details.
+
+  - I only speak at conferences that have an actionable and enforced Code
+    of&nbsp;Conduct.
+
+  - I require travel expenses to be covered by the event. I&nbsp;prefer doing
+    this as a reimbursement so that I can book my own travel.
+
+  - I require an honorarium (speaking&nbsp;fee). If&nbsp;you are a non-profit,
+    we&nbsp;can discuss terms to make the engagement&nbsp;possible.
+
+  - When contacting me, please&nbsp;let me know what actions you are taking to
+    ensure a diverse and inclusive&nbsp;event.
+
+speaking:
+  - name: Biography
+    url: https://github.com/jina/press/tree/master/bio
+  - name: Past&nbsp;Talks
+    url: https://noti.st/jina
 
 collaborations:
   - name: Group of&nbsp;Humans

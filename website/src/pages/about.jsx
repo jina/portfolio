@@ -6,8 +6,10 @@ import { Prose } from '../components/Prose';
 
 import { Circle } from '../layout/Circle';
 import { Container } from '../layout/Container';
+import { HolyGrail } from '../layout/HolyGrail';
 
 import DefaultLayout from '../site/DefaultLayout';
+import { MarkdownContent } from '../site/MarkdownContent';
 
 import flushStyles from '../layout/Flush/Flush.module.scss';
 import spacingStyles from '../layout/Spacing/Spacing.module.scss';
@@ -64,28 +66,11 @@ const AboutPage = () => {
         </>
       }
       heroChildren={
-        <div className={spacingStyles.y_xxl}>
-          <Prose>
-            <p
-              className="lead"
-              dangerouslySetInnerHTML={{ __html: AboutData.bio.lead }}
-            />
+        <Prose className={spacingStyles.y_xxl}>
+          <MarkdownContent className="lead" content={AboutData.lead} />
 
-            <Heading>My Outlook</Heading>
-
-            {AboutData.bio.philosophy.map((data, index) => {
-              return (
-                <div className={spacingStyles.y_lg} key={`p_${index}`}>
-                  <Heading.Small
-                    dangerouslySetInnerHTML={{ __html: data.heading }}
-                  />
-
-                  <div dangerouslySetInnerHTML={{ __html: data.description }} />
-                </div>
-              );
-            })}
-          </Prose>
-        </div>
+          <MarkdownContent content={AboutData.philosophy} />
+        </Prose>
       }
       sidebarBefore={
         <Card heading="Open Source Projects">
@@ -133,124 +118,97 @@ const AboutPage = () => {
         </Card>
       }
       footer={
-        <Card heading="Invite Me to Speak" helement="h3">
-          <Prose
-            spacing="lg"
-            dangerouslySetInnerHTML={{ __html: AboutData.invite }}
-          />
-        </Card>
-      }
-      footerSidebarBefore={
-        <Card heading="Upcoming" helement="h3">
-          <ul>
-            {TimelineData.map((data, index) => {
-              if (data.event === true) {
-                if (data.upcoming === true) {
-                  if (data.draft !== true) {
-                    const ItemName =
-                      data.url !== '' ? (
-                        <a href={data.url} target="_blank" rel="noreferrer">
-                          {data.name}
-                        </a>
-                      ) : (
-                        data.name
-                      );
-                    return (
-                      <li key={`timeline_item${index}`}>
-                        <div className={spacingStyles.y_base}>
-                          <h4>
-                            <strong>{ItemName}</strong> &mdash; {data.location}
-                          </h4>
+        <HolyGrail>
+          <HolyGrail.Header>
+            <Heading>Speaking</Heading>
+          </HolyGrail.Header>
 
-                          <ul>
-                            {data.presentations.map((p, index) => {
-                              return <li key={`p_item${index}`}>{p.title}</li>;
-                            })}
-                          </ul>
-                        </div>
-                      </li>
+          <HolyGrail.Body>
+            <HolyGrail.Sidebar wide>
+              <Card heading="Upcoming" helement="h3">
+                <ul>
+                  {TimelineData.map((data, index) => {
+                    if (data.event === true) {
+                      if (data.upcoming === true) {
+                        if (data.draft !== true) {
+                          const ItemName =
+                            data.url !== '' ? (
+                              <a
+                                href={data.url}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {data.name}
+                              </a>
+                            ) : (
+                              data.name
+                            );
+                          return (
+                            <li key={`timeline_item${index}`}>
+                              <div className={spacingStyles.y_base}>
+                                <h4>
+                                  <strong>{ItemName}</strong> &mdash;{' '}
+                                  {data.location}
+                                </h4>
+
+                                <ul>
+                                  {data.presentations.map((p, index) => {
+                                    return (
+                                      <li key={`p_item${index}`}>{p.title}</li>
+                                    );
+                                  })}
+                                </ul>
+                              </div>
+                            </li>
+                          );
+                        }
+                        return '';
+                      }
+                      return '';
+                    }
+                    return '';
+                  })}
+                </ul>
+              </Card>
+            </HolyGrail.Sidebar>
+
+            <HolyGrail.Content>
+              <Prose>
+                <MarkdownContent content={AboutData.invite} />
+              </Prose>
+            </HolyGrail.Content>
+
+            <HolyGrail.Sidebar>
+              <Card heading="Information">
+                <Card.List>
+                  {AboutData.speaking.map((s, index) => {
+                    return (
+                      <Card.Item
+                        key={`s-${index}`}
+                        href={s.url}
+                        text={s.name}
+                      />
                     );
-                  }
-                  return '';
-                }
-                return '';
-              }
-              return '';
-            })}
-          </ul>
-        </Card>
-      }
-      footerSidebarBeforeWide
-      footerSidebarAfter={
-        <Card heading="Information">
-          <Card.List>
-            <Card.Item
-              href="https://github.com/jina/press/tree/master/bio"
-              text="Biography"
-            />
-            <Card.Item href="https://noti.st/jina" text="Past Talks" />
-          </Card.List>
-        </Card>
+                  })}
+                </Card.List>
+              </Card>
+            </HolyGrail.Sidebar>
+          </HolyGrail.Body>
+        </HolyGrail>
       }
     >
-      <Heading>Experience</Heading>
-      <Prose>
-        <p className="lead">
-          I&rsquo;ve been designing and developing professionally for{' '}
-          <strong>19&nbsp;years</strong> (and&nbsp;longer as a hobby for{' '}
-          <strong>23&nbsp;years</strong>). I created my first design system{' '}
-          <strong>16&nbsp;years</strong>&nbsp;ago.
-        </p>
+      <div className={spacingStyles.y_lg}>
+        <Heading>Experience</Heading>
 
-        <ul>
-          <li>
-            I&rsquo;ve worked in-house at Amazon, Salesforce, Apple, GitHub,
-            etc. as&nbsp;well as some start ups and&nbsp;agencies.
-          </li>
+        <Prose className={spacingStyles.y_lg}>
+          <MarkdownContent
+            className="lead"
+            content={AboutData.experience.lead}
+          />
 
-          <li>
-            Consulting with companies including IBM, Pfizer, JustWorks,
-            Spotify,&nbsp;etc.
-          </li>
-
-          <li>Start Up Advisory Boards: Haiku&nbsp;and&nbsp;Jobroo</li>
-
-          <li>
-            Workshops, Public&nbsp;Speaking (13&nbsp;years), Writing
-            (several&nbsp;published articles and co-authored three&nbsp;books)
-          </li>
-
-          <li>
-            Freelance partnerships with Superfriendly, Group&nbsp;of Humans,
-            NineLabs, and&nbsp;Josh&nbsp;Silverman
-          </li>
-        </ul>
-      </Prose>
-
-      <Heading.Small>I call myself a Design Systems Advocate.</Heading.Small>
-
-      <Prose>
-        <ul>
-          <li>Founder, Clarity</li>
-
-          <li>Core Team Design/Website&nbsp;Lead, Sass</li>
-
-          <li>Co-chair, Design&nbsp;Tokens W3C Community&nbsp;Group.</li>
-
-          <li>Google Developers&nbsp;Expert</li>
-
-          <li>Design.Systems (Coalition/Slack)</li>
-        </ul>
-      </Prose>
-
-      <Heading>Biography</Heading>
-
-      <div
-        className={spacingStyles.y_lg}
-        dangerouslySetInnerHTML={{ __html: AboutData.bio.full }}
-      />
-
-      <Heading>Speaking</Heading>
+          <MarkdownContent content={AboutData.experience.content} />
+        </Prose>
+      </div>
     </DefaultLayout>
   );
 };
