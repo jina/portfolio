@@ -5,7 +5,7 @@ import showdown from 'showdown';
 
 import { Spacing } from '../../layout/Spacing';
 
-const converter = new showdown.setFlavor('github').Converter({
+const converter = new showdown.Converter({
   omitExtraWLInCodeBlocks: true,
   simplifiedAutoLink: true,
   excludeTrailingPunctuationFromURLs: true,
