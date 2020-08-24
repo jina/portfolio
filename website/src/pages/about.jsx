@@ -7,6 +7,7 @@ import { Prose } from '../components/Prose';
 import { Circle } from '../layout/Circle';
 import { Container } from '../layout/Container';
 import { HolyGrail } from '../layout/HolyGrail';
+import { Sticky } from '../layout/Sticky';
 
 import DefaultLayout from '../site/DefaultLayout';
 import { MarkdownContent } from '../site/MarkdownContent';
@@ -25,13 +26,13 @@ const AboutPage = () => {
       pageTitle="About Jina Anne"
       pageHTMLTitle="About Jina&nbsp;Anne"
       heroSidebarBefore={
-        <div className={`${flushStyles.x_xl} ${flushStyles.t_lg}`}>
+        <Sticky className={`${flushStyles.x_xl} ${flushStyles.t_lg}`}>
           <Container mw="md">
             <Circle is_not sm_is lg_is_not>
               <img src={Image} alt="Portrait" />
             </Circle>
           </Container>
-        </div>
+        </Sticky>
       }
       heroSidebarBeforeWide
       heroSidebarAfter={
