@@ -55,7 +55,7 @@
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/plugin-proposal-optional-chaining": "^7.10.4",
     "@babel/plugin-transform-react-jsx": "^7.10.3",
-    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-a11y": "^6.0.20",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-essentials": "^5.3.19",
