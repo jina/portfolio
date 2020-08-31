@@ -10,6 +10,7 @@ const Textarea = ({ className, id, ...rest }) => {
 
   return (
     <Field
+      component="textarea"
       id={id}
       name={id}
       required="required"
