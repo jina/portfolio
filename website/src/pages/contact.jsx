@@ -66,12 +66,7 @@ const ContactPage = () => {
         }}
       >
         {() => (
-          <Form
-            name="contact"
-            data-netlify
-            data-netlify-recaptcha
-            netlify-honeypot="bot-field"
-          >
+          <Form name="contact" data-netlify netlify-honeypot="bot-field">
             <fieldset>
               <AssistiveText element="legend">Contact Form</AssistiveText>
               <AssistiveText element="div">
@@ -120,15 +115,6 @@ const ContactPage = () => {
                       <Textarea id="message" name="message" />
 
                       <Alert name="message" />
-                    </HolyGrail.Content>
-                  </HolyGrail.Body>
-                </HolyGrail>
-
-                <HolyGrail element="li">
-                  <HolyGrail.Body>
-                    <HolyGrail.Sidebar />
-                    <HolyGrail.Content>
-                      <div data-netlify-recaptcha />
                     </HolyGrail.Content>
                   </HolyGrail.Body>
                 </HolyGrail>
