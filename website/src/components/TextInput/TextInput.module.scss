@@ -1,9 +1,0 @@
-@import 'assets/styles/dependencies';
-
-input {
-  overflow: visible;
-}
-
-.wrapper {
-  @include form-input;
-}

@@ -47,6 +47,7 @@ const DefaultLayout = ({
   header,
   heroChildren,
   heroContentAlign,
+  heroContentForm,
   heroSidebarAfter,
   heroSidebarAfter2,
   heroSidebarAfterAlign,
@@ -156,25 +157,27 @@ const DefaultLayout = ({
                   )}
 
                   <HolyGrail.Content self={heroContentAlign}>
-                    <Heading.Title>
-                      {pageHTMLTitle !== null ? (
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: pageHTMLTitle,
-                          }}
-                        />
-                      ) : (
-                        pageTitle
-                      )}
-                    </Heading.Title>
+                    <Container form={heroContentForm}>
+                      <Heading.Title>
+                        {pageHTMLTitle !== null ? (
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: pageHTMLTitle,
+                            }}
+                          />
+                        ) : (
+                          pageTitle
+                        )}
+                      </Heading.Title>
 
-                    <Prose>
-                      {pageDescription && (
-                        <MarkdownContent content={pageDescription} />
-                      )}
-                    </Prose>
+                      <Prose>
+                        {pageDescription && (
+                          <MarkdownContent content={pageDescription} />
+                        )}
+                      </Prose>
 
-                    {heroChildren}
+                      {heroChildren}
+                    </Container>
                   </HolyGrail.Content>
 
                   {heroSidebarAfter && (
@@ -369,6 +372,7 @@ DefaultLayout.propTypes = {
   header: PropTypes.node,
   heroChildren: PropTypes.node,
   heroContentAlign: PropTypes.string,
+  heroContentForm: PropTypes.bool,
   heroSidebarAfter: PropTypes.node,
   heroSidebarAfter2: PropTypes.node,
   heroSidebarAfterAlign: PropTypes.oneOf(Aligns),
@@ -412,6 +416,7 @@ DefaultLayout.defaultProps = {
   footerSidebarBeforeWide: false,
   footerSidebarBeforeWide2: false,
   heroContentAlign: '',
+  heroContentForm: false,
   heroSidebarAfterAlign: '',
   heroSidebarAfterAlign2: '',
   heroSidebarAfterWide: false,

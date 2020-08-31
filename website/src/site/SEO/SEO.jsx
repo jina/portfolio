@@ -66,9 +66,12 @@ const SEO = ({ title, description, lang, meta }) => {
       ].concat(meta)}
     >
       <script
-        async
-        src="https://platform.twitter.com/widgets.js"
-        charset="utf-8"
+        type="text/javascript"
+        src="https://pym.nprapps.org/pym.v1.min.js"
+      />
+      <script
+        type="text/javascript"
+        src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"
       />
     </Helmet>
   );
