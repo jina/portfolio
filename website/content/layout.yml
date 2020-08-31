@@ -6,6 +6,8 @@ header:
   - title: CV
     htmlTitle: <abbr title="Curriculum Vitae">CV</abbr>
     url: /cv/
+  - title: Contact
+    url: /contact/
 
 footer:
   - title: Book an Office Hour

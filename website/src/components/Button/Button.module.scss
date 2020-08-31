@@ -1,0 +1,18 @@
+@import 'assets/styles/dependencies';
+
+.wrapper {
+  @include button;
+
+  background: $bg-strong-inverse;
+  color: $fg-strong-inverse;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: $bg-inverse;
+  }
+
+  &:active {
+    background: $bg-weak-inverse;
+  }
+}

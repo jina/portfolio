@@ -44,12 +44,7 @@ body {
 }
 
 :focus {
-  outline: $spacing-base solid $accent-inverse;
-}
-
-:active,
-:focus:not(:focus-visible) {
-  outline: 0 !important;
+  outline: $spacing-base solid $accent-strong;
 }
 
 abbr[title] {

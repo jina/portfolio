@@ -4,9 +4,7 @@ import DefaultLayout from '../site/DefaultLayout';
 
 const NotFoundPage = () => {
   return (
-    <DefaultLayout title="404: Not Found">
-      <h1>Page Not Found</h1>
-
+    <DefaultLayout pageTitle="Page Not Found">
       <p>Sorry, but the page you were trying to view does not exist.</p>
     </DefaultLayout>
   );

@@ -1,6 +1,8 @@
 @import 'assets/styles/dependencies';
 
 .wrapper {
+  @include button;
+
   &,
   &.active,
   .subtle {
@@ -8,7 +10,6 @@
   }
 
   display: block;
-  padding: $spacing-sm $spacing-md;
 
   @include mq($md) {
     display: inline-block;

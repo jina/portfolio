@@ -20,6 +20,28 @@
   text-transform: uppercase;
 }
 
+@mixin form-input {
+  outline: 1px solid $accent-weak;
+  padding: $spacing-sm $spacing-md;
+  width: 100%;
+  line-height: inherit;
+
+  &:hover {
+    outline-color: $accent-default;
+  }
+
+  &:focus {
+    outline: {
+      width: $spacing-base;
+      color: $accent-strong;
+    }
+  }
+}
+
+@mixin button {
+  padding: $spacing-sm $spacing-md;
+}
+
 @mixin breakpoints($selector) {
   .#{$selector} {
     @content;
