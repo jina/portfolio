@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import styles from './Spacing.module.scss';
 
 const Spacing = ({
+  element,
   x,
   sm_x,
   md_x,
@@ -19,6 +20,7 @@ const Spacing = ({
   className,
   ...rest
 }) => {
+  const Element = element;
   const classes = classNames(
     x && styles[`x_${x}`],
     sm_x && styles[`sm_x_${sm_x}`],
@@ -34,15 +36,16 @@ const Spacing = ({
   );
 
   return (
-    <div className={classes} {...rest}>
+    <Element className={classes} {...rest}>
       {children}
-    </div>
+    </Element>
   );
 };
 
 const Space = ['', 'base', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'none'];
 
 Spacing.propTypes = {
+  element: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.node,
   x: PropTypes.oneOf(Space),
@@ -58,6 +61,7 @@ Spacing.propTypes = {
 };
 
 Spacing.defaultProps = {
+  element: 'div',
   className: '',
   x: '',
   sm_x: '',

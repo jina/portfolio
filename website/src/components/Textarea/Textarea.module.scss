@@ -1,0 +1,12 @@
+@import 'assets/styles/dependencies';
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+.wrapper {
+  @include form-input;
+
+  height: $sizing-c-xxxxs;
+}

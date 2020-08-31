@@ -138,6 +138,7 @@ module.exports = {
           'img',
           'i',
           'em',
+          'ol',
           'textarea',
         ], // Don't remove this selector
         // ignore: ['global.scss'], // Ignore files/folders

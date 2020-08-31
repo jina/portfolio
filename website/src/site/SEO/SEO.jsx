@@ -64,16 +64,7 @@ const SEO = ({ title, description, lang, meta }) => {
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      <script
-        type="text/javascript"
-        src="https://pym.nprapps.org/pym.v1.min.js"
-      />
-      <script
-        type="text/javascript"
-        src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"
-      />
-    </Helmet>
+    />
   );
 };
 SEO.propTypes = {

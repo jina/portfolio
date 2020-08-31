@@ -1,0 +1,9 @@
+@import 'assets/styles/dependencies';
+
+.wrapper {
+  display: block;
+  padding: {
+    top: $spacing-sm;
+    bottom: $spacing-sm;
+  }
+}
