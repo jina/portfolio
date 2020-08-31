@@ -7,11 +7,11 @@ import { Label } from '../components/Label';
 import { Textarea } from '../components/Textarea';
 import { TextInput } from '../components/TextInput';
 
+import { HolyGrail } from '../layout/HolyGrail';
+
 import { AssistiveText } from '../utilities/AssistiveText';
 
 import DefaultLayout from '../site/DefaultLayout';
-
-import spacingStyles from '../layout/Spacing/Spacing.module.scss';
 
 const ContactPage = () => {
   const encode = (data) => {
@@ -81,47 +81,68 @@ const ContactPage = () => {
                 </label>
               </AssistiveText>
 
-              <ol className={spacingStyles.y_lg}>
-                <li>
-                  <label htmlFor="name">Name</label>
+              <ol>
+                <HolyGrail element="li">
+                  <HolyGrail.Body>
+                    <HolyGrail.Sidebar>
+                      <Label htmlFor="name">Name</Label>
+                    </HolyGrail.Sidebar>
 
-                  <br />
+                    <HolyGrail.Content>
+                      <TextInput type="text" id="name" name="name" />
 
-                  <TextInput type="text" id="name" name="name" />
+                      <Alert name="name" />
+                    </HolyGrail.Content>
+                  </HolyGrail.Body>
+                </HolyGrail>
 
-                  <Alert name="name" />
-                </li>
+                <HolyGrail element="li">
+                  <HolyGrail.Body>
+                    <HolyGrail.Sidebar>
+                      <Label htmlFor="email-address">Email Address</Label>
+                    </HolyGrail.Sidebar>
 
-                <li>
-                  <label htmlFor="email-address">Email Address</label>
+                    <HolyGrail.Content>
+                      <TextInput type="email" id="email-address" name="email" />
 
-                  <br />
+                      <Alert name="email" />
+                    </HolyGrail.Content>
+                  </HolyGrail.Body>
+                </HolyGrail>
 
-                  <TextInput type="email" id="email-address" name="email" />
+                <HolyGrail element="li">
+                  <HolyGrail.Body>
+                    <HolyGrail.Sidebar>
+                      <Label htmlFor="message">Message</Label>
+                    </HolyGrail.Sidebar>
 
-                  <Alert name="email" />
-                </li>
+                    <HolyGrail.Content>
+                      <Textarea id="message" name="message" />
 
-                <li>
-                  <label htmlFor="message">Message</label>
+                      <Alert name="message" />
+                    </HolyGrail.Content>
+                  </HolyGrail.Body>
+                </HolyGrail>
 
-                  <br />
+                <HolyGrail element="li">
+                  <HolyGrail.Body>
+                    <HolyGrail.Sidebar />
+                    <HolyGrail.Content>
+                      <div data-netlify-recaptcha />
+                    </HolyGrail.Content>
+                  </HolyGrail.Body>
+                </HolyGrail>
 
-                  <Textarea id="message" name="message" />
-
-                  <Alert name="message" />
-                </li>
-
-                <li>
-                  <div data-netlify-recaptcha="true" />
-                </li>
-
-                <li>
-                  <Button />
-                </li>
+                <HolyGrail element="li">
+                  <HolyGrail.Body>
+                    <HolyGrail.Sidebar />
+                    <HolyGrail.Content>
+                      <Button />
+                    </HolyGrail.Content>
+                  </HolyGrail.Body>
+                </HolyGrail>
               </ol>
             </fieldset>
-            ...
           </Form>
         )}
       </Formik>

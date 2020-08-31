@@ -10,8 +10,8 @@ const Textarea = ({ className, ...rest }) => {
   const classes = classNames(styles.wrapper, className);
 
   return (
-    <Field
-      component={TextareaAutosize}
+    <TextareaAutosize
+      tag={Field}
       rows={4}
       onResize={(e) => {}}
       className={classes}
