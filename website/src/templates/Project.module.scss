@@ -18,18 +18,11 @@
   width: 100%;
 }
 
-.project,
-.lists {
+.project {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   column-gap: $spacing-xl;
   row-gap: $spacing-lg;
-}
-
-@include mq($sm) {
-  .lists {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @include mq($xl) {
@@ -39,9 +32,5 @@
 
   .details {
     grid-column: span 2 / span 2;
-  }
-
-  .lists {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
