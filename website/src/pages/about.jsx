@@ -148,8 +148,10 @@ const AboutPage = () => {
                             <li key={`timeline_item${index}`}>
                               <div className={spacingStyles.y_base}>
                                 <h4>
-                                  <strong>{ItemName}</strong> &mdash;{' '}
-                                  {data.location}
+                                  <strong>{ItemName}</strong>
+                                  {data.location !== ''
+                                    ? ` — ${data.location}`
+                                    : ''}
                                 </h4>
 
                                 <ul>
