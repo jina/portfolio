@@ -3212,9 +3212,9 @@
     unist-util-visit "2.0.3"
 
 "@mdx-js/react@^1.5.1", "@mdx-js/react@^1.5.2", "@mdx-js/react@^1.5.7", "@mdx-js/react@^1.6.6":
-  version "1.6.16"
-  resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.6.16.tgz#538eb14473194d0b3c54020cb230e426174315cd"
-  integrity sha512-+FhuSVOPo7+4fZaRwWuCSRUcZkJOkZu0rfAbBKvoCg1LWb1Td8Vzi0DTLORdSvgWNbU6+EL40HIgwTOs00x2Jw==
+  version "1.6.18"
+  resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.6.18.tgz#f83cbb2355de9cf36a213140ce21647da1e34fa7"
+  integrity sha512-aFHsZVu7r9WamlP+WO/lyvHHZAubkQjkcRYlvS7fQElypfJvjKdHevjC3xiqlsQpasx/4KqRMoEIb++wNtd+6w==
 
 "@mdx-js/react@^2.0.0-next.4", "@mdx-js/react@^2.0.0-next.7":
   version "2.0.0-next.7"
@@ -20850,7 +20850,7 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.25.1, sharp@^0.25.4:
+sharp@^0.25.4:
   version "0.25.4"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.4.tgz#1a8e542144a07ab7e9316ab89de80182b827c363"
   integrity sha512-umSzJJ1oBwIOfwFFt/fJ7JgCva9FvrEU2cbbm7u/3hSDZhXvkME8WE5qpaJqLIe2Har5msF5UG4CzYlEg5o3BQ==
