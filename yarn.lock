@@ -11507,11 +11507,11 @@ gatsby-plugin-sitemap@^2.4.11:
     sitemap "^1.13.0"
 
 gatsby-plugin-twitter@^2.3.10:
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.3.10.tgz#1605b39385c475b234eafc422019cb36a7a14648"
-  integrity sha512-WQzjGpeKCdxujzAWE2yFOKaI494J/Qb6vhDdLvtevOAZVXSaMdTSfwSSUr17jsu8TV5s47fasKox+h/0uRlJUw==
+  version "2.3.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.3.11.tgz#6d2fdf16bdbed62ee0a3238248ffaa04aff657a0"
+  integrity sha512-3PfiroUOA5nZOi0LrwjrULB0JLBW+rn6lnpqGqUC5Y4sUN3eRBOMER+s5r+S4OTvm/sxRl1+8aJmjiY8OO/ghA==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.11.2"
 
 gatsby-plugin-typescript@^2.4.20:
   version "2.4.20"
@@ -20850,7 +20850,7 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.25.1, sharp@^0.25.4:
+sharp@^0.25.4:
   version "0.25.4"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.4.tgz#1a8e542144a07ab7e9316ab89de80182b827c363"
   integrity sha512-umSzJJ1oBwIOfwFFt/fJ7JgCva9FvrEU2cbbm7u/3hSDZhXvkME8WE5qpaJqLIe2Har5msF5UG4CzYlEg5o3BQ==
