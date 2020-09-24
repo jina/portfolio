@@ -318,12 +318,17 @@
   event: true
   upcoming: true
   draft: true
+- name: None scheduled
+  event: true
+  url: ''
+  location: ''
+  upcoming: true
+  presentations: []
 - name: Clarity 2020
   location: Online
   url: https://www.clarityconf.com/2020
   date: 2020
   event: true
-  upcoming: true
   roles:
     - Host
     - Speaker
