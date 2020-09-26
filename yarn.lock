@@ -134,16 +134,7 @@
     "@babel/helper-explode-assignable-expression" "^7.10.4"
     "@babel/types" "^7.10.4"
 
-"@babel/helper-builder-react-jsx-experimental@^7.10.4":
-  version "7.10.5"
-  resolved "https://registry.yarnpkg.com/@babel/helper-builder-react-jsx-experimental/-/helper-builder-react-jsx-experimental-7.10.5.tgz#f35e956a19955ff08c1258e44a515a6d6248646b"
-  integrity sha512-Buewnx6M4ttG+NLkKyt7baQn7ScC/Td+e99G914fRU8fGIUivDDgVIQeDHFa5e4CRSJQt58WpNHhsAZgtzVhsg==
-  dependencies:
-    "@babel/helper-annotate-as-pure" "^7.10.4"
-    "@babel/helper-module-imports" "^7.10.4"
-    "@babel/types" "^7.10.5"
-
-"@babel/helper-builder-react-jsx-experimental@^7.11.5":
+"@babel/helper-builder-react-jsx-experimental@^7.10.4", "@babel/helper-builder-react-jsx-experimental@^7.11.5":
   version "7.11.5"
   resolved "https://registry.yarnpkg.com/@babel/helper-builder-react-jsx-experimental/-/helper-builder-react-jsx-experimental-7.11.5.tgz#4ea43dd63857b0a35cd1f1b161dc29b43414e79f"
   integrity sha512-Vc4aPJnRZKWfzeCBsqTBnzulVNjABVdahSPhtdMD3Vs80ykx4a87jTHtF/VR+alSrDmNvat7l13yrRHauGcHVw==
