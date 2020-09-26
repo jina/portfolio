@@ -51,7 +51,7 @@
     "remark": "^12.0.1",
     "resolve-url-loader": "^3.1.1",
     "sass": "^1.26.9",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^10.0.2",
     "showdown": "^1.9.1",
     "storybook-addon-themes": "^5.4.1",
     "style-loader": "^1.2.1"
