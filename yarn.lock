@@ -1299,7 +1299,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -3207,7 +3207,7 @@
     ts-dedent "^1.1.1"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-actions@6.0.22":
+"@storybook/addon-actions@6.0.22", "@storybook/addon-actions@^6.0.22":
   version "6.0.22"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.0.22.tgz#40dff4101274c512df1e1134a1ec4da16eca44e7"
   integrity sha512-yP8BCxHscKhrXha0Z2nw+8OuFJDSCBAygju2HAr915g8+mAMIlpKmlPu6QOhwY9gP/Cn9HQCmrtPzuTeV2Ogug==
@@ -3230,26 +3230,6 @@
     ts-dedent "^1.1.1"
     util-deprecate "^1.0.2"
     uuid "^8.0.0"
-
-"@storybook/addon-actions@^5.3.19":
-  version "5.3.19"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.3.19.tgz#50548fa6e84bc79ad95233ce23ade4878fc7cfac"
-  integrity sha512-gXF29FFUgYlUoFf1DcVCmH1chg2ElaHWMmCi5h7aZe+g6fXBQw0UtEdJnYLMOqZCIiWoZyuf1ETD0RbNHPhRIw==
-  dependencies:
-    "@storybook/addons" "5.3.19"
-    "@storybook/api" "5.3.19"
-    "@storybook/client-api" "5.3.19"
-    "@storybook/components" "5.3.19"
-    "@storybook/core-events" "5.3.19"
-    "@storybook/theming" "5.3.19"
-    core-js "^3.0.1"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    polished "^3.3.1"
-    prop-types "^15.7.2"
-    react "^16.8.3"
-    react-inspector "^4.0.0"
-    uuid "^3.3.2"
 
 "@storybook/addon-backgrounds@6.0.22":
   version "6.0.22"
@@ -3549,17 +3529,6 @@
     ts-dedent "^1.1.1"
     util-deprecate "^1.0.2"
 
-"@storybook/channel-postmessage@5.3.19":
-  version "5.3.19"
-  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.3.19.tgz#ef9fe974c2a529d89ce342ff7acf5cc22805bae9"
-  integrity sha512-Iq0f4NPHR0UVVFCWt0cI7Myadk4/SATXYJPT6sv95KhnLjKEeYw571WBlThfp8a9FM80887xG+eIRe93c8dleA==
-  dependencies:
-    "@storybook/channels" "5.3.19"
-    "@storybook/client-logger" "5.3.19"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    telejson "^3.2.0"
-
 "@storybook/channel-postmessage@6.0.22":
   version "6.0.22"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-6.0.22.tgz#0a928d25fe3b87340e5670e897dc8fa4ee6ca6df"
@@ -3594,29 +3563,6 @@
   dependencies:
     core-js "^3.0.1"
     ts-dedent "^1.1.1"
-    util-deprecate "^1.0.2"
-
-"@storybook/client-api@5.3.19":
-  version "5.3.19"
-  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-5.3.19.tgz#7a5630bb8fffb92742b1773881e9004ee7fdf8e0"
-  integrity sha512-Dh8ZLrLH91j9Fa28Gmp0KFUvvgK348aNMrDNAUdj4m4witz/BWQ2pxz6qq9/xFVErk/GanVC05kazGElqgYCRQ==
-  dependencies:
-    "@storybook/addons" "5.3.19"
-    "@storybook/channel-postmessage" "5.3.19"
-    "@storybook/channels" "5.3.19"
-    "@storybook/client-logger" "5.3.19"
-    "@storybook/core-events" "5.3.19"
-    "@storybook/csf" "0.0.1"
-    "@types/webpack-env" "^1.15.0"
-    core-js "^3.0.1"
-    eventemitter3 "^4.0.0"
-    global "^4.3.2"
-    is-plain-object "^3.0.0"
-    lodash "^4.17.15"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-    stable "^0.1.8"
-    ts-dedent "^1.1.0"
     util-deprecate "^1.0.2"
 
 "@storybook/client-api@6.0.22":
@@ -4631,7 +4577,7 @@
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
   integrity sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI=
 
-"@types/webpack-env@^1.15.0", "@types/webpack-env@^1.15.2":
+"@types/webpack-env@^1.15.2":
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.15.2.tgz#927997342bb9f4a5185a86e6579a0a18afc33b0a"
   integrity sha512-67ZgZpAlhIICIdfQrB5fnDvaKFcDxpKibxznfYRVAT4mQE41Dido/3Ty+E3xGBmTogc5+0Qb8tWhna+5B8z1iQ==
@@ -13679,7 +13625,7 @@ is-docker@2.0.0, is-docker@^2.0.0:
   resolved "https://registry.yarnpkg.com/is-docker/-/is-docker-2.0.0.tgz#2cb0df0e75e2d064fe1864c37cdeacb7b2dcf25b"
   integrity sha512-pJEdRugimx4fBMra5z2/5iRdZ63OhYV0vr0Dwm5+xtW4D1FvRkB8hamMIhnWfyJeDdyr/aa7BDyNbtG38VxgoQ==
 
-is-dom@^1.0.0, is-dom@^1.0.9:
+is-dom@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-dom/-/is-dom-1.1.0.tgz#af1fced292742443bb59ca3f76ab5e80907b4e8a"
   integrity sha512-u82f6mvhYxRPKpw8V1N0W8ce1xXwOrQtgGcxl6UCL5zBmZu3is/18K0rR7uFCnMDuAsS/3W54mGL4vsaFUQlEQ==
@@ -17481,14 +17427,7 @@ pnp-webpack-plugin@1.6.4, pnp-webpack-plugin@^1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
-polished@^3.3.1:
-  version "3.4.4"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-3.4.4.tgz#ac8cd6e704887398f3b802718f9d389b9ea4307b"
-  integrity sha512-x9PKeExyI9AhWrJP3Q57I1k7GInujjiVBJMPFmycj9hX1yCOo/X9eu9eZwxgOziiXge3WbFQ5XOmkzunOntBSA==
-  dependencies:
-    "@babel/runtime" "^7.6.3"
-
-polished@^3.4.4:
+polished@^3.3.1, polished@^3.4.4:
   version "3.6.6"
   resolved "https://registry.yarnpkg.com/polished/-/polished-3.6.6.tgz#91ef9eface9be5366c07672b63b736f50c151185"
   integrity sha512-yiB2ims2DZPem0kCD6V0wnhcVGFEhNh0Iw0axNpKU+oSAgFt6yx6HxIT23Qg0WWvgS379cS35zT4AOyZZRzpQQ==
@@ -19105,15 +19044,6 @@ react-icons@^3.0.1:
   integrity sha512-WsQ5n1JToG9VixWilSo1bHv842Cj5aZqTGiS3Ud47myF6aK7S/IUY2+dHcBdmkQcCFRuHsJ9OMUI0kTDfjyZXQ==
   dependencies:
     camelcase "^5.0.0"
-
-react-inspector@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-4.0.1.tgz#0f888f78ff7daccbc7be5d452b20c96dc6d5fbb8"
-  integrity sha512-xSiM6CE79JBqSj8Fzd9dWBHv57tLTH7OM57GP3VrE5crzVF3D5Khce9w1Xcw75OAbvrA0Mi2vBneR1OajKmXFg==
-  dependencies:
-    "@babel/runtime" "^7.6.3"
-    is-dom "^1.0.9"
-    prop-types "^15.6.1"
 
 react-inspector@^5.0.1:
   version "5.1.0"
