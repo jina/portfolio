@@ -6010,9 +6010,9 @@ babel-plugin-remove-export-keywords@^1.6.5:
   integrity sha512-JrB9ZASlMAfkRF+5NdgoQxgenhJxzXFEO1vrqsSDJdzLrC38L2wrvXF9mm1YLbrehkZxcrNz9UYDyARP4jaY9g==
 
 babel-plugin-remove-graphql-queries@^2.9.7:
-  version "2.9.12"
-  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.12.tgz#9d6b22b799ac11173fb91c8973f88846b391c130"
-  integrity sha512-CJjsW331GuuU+h3SpKcrtMfzq3+Ypq6Oth8UQCBO3SP2gJw0EUGPVpmQwEXIT94sotUfVLWCasGQK7rRaeYb1A==
+  version "2.9.20"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.20.tgz#69ad42efdb3b4340992080afba101d2d1a2843b2"
+  integrity sha512-FB4tIvdXaGFBFhHAzlqB0NxVA5BcjzVYbY8ut7ProStW3cjv208ADMlfzmPdSP/I1Z0wl2MrXgHNCrL1TQ/Mew==
 
 babel-plugin-syntax-jsx@^6.18.0:
   version "6.18.0"
