@@ -11123,11 +11123,11 @@ gatsby-plugin-sitemap@^2.4.11:
     sitemap "^1.13.0"
 
 gatsby-plugin-twitter@^2.3.10:
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.3.10.tgz#1605b39385c475b234eafc422019cb36a7a14648"
-  integrity sha512-WQzjGpeKCdxujzAWE2yFOKaI494J/Qb6vhDdLvtevOAZVXSaMdTSfwSSUr17jsu8TV5s47fasKox+h/0uRlJUw==
+  version "2.3.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.3.12.tgz#847a08aa131ac9997698d5c4970634ee2a13b6ba"
+  integrity sha512-djpmNj11Tc8LCwdTpqeAQRpVwGb+kH22wkJ6WETUoiA0QNVK0H7bmCvFfpDr3AYFEtLcmdm7S87IqlSCwcRVOw==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.11.2"
 
 gatsby-plugin-typescript@^2.4.8:
   version "2.4.8"
