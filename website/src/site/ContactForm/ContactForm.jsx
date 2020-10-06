@@ -79,7 +79,7 @@ const ContactForm = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
-        action="https://formkeep.com/f/aeab3bd3ea12"
+        action="/thanks"
         accept-charset="UTF-8"
         enctype="multipart/form-data"
         method="POST"
