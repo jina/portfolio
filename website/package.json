@@ -71,7 +71,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-remove-graphql-queries": "^2.9.7",
     "cross-env": "^7.0.2",
-    "react-is": "^16.13.1"
+    "react-is": "^17.0.1"
   },
   "keywords": [
     "gatsby"
