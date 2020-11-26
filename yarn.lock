@@ -11589,11 +11589,12 @@ gatsby-plugin-sharp@^2.6.14:
     uuid "3.4.0"
 
 gatsby-plugin-sitemap@^2.4.11:
-  version "2.4.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.4.14.tgz#24a4da981637e6d2854b4ae9aaa2e1cd1f9a3d3d"
-  integrity sha512-SBINdmn6hrBUXNoziQ0xPmqsEsJIX+zAiedq4Gb6A835MWKWgEHZALZh7Nx46aOg8vfg0Nr0u0PvK6UXfyqvdg==
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.7.0.tgz#43c84bb35e42002dce11bb1b20df2010155940df"
+  integrity sha512-p38fsjgKcn9luTFNmeC8lzHT4X8eXfb8ag82snl+StejRBv+TgXJo0Ubhpz68wipsYezXvxKMXjyCYsjK4gfRQ==
   dependencies:
-    "@babel/runtime" "^7.11.2"
+    "@babel/runtime" "^7.12.5"
+    common-tags "^1.8.0"
     minimatch "^3.0.4"
     pify "^3.0.0"
     sitemap "^1.13.0"
