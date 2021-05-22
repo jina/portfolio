@@ -29,7 +29,7 @@
     "gatsby-plugin-twitter": "^2.3.10",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-images": "^3.3.14",
-    "gatsby-remark-smartypants": "^2.3.10",
+    "gatsby-remark-smartypants": "^4.2.0",
     "gatsby-remark-widows": "^1.0.0",
     "gatsby-source-filesystem": "^2.3.14",
     "gatsby-transformer-remark": "^4.2.0",
