@@ -33,7 +33,7 @@
     "gatsby-remark-widows": "^1.0.0",
     "gatsby-source-filesystem": "^2.3.14",
     "gatsby-transformer-remark": "^4.2.0",
-    "gatsby-transformer-sharp": "^2.5.7",
+    "gatsby-transformer-sharp": "^3.5.0",
     "imports-loader": "^1.1.0",
     "js-yaml": "^3.14.0",
     "postcss-em-media-query": "^2.0.0",
