@@ -15,7 +15,7 @@
     "fibers": "^5.0.0",
     "formik": "^2.1.5",
     "gatsby": "^2.23.12",
-    "gatsby-cli": "^2.12.80",
+    "gatsby-cli": "^3.6.0",
     "gatsby-image": "^3.2.0",
     "gatsby-plugin-manifest": "^2.4.23",
     "gatsby-plugin-mdx": "^1.2.19",
