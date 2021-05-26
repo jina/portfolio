@@ -1,7 +1,7 @@
 version: 2
 
 updates:
-  - package-ecosystem: yarn
+  - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: daily
@@ -9,7 +9,7 @@ updates:
       timezone: America/Los_Angeles
     open-pull-requests-limit: 20
 
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: github-actions
     directory: "/"
     schedule:
       interval: daily
