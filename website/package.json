@@ -21,7 +21,7 @@
     "gatsby-plugin-mdx": "^1.2.19",
     "gatsby-plugin-offline": "^3.2.23",
     "gatsby-plugin-postcss": "^2.3.6",
-    "gatsby-plugin-purgecss": "^5.0.0",
+    "gatsby-plugin-purgecss": "^6.0.2",
     "gatsby-plugin-react-helmet": "^4.5.0",
     "gatsby-plugin-sass": "^2.3.7",
     "gatsby-plugin-sharp": "^3.2.1",
