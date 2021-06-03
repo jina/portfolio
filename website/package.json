@@ -18,7 +18,7 @@
     "gatsby-cli": "^3.6.0",
     "gatsby-image": "^3.2.0",
     "gatsby-plugin-manifest": "^3.6.0",
-    "gatsby-plugin-mdx": "^1.2.19",
+    "gatsby-plugin-mdx": "^2.6.0",
     "gatsby-plugin-offline": "^3.2.23",
     "gatsby-plugin-postcss": "^2.3.6",
     "gatsby-plugin-purgecss": "^6.0.2",
