@@ -14,7 +14,7 @@
     "dotenv": "^10.0.0",
     "fibers": "^5.0.0",
     "formik": "^2.1.5",
-    "gatsby": "^2.23.12",
+    "gatsby": "^3.7.0",
     "gatsby-cli": "^3.6.0",
     "gatsby-image": "^3.2.0",
     "gatsby-plugin-manifest": "^3.6.0",
