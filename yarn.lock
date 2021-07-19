@@ -8586,10 +8586,10 @@ create-gatsby@^0.2.1:
   resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-0.2.1.tgz#d93ed639ab8bea00be9956ab495dc84ab8e49f4b"
   integrity sha512-TYg5jfi97GWCuotU2otZUqNtNBmjIZTHlW1RE49JDK/QujtJ4pur9cp7oFJm9QaOqeiH+oq1/LK7JFzq9B44HA==
 
-create-gatsby@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-1.8.0.tgz#e1fe86687cd314259c7fc625881bd35dcea32572"
-  integrity sha512-AW3PZONTFfTMKmUfHbpwHebL8/QCbQ0qPwH9piNHen4/7EeZyaN7ZzeilKMUue4DEi9Om7VKlZtW+bKcVml3bg==
+create-gatsby@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-1.9.0.tgz#8c2257006fb3513523e93ee883b22f357fc04832"
+  integrity sha512-KYQnXV2uaZCUt3y4Kkh4hlBGg4LYc6XCEdp99CEfMKOCu34rte5+6c1EZRpphATLqdKIitdFlPp5dJm3knBeMA==
 
 create-hash@^1.1.0, create-hash@^1.1.2:
   version "1.2.0"
@@ -10736,6 +10736,16 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
+express-graphql@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/express-graphql/-/express-graphql-0.12.0.tgz#58deabc309909ca2c9fe2f83f5fbe94429aa23df"
+  integrity sha512-DwYaJQy0amdy3pgNtiTDuGGM2BLdj+YO2SgbKoLliCfuHv3VVTt7vNG/ZqK2hRYjtYHE2t2KB705EU94mE64zg==
+  dependencies:
+    accepts "^1.3.7"
+    content-type "^1.0.4"
+    http-errors "1.8.0"
+    raw-body "^2.4.1"
+
 express-graphql@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/express-graphql/-/express-graphql-0.9.0.tgz#00fd8552f866bac5c9a4612b2c4c82076107b3c2"
@@ -11627,9 +11637,9 @@ gatsby-cli@^2.16.2:
     yurnalist "^1.1.2"
 
 gatsby-cli@^3.6.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-3.8.0.tgz#beffcda948b691ed1a2d45a12f80e1e464fc68e6"
-  integrity sha512-81rQNDgHgkXoFMiwluZGN0ETKonGn8tl1uxL3OpOx3aOfP1aPv5NBSOLX70O6vo9jXyg6oy0gPHGjhbQMdSyIw==
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-3.9.0.tgz#0c8ba76fd061d09739ff69e1c2f73d08e55c2c52"
+  integrity sha512-mfd+e5dNzQ8CkjggrYw3PkQwizJmK1+hR6VWmstDkc5+h1c6xFFNFfauexllDFi8H1SMokAEV4TQRDYDilpByw==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@types/common-tags" "^1.8.0"
@@ -11639,14 +11649,14 @@ gatsby-cli@^3.6.0:
     common-tags "^1.8.0"
     configstore "^5.0.1"
     convert-hrtime "^3.0.0"
-    create-gatsby "^1.8.0"
+    create-gatsby "^1.9.0"
     envinfo "^7.7.3"
     execa "^3.4.0"
     fs-exists-cached "^1.0.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^2.8.0"
-    gatsby-recipes "^0.19.0"
-    gatsby-telemetry "^2.8.0"
+    gatsby-core-utils "^2.9.0"
+    gatsby-recipes "^0.20.0"
+    gatsby-telemetry "^2.9.0"
     hosted-git-info "^3.0.6"
     is-valid-path "^0.1.1"
     joi "^17.4.0"
@@ -11683,7 +11693,7 @@ gatsby-core-utils@^1.10.1, gatsby-core-utils@^1.7.1:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^2.6.0, gatsby-core-utils@^2.7.1, gatsby-core-utils@^2.8.0, gatsby-core-utils@^2.9.0:
+gatsby-core-utils@^2.6.0, gatsby-core-utils@^2.7.1, gatsby-core-utils@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.9.0.tgz#f1ba30dfa687bdd2c1c5106d29e6491e5376e8c5"
   integrity sha512-LKmkk4B/VnSEYKR9W/C8Lp9lwk/l/qY5jbsoiChc43F67VM667gITWH0noSUdcGzbEsN8xi0Wuc8dMA6BvKkvg==
@@ -11943,10 +11953,10 @@ gatsby-react-router-scroll@^3.4.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-recipes@^0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/gatsby-recipes/-/gatsby-recipes-0.19.0.tgz#4596680a051bf5cfc75e0ee5ac107d3344bb6cd2"
-  integrity sha512-yboFABHUNB9+1x/RA13yKU/P0/2K+SaenudC+THshxL4uiUHlbU029iXp6Di2zMfIhak8aZ7FyUrpCieey/0Rw==
+gatsby-recipes@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/gatsby-recipes/-/gatsby-recipes-0.20.0.tgz#6a4d87c140281ce3dced2e762da187ed988f8e82"
+  integrity sha512-GsQOovAFImV3MtZVTTjv6utMRRo5QDC1+7l3Je3kqHz425J7UcmjMH/ZzHdzIZ1hO2/RUgGoFXAbWgqhipJp2g==
   dependencies:
     "@babel/core" "^7.14.0"
     "@babel/generator" "^7.14.0"
@@ -11969,10 +11979,10 @@ gatsby-recipes@^0.19.0:
     dotenv "^8.2.0"
     execa "^4.0.2"
     express "^4.17.1"
-    express-graphql "^0.9.0"
+    express-graphql "^0.12.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^2.8.0"
-    gatsby-telemetry "^2.8.0"
+    gatsby-core-utils "^2.9.0"
+    gatsby-telemetry "^2.9.0"
     glob "^7.1.6"
     graphql "^15.4.0"
     graphql-compose "~7.25.0"
@@ -12144,7 +12154,7 @@ gatsby-telemetry@^1.7.1:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-telemetry@^2.8.0, gatsby-telemetry@^2.9.0:
+gatsby-telemetry@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-2.9.0.tgz#d6763b278bee601dd007a84427bac52e57a28d79"
   integrity sha512-Ji40by9qHm9Zz2vKIBACT77awt0FpqKES9uT9nLmaqyiOZ/7Hs1dKwMrZ2yCkHNBh6S9RplcgfUQLq2LE4oeaA==
@@ -13689,6 +13699,17 @@ http-errors@1.7.3, http-errors@^1.7.3, http-errors@~1.7.2:
     depd "~1.1.2"
     inherits "2.0.4"
     setprototypeof "1.1.1"
+    statuses ">= 1.5.0 < 2"
+    toidentifier "1.0.0"
+
+http-errors@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.8.0.tgz#75d1bbe497e1044f51e4ee9e704a62f28d336507"
+  integrity sha512-4I8r0C5JDhT5VkvI47QktDW75rNlGVsUf/8hzjCC/wkWI/jdTRmBb9aI7erSG82r1bjKY3F6k28WnsVxB1C73A==
+  dependencies:
+    depd "~1.1.2"
+    inherits "2.0.4"
+    setprototypeof "1.2.0"
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
 
@@ -21489,6 +21510,11 @@ setprototypeof@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
+
+setprototypeof@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
+  integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
 
 sha.js@^2.4.0, sha.js@^2.4.8:
   version "2.4.11"
