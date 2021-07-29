@@ -36,7 +36,7 @@
     "gatsby-transformer-sharp": "^3.5.0",
     "imports-loader": "^3.0.0",
     "js-yaml": "^3.14.0",
-    "postcss-em-media-query": "^2.0.0",
+    "postcss-em-media-query": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-pxtorem": "^5.1.1",

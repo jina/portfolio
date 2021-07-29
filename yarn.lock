@@ -10423,13 +10423,13 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
-em-media-query@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/em-media-query/-/em-media-query-1.0.0.tgz#92b407ac830291ad7f88a48c9d8f9aebbe6e20bc"
-  integrity sha1-krQHrIMCka1/iKSMnY+a675uILw=
+em-media-query@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/em-media-query/-/em-media-query-2.0.0.tgz#058cc2ac47a227d46ff2c7d909a930169637daea"
+  integrity sha512-00WaHd1seQTAlWFKjmSNQx1NVflBdC4YWIEhDA08P7gv2JdRrMEdx5do3j4xOcJgQlrUuvE1Yx0FaYoPl5Ql8w==
   dependencies:
     lodash.round "^4.0.4"
-    postcss-value-parser "^3.3.0"
+    postcss-value-parser "^4.1.0"
 
 "emoji-regex@>=6.0.0 <=6.1.1":
   version "6.1.1"
@@ -13778,11 +13778,6 @@ has-cors@1.1.0:
   resolved "https://registry.yarnpkg.com/has-cors/-/has-cors-1.1.0.tgz#5e474793f7ea9843d1bb99c23eef49ff126fff39"
   integrity sha1-XkdHk/fqmEPRu5nCPu9J/xJv/zk=
 
-has-flag@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa"
-  integrity sha1-nZ55MWXOAXoA8AQYxD+UKnsdEfo=
-
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
@@ -15708,11 +15703,6 @@ jpeg-js@^0.4.0:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.4.3.tgz#6158e09f1983ad773813704be80680550eff977b"
   integrity sha512-ru1HWKek8octvUHFHvE5ZzQ1yAsJmIvRdGWvSoKV52XKyuyYA437QWDttXT8eZXDSbuMpHlLzPDZUPd6idIz+Q==
-
-js-base64@^2.1.9:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.6.2.tgz#cf9301bc5cc756892a9a6c8d7138322e5944fb0d"
-  integrity sha512-1hgLrLIrmCgZG+ID3VoLNLOSwjGnoZa8tyrUdEteMeIzsT6PH7PMLyUvbDwzNE56P3PNxyvuIOx4Uh2E5rzQIw==
 
 js-string-escape@^1.0.1:
   version "1.0.1"
@@ -19284,13 +19274,12 @@ postcss-double-position-gradients@^1.0.0:
     postcss "^7.0.5"
     postcss-values-parser "^2.0.0"
 
-postcss-em-media-query@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-em-media-query/-/postcss-em-media-query-2.0.0.tgz#85c82b36c2aa63a0b19bc643f68bbc246a0c7ea0"
-  integrity sha1-hcgrNsKqY6Cxm8ZD9ou8JGoMfqA=
+postcss-em-media-query@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-em-media-query/-/postcss-em-media-query-4.1.0.tgz#910d71394296f058c2b0aefca66e80bc53289dfc"
+  integrity sha512-BYw6a13M9SGVqK/ORWi1P2oqCNKi4/DHlA5tSM8Do4pIRN3jwMyfaAqxsEyu8xqr2I+dXwdEQPjLJOclgF5MGg==
   dependencies:
-    em-media-query "^1.0.0"
-    postcss "^5.0.5"
+    em-media-query "^2.0.0"
 
 postcss-env-function@^2.0.2:
   version "2.0.2"
@@ -19891,16 +19880,6 @@ postcss-values-parser@^2.0.0, postcss-values-parser@^2.0.1:
     flatten "^1.0.2"
     indexes-of "^1.0.1"
     uniq "^1.0.1"
-
-postcss@^5.0.5:
-  version "5.2.18"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.18.tgz#badfa1497d46244f6390f58b319830d9107853c5"
-  integrity sha512-zrUjRRe1bpXKsX1qAJNJjqZViErVuyEkMTRrwu4ud4sbTtIBRmtaYDrHmcGgmrbsW3MHfmtIf+vJumgQn+PrXg==
-  dependencies:
-    chalk "^1.1.3"
-    js-base64 "^2.1.9"
-    source-map "^0.5.6"
-    supports-color "^3.2.3"
 
 postcss@^6.0.1, postcss@^6.0.23:
   version "6.0.23"
@@ -23282,13 +23261,6 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
   integrity sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
-
-supports-color@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-3.2.3.tgz#65ac0504b3954171d8a64946b2ae3cbb8a5f54f6"
-  integrity sha1-ZawFBLOVQXHYpklGsq48u4pfVPY=
-  dependencies:
-    has-flag "^1.0.0"
 
 supports-color@^5.3.0, supports-color@^5.4.0:
   version "5.5.0"
