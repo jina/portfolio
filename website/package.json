@@ -39,7 +39,7 @@
     "postcss-em-media-query": "^2.0.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
-    "postcss-pxtorem": "^5.1.1",
+    "postcss-pxtorem": "^6.0.0",
     "prism-react-renderer": "^1.1.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
