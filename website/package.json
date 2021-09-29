@@ -19,7 +19,7 @@
     "gatsby-image": "^3.2.0",
     "gatsby-plugin-manifest": "^3.6.0",
     "gatsby-plugin-mdx": "^2.6.0",
-    "gatsby-plugin-offline": "^3.2.23",
+    "gatsby-plugin-offline": "^4.14.0",
     "gatsby-plugin-postcss": "^2.3.6",
     "gatsby-plugin-purgecss": "^6.0.2",
     "gatsby-plugin-react-helmet": "^4.5.0",
