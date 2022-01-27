@@ -9,7 +9,10 @@ updates:
       timezone: America/Los_Angeles
     open-pull-requests-limit: 10
     ignore:
+      - dependency-name: "gatsby-plugin-react-helmet"
       - dependency-name: "gatsby-plugin-sharp"
+      - dependency-name: "gatsby-source-filesystem"
+      - dependency-name: "gatsby-transformer-remark"
 
   - package-ecosystem: github-actions
     directory: "/"
