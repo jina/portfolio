@@ -3829,17 +3829,17 @@
     ts-dedent "^1.1.1"
 
 "@storybook/addon-storysource@^6.1.6":
-  version "6.4.14"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-6.4.14.tgz#dd5421b79b43671e5921701b66cd69500d750e8f"
-  integrity sha512-vifb7M9x65dZq2f5wfQoVBRapfROK5oXS6VsV3xpqs308oD8IL0fP0KrIRYwJIpRxjTWf+C75Lyd2teoDD9S1w==
+  version "6.4.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-6.4.17.tgz#b5ca9ab8307de18d8885bcb181a4c867991b5dee"
+  integrity sha512-LBUyk3JXr9qalQazUsYbV50v9S2aI162y8wprpk1hF5YBZp2gL07+59sYww4riHZ+jZA+2oR5+TcTs8sRFFuXg==
   dependencies:
-    "@storybook/addons" "6.4.14"
-    "@storybook/api" "6.4.14"
-    "@storybook/client-logger" "6.4.14"
-    "@storybook/components" "6.4.14"
-    "@storybook/router" "6.4.14"
-    "@storybook/source-loader" "6.4.14"
-    "@storybook/theming" "6.4.14"
+    "@storybook/addons" "6.4.17"
+    "@storybook/api" "6.4.17"
+    "@storybook/client-logger" "6.4.17"
+    "@storybook/components" "6.4.17"
+    "@storybook/router" "6.4.17"
+    "@storybook/source-loader" "6.4.17"
+    "@storybook/theming" "6.4.17"
     core-js "^3.8.2"
     estraverse "^5.2.0"
     loader-utils "^2.0.0"
@@ -4008,7 +4008,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/api@6.4.15", "@storybook/api@^6.0.0":
+"@storybook/api@6.4.15":
   version "6.4.15"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-6.4.15.tgz#781a066ae64424a2f85f08d68a46a628745ff395"
   integrity sha512-oa9gQBauPUgXz/4Blb922M/bqaeV9JD161NI6lAxlWH0C8AVpExXFmKCVtmN3BNi3cRMmsY/o3WYd+/Uy7bfEQ==
@@ -4031,7 +4031,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/api@6.4.17":
+"@storybook/api@6.4.17", "@storybook/api@^6.0.0":
   version "6.4.17"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-6.4.17.tgz#82c3d756c85a65ecd8a3c3d9ce890e581175003a"
   integrity sha512-O0ssHVy40t4QD5CNdNESbJo7uZd86UWYrHCFjgeC2gmxrMgBD+ajO34N4HoQFC/F+/84om2/z8RYAGKu/WpoTA==
@@ -4466,7 +4466,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.4.15", "@storybook/components@^6.0.0":
+"@storybook/components@6.4.15":
   version "6.4.15"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.4.15.tgz#9ad7596a14429d458e780b74f03bed09ed9a04d7"
   integrity sha512-IlNxLfjde5G9Sf3GK7CEyfKZRpPu03Q75mwmN4yw2D4znsxAcVKCYxqrDYwxI5lfOKvkeeVkfg2mPpDBwuAL4A==
@@ -4496,7 +4496,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.4.17":
+"@storybook/components@6.4.17", "@storybook/components@^6.0.0":
   version "6.4.17"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.4.17.tgz#5be383682d9538c35c96463723cb17740f105fb6"
   integrity sha512-R6imELCWlHWQiprYMeeXLKgUQK4m698G/jvkc1xUxAThpTxwgROTcpw5qnJA0k+wltjGn4t6MBWKHhheGZc6Hg==
@@ -5312,6 +5312,22 @@
     prettier ">=2.2.1 <=2.3.0"
     regenerator-runtime "^0.13.7"
 
+"@storybook/source-loader@6.4.17":
+  version "6.4.17"
+  resolved "https://registry.yarnpkg.com/@storybook/source-loader/-/source-loader-6.4.17.tgz#d17e73f88f8c2a714fe129bf66ad692b4d4e0c97"
+  integrity sha512-OAETI21mL/jwmb9e/JtFDIsLWoOOWOAIm3Cj89XHQz/5VkYljZxdh2icb6xDHR8PtEaXj4+sBWQUG3L+a/a9QQ==
+  dependencies:
+    "@storybook/addons" "6.4.17"
+    "@storybook/client-logger" "6.4.17"
+    "@storybook/csf" "0.0.2--canary.87bc651.0"
+    core-js "^3.8.2"
+    estraverse "^5.2.0"
+    global "^4.4.0"
+    loader-utils "^2.0.0"
+    lodash "^4.17.21"
+    prettier ">=2.2.1 <=2.3.0"
+    regenerator-runtime "^0.13.7"
+
 "@storybook/store@6.4.14":
   version "6.4.14"
   resolved "https://registry.yarnpkg.com/@storybook/store/-/store-6.4.14.tgz#2ec5601e1c40a27f164b570d4c2b84c57d3a4115"
@@ -5390,7 +5406,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/theming@6.4.15", "@storybook/theming@^6.0.0":
+"@storybook/theming@6.4.15":
   version "6.4.15"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.15.tgz#330c4d729c1b49c569b728e705ba6b5e9aab8e31"
   integrity sha512-1968vqrvMRo6Ivpu9aWOZ9MdSXKxWB/yI8i3PAN+WaSDnkGf+w2b3Tjgcx9pJiIvO025tuhCg7vhU2snXVYOTg==
@@ -5408,7 +5424,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/theming@6.4.17":
+"@storybook/theming@6.4.17", "@storybook/theming@^6.0.0":
   version "6.4.17"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.17.tgz#f0a03d2d3239638ac171e97a8f089ee2656a8287"
   integrity sha512-7+U72/VdhoMb00q1URMzdTW3OYHJogro2i2hScgKR+ndL4/dtSmetJ/1z9PuoFxLxHgdLKcwMAV0fZAjEYlhCA==
