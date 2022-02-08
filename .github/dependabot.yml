@@ -14,6 +14,7 @@ updates:
       - dependency-name: "gatsby-plugin-manifest"
       - dependency-name: "gatsby-plugin-react-helmet"
       - dependency-name: "gatsby-plugin-sharp"
+      - dependency-name: "gatsby-plugin-twitter"
       - dependency-name: "gatsby-remark-images"
       - dependency-name: "gatsby-remark-smartypants"
       - dependency-name: "gatsby-source-filesystem"
