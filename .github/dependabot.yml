@@ -19,6 +19,7 @@ updates:
       - dependency-name: "gatsby-remark-smartypants"
       - dependency-name: "gatsby-source-filesystem"
       - dependency-name: "gatsby-transformer-remark"
+      - dependency-name: "gatsby-transformer-sharp"
       - dependency-name: "@mdx-js/mdx"
 
   - package-ecosystem: github-actions
