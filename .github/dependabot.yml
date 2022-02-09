@@ -21,6 +21,7 @@ updates:
       - dependency-name: "gatsby-transformer-remark"
       - dependency-name: "gatsby-transformer-sharp"
       - dependency-name: "@mdx-js/mdx"
+      - dependency-name: "prism-react-renderer"
 
   - package-ecosystem: github-actions
     directory: "/"
