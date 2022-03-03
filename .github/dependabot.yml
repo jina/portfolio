@@ -12,6 +12,7 @@ updates:
       - dependency-name: "gatsby"
       - dependency-name: "gatsby-cli"
       - dependency-name: "gatsby-plugin-manifest"
+      - dependency-name: "gatsby-plugin-purgecss"
       - dependency-name: "gatsby-plugin-react-helmet"
       - dependency-name: "gatsby-plugin-sharp"
       - dependency-name: "gatsby-plugin-twitter"
