@@ -52,7 +52,7 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.26.9",
     "sass-loader": "^12.1.0",
-    "showdown": "^1.9.1",
+    "showdown": "^2.0.1",
     "storybook-addon-themes": "^6.0.1",
     "style-loader": "^1.2.1"
   },
